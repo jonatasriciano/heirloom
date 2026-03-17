@@ -1,0 +1,207 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "cleaning": "Nettoyage",
+    "rugTypes": "Types de tapis",
+    "repair": "Réparation",
+    "underlays": "Sous-tapis",
+    "rugProtection": "Protection",
+    "pets": "Animaux",
+    "carpetDyeing": "Teinture",
+    "aboutUs": "À propos",
+    "getQuote": "Obtenir un devis",
+    "call": "Appelez-nous",
+    "cleaningDropdown": {
+      "process": "Processus de nettoyage",
+      "inspection": "Inspection du tapis",
+      "pickup": "Ramassage",
+      "dusting": "Dépoussiérage",
+      "washRinse": "Lavage et rinçage",
+      "drying": "Séchage",
+      "vacuumInspection": "Aspiration et inspection",
+      "fiberProtectorPads": "Protecteur de fibres et sous-tapis",
+      "delivery": "Livraison",
+      "methods": "Méthodes de nettoyage",
+      "wetCleaning": "Nettoyage humide",
+      "hotWater": "Extraction à l'eau chaude",
+      "deepCleaning": "Nettoyage en profondeur",
+      "stainRemoval": "Enlèvement de taches",
+      "oldStain": "Taches anciennes",
+      "maintenance": "Entretien de tapis",
+      "articles": "Articles sur le nettoyage",
+      "videos": "Vidéos de lavage"
+    },
+    "rugTypesDropdown": {
+      "oriental": "Tapis orientaux",
+      "persian": "Tapis persans",
+      "silk": "Tapis en soie",
+      "turkish": "Tapis turcs",
+      "antique": "Tapis anciens",
+      "other": "Autres types de tapis"
+    },
+    "repairDropdown": {
+      "fringe": "Réparation de franges",
+      "colorDyeing": "Correction de couleur et teinture",
+      "backing": "Réparation du dos",
+      "blotSpills": "Éponger les déversements",
+      "patching": "Rapiéçage de tapis",
+      "fireWater": "Tapis endommagés par le feu et l'eau",
+      "smokeOdor": "Élimination des odeurs de fumée",
+      "holeRepair": "Réparation de trous",
+      "articles": "Articles sur la réparation"
+    },
+    "underlaysDropdown": {
+      "petBarrier": "Barrière pour animaux",
+      "types": "Types de sous-tapis",
+      "slipperyFloor": "Sous-tapis pour sols glissants",
+      "waterproof": "Sous-tapis imperméables",
+      "floorType": "Pour tous types de sols",
+      "laminate": "Sols stratifiés",
+      "features": "Caractéristiques des sous-tapis",
+      "nonSlip": "Sous-tapis antidérapants",
+      "naturalMaterial": "Sous-tapis en matériaux naturels",
+      "material": "Matériaux de sous-tapis",
+      "replacement": "Remplacement de sous-tapis"
+    },
+    "rugProtectionDropdown": {
+      "protectorRepellent": "Protecteur et anti-taches"
+    },
+    "petsDropdown": {
+      "odors": "Odeurs d'animaux",
+      "stainRemoval": "Enlèvement de taches d'animaux",
+      "pads": "Sous-tapis pour animaux",
+      "articles": "Articles sur les soins liés aux animaux"
+    },
+    "carpetDyeingDropdown": {
+      "restoration": "Restauration de moquette",
+      "colorRepair": "Réparation de couleur",
+      "bleachSpot": "Réparation de décoloration"
+    },
+    "aboutUsDropdown": {
+      "awards": "Prix et affiliations",
+      "team": "Rencontrer l'équipe",
+      "faq": "FAQ",
+      "jobs": "Travaux complétés",
+      "reviews": "Avis",
+      "hours": "Heures et emplacement",
+      "shipping": "Expédition",
+      "contact": "Contactez-nous"
+    }
+  },
+  "hero": {
+    "label": "Le soin de confiance pour vos tapis à Calgary depuis 1967",
+    "title": "Préserver la beauté de vos plus beaux tapis",
+    "subtitle": "Nettoyage expert, restauration et entretien de tapis orientaux, textiles anciens et tapis de collection.",
+    "cta": "Demander une estimation gratuite",
+    "secondaryCta": "Appeler (403) 451-0545"
+  },
+  "trust": {
+    "label": "Pourquoi Heirloom®",
+    "title": "Un héritage de soin et de savoir-faire",
+    "description": "Depuis plus de cinq décennies, les familles de Calgary font confiance à Heirloom® pour leurs tapis les plus précieux. Notre installation est la plus grande usine de nettoyage de tapis dédiée d'ici à Toronto.",
+    "stat1Value": "55+",
+    "stat1Label": "Années d'expérience",
+    "stat2Value": "50 000+",
+    "stat2Label": "Tapis nettoyés",
+    "stat3Value": "100%",
+    "stat3Label": "Garantie de satisfaction",
+    "stat4Value": "#1",
+    "stat4Label": "Évalué à Calgary"
+  },
+  "services": {
+    "label": "Nos services",
+    "title": "Soins complets pour vos tapis",
+    "subtitle": "Du nettoyage de routine à la restauration complexe, nous traitons chaque type de tapis avec l'expertise qu'il mérite.",
+    "items": {
+      "cleaning": {
+        "title": "Nettoyage de tapis",
+        "description": "Lavage par immersion complète adapté à la fibre, la teinture et la construction de chaque tapis. Sans danger pour la soie, la laine, le coton et les synthétiques."
+      },
+      "repair": {
+        "title": "Réparation et restauration",
+        "description": "Retissage expert, réparation de franges, reliure et rapiéçage pour restaurer l'intégrité structurelle et la beauté de votre tapis."
+      },
+      "stain": {
+        "title": "Enlèvement de taches et d'odeurs",
+        "description": "Traitement avancé pour les taches d'animaux, de vin, de nourriture et autres marques tenaces. Nous éliminons les odeurs à la source."
+      },
+      "protection": {
+        "title": "Protection de tapis",
+        "description": "Traitements de protection des fibres et sous-tapis sur mesure pour prolonger la durée de vie de votre investissement."
+      },
+      "appraisal": {
+        "title": "Évaluation de tapis",
+        "description": "Évaluation professionnelle de l'origine, de l'âge, de l'état et de la valeur marchande de votre tapis à des fins d'assurance ou de succession."
+      },
+      "pickup": {
+        "title": "Ramassage et livraison",
+        "description": "Ramassage et livraison gratuits dans tout Calgary, Okotoks et De Winton. Expédition disponible partout au Canada."
+      }
+    }
+  },
+  "process": {
+    "label": "Notre processus",
+    "title": "Comment nous prenons soin de vos tapis",
+    "subtitle": "Chaque tapis reçoit un plan de traitement personnalisé basé sur ses caractéristiques uniques.",
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Inspection et évaluation",
+        "description": "Nous examinons le type de fibre, la stabilité des teintures, la construction et les conditions préexistantes pour créer un plan de nettoyage personnalisé."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Dépoussiérage et pré-traitement",
+        "description": "Le dépoussiérage mécanique profond élimine les saletés incrustées, suivi d'un pré-traitement ciblé des taches et des zones problématiques."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Lavage par immersion complète",
+        "description": "Votre tapis est délicatement lavé à l'aide d'un flux d'eau contrôlé et de solutions à pH équilibré spécifiques à son type de fibre."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Séchage et finition",
+        "description": "Le séchage à climat contrôlé préserve la forme et la texture. Le toilettage final et l'inspection garantissent des résultats impeccables."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Témoignages",
+    "title": "Ce que disent nos clients",
+    "items": {
+      "t1": {
+        "text": "Heirloom a redonné vie à notre tapis persan de 80 ans. Les couleurs sont à nouveau vibrantes et il sent merveilleusement bon. Un service vraiment exceptionnel.",
+        "author": "Margaret T.",
+        "location": "Calgary, AB"
+      },
+      "t2": {
+        "text": "Nous faisons confiance à Heirloom pour toute notre collection depuis plus de 15 ans. Leur attention aux détails et leur soin sont inégalés dans la ville.",
+        "author": "David & Susan R.",
+        "location": "Okotoks, AB"
+      },
+      "t3": {
+        "text": "Après l'accident de notre chien sur notre tapis en soie, nous pensions qu'il était ruiné. Heirloom a éliminé toute trace de tache et d'odeur. Un travail incroyable.",
+        "author": "Jennifer L.",
+        "location": "De Winton, AB"
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à restaurer la beauté de votre tapis?",
+    "subtitle": "Obtenez une estimation gratuite et sans obligation. Nous offrons le ramassage et la livraison gratuits dans la région de Calgary.",
+    "primary": "Obtenir votre estimation gratuite",
+    "secondary": "Appeler (403) 451-0545"
+  },
+  "footer": {
+    "description": "Le premier service de nettoyage et de restauration de tapis de Calgary depuis 1967. Des milliers de familles nous font confiance pour prendre soin de leurs textiles les plus précieux.",
+    "quickLinks": "Liens rapides",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "address": "Calgary, Alberta, Canada",
+    "phone": "(403) 451-0545",
+    "email": "info@arearugcleaning.com",
+    "hours": "Lun–Ven: 8h–17h",
+    "copyright": "© {year} Heirloom® Rug Cleaning. Tous droits réservés."
+  }
+}

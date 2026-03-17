@@ -1,0 +1,26 @@
+# ============================================
+# Heirloom - Development Dockerfile
+# Optimized for hot reload and debugging
+# ============================================
+
+FROM node:22.19.0-alpine AS development
+
+# Install required tools for healthcheck and Playwright
+RUN apk add --no-cache wget libc6-compat
+
+WORKDIR /app
+
+# Copy package files for dependency installation (better caching)
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# Copy source code
+COPY . .
+
+EXPOSE 3011
+
+# Healthcheck
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+  CMD wget --quiet --tries=1 --spider http://localhost:3011 || exit 1
+
+CMD ["npm", "run", "dev"]

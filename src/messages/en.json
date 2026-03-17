@@ -1,0 +1,207 @@
+{
+  "nav": {
+    "home": "Home",
+    "cleaning": "Cleaning",
+    "rugTypes": "Rug Types",
+    "repair": "Repair",
+    "underlays": "Underlays",
+    "rugProtection": "Rug Protection",
+    "pets": "Pets",
+    "carpetDyeing": "Carpet Dyeing",
+    "aboutUs": "About Us",
+    "getQuote": "Get a Quote",
+    "call": "Call Us",
+    "cleaningDropdown": {
+      "process": "Rug Cleaning Process",
+      "inspection": "Rug Inspection",
+      "pickup": "Pickup",
+      "dusting": "Rug Dusting",
+      "washRinse": "Clean, Wash & Rinse",
+      "drying": "Drying",
+      "vacuumInspection": "Vacuuming & Inspection",
+      "fiberProtectorPads": "Fiber Protector & Rug Pads",
+      "delivery": "Delivery",
+      "methods": "Rug Cleaning Methods",
+      "wetCleaning": "Wet Cleaning",
+      "hotWater": "Hot Water Extraction",
+      "deepCleaning": "Deep Cleaning",
+      "stainRemoval": "Stain Removal",
+      "oldStain": "Old Rug Stain Removal",
+      "maintenance": "Area Rug Maintenance",
+      "articles": "Cleaning Articles",
+      "videos": "Rug Washing Videos"
+    },
+    "rugTypesDropdown": {
+      "oriental": "Oriental Rugs",
+      "persian": "Persian Rugs",
+      "silk": "Silk Rugs",
+      "turkish": "Turkish Rugs",
+      "antique": "Antique Rugs",
+      "other": "Other Types We Clean"
+    },
+    "repairDropdown": {
+      "fringe": "Fringe Repair",
+      "colorDyeing": "Color Correction & Dyeing",
+      "backing": "Backing Repair",
+      "blotSpills": "Blot Spills",
+      "patching": "Rug Patching",
+      "fireWater": "Fire & Water Damaged Rugs",
+      "smokeOdor": "Smoke Odor Removal",
+      "holeRepair": "Rug Hole Repair",
+      "articles": "Rug Repair Articles"
+    },
+    "underlaysDropdown": {
+      "petBarrier": "Pet Barrier",
+      "types": "Types of Rug Pads",
+      "slipperyFloor": "Rug Pads for Slippery Floors",
+      "waterproof": "Waterproof Rug Pads",
+      "floorType": "For All Types of Floors",
+      "laminate": "Laminate Floors",
+      "features": "Rug Underlay Features",
+      "nonSlip": "Non-Slip Rug Pads",
+      "naturalMaterial": "Natural Material Rug Pads",
+      "material": "Rug Underlay Material",
+      "replacement": "Rug Underlay Replacement"
+    },
+    "rugProtectionDropdown": {
+      "protectorRepellent": "Protector & Stain Repellent"
+    },
+    "petsDropdown": {
+      "odors": "Pet Odors",
+      "stainRemoval": "Pet Stain Removal",
+      "pads": "Rug Pads for Pets",
+      "articles": "Pet-Related Rug Care Articles"
+    },
+    "carpetDyeingDropdown": {
+      "restoration": "Carpet Restoration",
+      "colorRepair": "Carpet Color Repair",
+      "bleachSpot": "Carpet Bleach Spot Repair"
+    },
+    "aboutUsDropdown": {
+      "awards": "Awards & Affiliations",
+      "team": "Meet the Team",
+      "faq": "FAQ",
+      "jobs": "Completed Jobs",
+      "reviews": "Reviews",
+      "hours": "Hours & Location",
+      "shipping": "Shipping",
+      "contact": "Contact Us"
+    }
+  },
+  "hero": {
+    "label": "Calgary's Trusted Rug Care Since 1967",
+    "title": "Preserving the Beauty of Your Finest Rugs",
+    "subtitle": "Expert cleaning, restoration and care for Oriental rugs, antique textiles and investment-grade carpets.",
+    "cta": "Request a Free Estimate",
+    "secondaryCta": "Call (403) 451-0545"
+  },
+  "trust": {
+    "label": "Why Heirloom®",
+    "title": "A Legacy of Care & Craftsmanship",
+    "description": "For over five decades, Calgary families have trusted Heirloom® with their most treasured rugs. Our facility is the largest dedicated rug cleaning plant from here to Toronto.",
+    "stat1Value": "55+",
+    "stat1Label": "Years of Experience",
+    "stat2Value": "50,000+",
+    "stat2Label": "Rugs Cleaned",
+    "stat3Value": "100%",
+    "stat3Label": "Satisfaction Guarantee",
+    "stat4Value": "#1",
+    "stat4Label": "Rated in Calgary"
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "Comprehensive Rug Care",
+    "subtitle": "From routine cleaning to complex restoration, we handle every type of rug with the expertise it deserves.",
+    "items": {
+      "cleaning": {
+        "title": "Rug Cleaning",
+        "description": "Full-immersion washing tailored to each rug's fiber, dye and construction. Safe for silk, wool, cotton and synthetics."
+      },
+      "repair": {
+        "title": "Rug Repair & Restoration",
+        "description": "Expert reweaving, fringe repair, binding and patching to restore your rug's structural integrity and beauty."
+      },
+      "stain": {
+        "title": "Stain & Odor Removal",
+        "description": "Advanced treatment for pet stains, wine, food and other stubborn marks. We eliminate odors at the source."
+      },
+      "protection": {
+        "title": "Rug Protection",
+        "description": "Fiber protection treatments and custom-cut rug pads to extend the life of your investment."
+      },
+      "appraisal": {
+        "title": "Rug Appraisal",
+        "description": "Professional evaluation of your rug's origin, age, condition and market value for insurance or estate purposes."
+      },
+      "pickup": {
+        "title": "Pickup & Delivery",
+        "description": "Complimentary pickup and delivery throughout Calgary, Okotoks and De Winton. Shipping available across Canada."
+      }
+    }
+  },
+  "process": {
+    "label": "Our Process",
+    "title": "How We Care for Your Rugs",
+    "subtitle": "Every rug receives a personalized treatment plan based on its unique characteristics.",
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Inspection & Assessment",
+        "description": "We examine fiber type, dye stability, construction and pre-existing conditions to create a custom cleaning plan."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Dusting & Pre-Treatment",
+        "description": "Deep mechanical dusting removes embedded soil, followed by targeted pre-treatment of stains and problem areas."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Full-Immersion Wash",
+        "description": "Your rug is gently washed using controlled water flow and pH-balanced solutions specific to its fiber type."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Drying & Finishing",
+        "description": "Climate-controlled drying preserves shape and texture. Final grooming and inspection ensure flawless results."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What Our Clients Say",
+    "items": {
+      "t1": {
+        "text": "Heirloom brought our 80-year-old Persian rug back to life. The colors are vibrant again and it smells wonderful. Truly exceptional service.",
+        "author": "Margaret T.",
+        "location": "Calgary, AB"
+      },
+      "t2": {
+        "text": "We've trusted Heirloom with our entire collection for over 15 years. Their attention to detail and care is unmatched in the city.",
+        "author": "David & Susan R.",
+        "location": "Okotoks, AB"
+      },
+      "t3": {
+        "text": "After our dog had an accident on our silk rug, we thought it was ruined. Heirloom removed every trace of stain and odor. Incredible work.",
+        "author": "Jennifer L.",
+        "location": "De Winton, AB"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Restore Your Rug's Beauty?",
+    "subtitle": "Get a free, no-obligation estimate. We offer complimentary pickup and delivery in the Calgary area.",
+    "primary": "Get Your Free Estimate",
+    "secondary": "Call (403) 451-0545"
+  },
+  "footer": {
+    "description": "Calgary's premier rug cleaning and restoration service since 1967. Trusted by thousands of families to care for their most treasured textiles.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "address": "Calgary, Alberta, Canada",
+    "phone": "(403) 451-0545",
+    "email": "info@arearugcleaning.com",
+    "hours": "Mon–Fri: 8am–5pm",
+    "copyright": "© {year} Heirloom® Rug Cleaning. All rights reserved."
+  }
+}
