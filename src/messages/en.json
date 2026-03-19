@@ -11,6 +11,9 @@
     "aboutUs": "About Us",
     "getQuote": "Get a Quote",
     "call": "Call Us",
+    "calculateCost": "Calculate your Cleaning Cost",
+    "promoLine1": "Premium Rug Underlay for Purchase",
+    "promoLine2": "Canada-Wide Delivery",
     "cleaningDropdown": {
       "process": "Rug Cleaning Process",
       "inspection": "Rug Inspection",
@@ -199,9 +202,9 @@
     "servicesTitle": "Services",
     "contactTitle": "Contact",
     "address": "Calgary, Alberta, Canada",
-    "phone": "(403) 451-0545",
+    "phone": "(587) 857-5553",
     "email": "info@arearugcleaning.com",
-    "hours": "Mon–Fri: 8am–5pm",
-    "copyright": "© {year} Heirloom® Rug Cleaning. All rights reserved."
+    "copyright": "© {year} Heirloom® Rug Cleaning. All rights reserved.",
+    "followUs": "Follow Us On"
   }
 }

@@ -11,6 +11,9 @@
     "aboutUs": "À propos",
     "getQuote": "Obtenir un devis",
     "call": "Appelez-nous",
+    "calculateCost": "Calculer le coût de nettoyage",
+    "promoLine1": "Sous-tapis premium à vendre",
+    "promoLine2": "Livraison partout au Canada",
     "cleaningDropdown": {
       "process": "Processus de nettoyage",
       "inspection": "Inspection du tapis",
@@ -199,9 +202,9 @@
     "servicesTitle": "Services",
     "contactTitle": "Contact",
     "address": "Calgary, Alberta, Canada",
-    "phone": "(403) 451-0545",
+    "phone": "(587) 857-5553",
     "email": "info@arearugcleaning.com",
-    "hours": "Lun–Ven: 8h–17h",
-    "copyright": "© {year} Heirloom® Rug Cleaning. Tous droits réservés."
+    "copyright": "© {year} Heirloom® Rug Cleaning. Tous droits réservés.",
+    "followUs": "Suivez-nous sur"
   }
 }

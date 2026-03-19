@@ -157,6 +157,15 @@ export default function Header() {
 
   return (
     <header className="header">
+      {/* Promo bar */}
+      <div className="header__promo">
+        <Link href="/rug-padding" className="header__promo-link">
+          <span>{t('promoLine1')}</span>
+          <span className="header__promo-dot" aria-hidden="true">•</span>
+          <span>{t('promoLine2')}</span>
+        </Link>
+      </div>
+
       <div className="container">
         {/* Top row: logo + CTA */}
         <div className="header__top">
@@ -171,8 +180,11 @@ export default function Header() {
             />
           </Link>
           <div className="header__top-actions">
-            <a href="tel:4034510545" className="btn btn-ghost">{t('call')}</a>
-            <Link href="/contact" className="btn btn-primary">{t('getQuote')}</Link>
+            <Link href="/calculate-cleaning-cost" className="btn btn-accent">{t('calculateCost')}</Link>
+            <div className="header__top-actions-row">
+              <a href="tel:4034510545" className="btn btn-ghost">{t('call')}</a>
+              <Link href="/contact" className="btn btn-primary">{t('getQuote')}</Link>
+            </div>
           </div>
           {/* Mobile Toggle */}
           <button
@@ -312,10 +324,13 @@ export default function Header() {
             ))}
           </ul>
           <div className="header__mobile-actions">
+            <Link href="/calculate-cleaning-cost" className="btn btn-accent btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
+              {t('calculateCost')}
+            </Link>
             <Link href="/contact" className="btn btn-primary btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
               {t('getQuote')}
             </Link>
-            <a href="tel:4034510545" className="btn btn-secondary btn-lg" style={{ width: '100%' }}>
+            <a href="tel:4034510545" className="btn btn-ghost btn-lg" style={{ width: '100%' }}>
               {t('call')}
             </a>
           </div>

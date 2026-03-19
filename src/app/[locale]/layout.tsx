@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Playfair_Display, Inter } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
+import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import '../globals.css';
 
 const playfair = Playfair_Display({
@@ -48,6 +49,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${playfair.variable} ${inter.variable}`} data-theme="luxury-light">
       <body className={`${inter.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
+          <ScrollToTop />
           {children}
         </NextIntlClientProvider>
       </body>

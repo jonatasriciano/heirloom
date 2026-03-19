@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import SocialIcon from '@/components/SocialIcon/SocialIcon';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -10,9 +11,18 @@ export default function Footer() {
 
   const quickLinks = [
     { href: '/' as const, label: nav('home') },
-    { href: '/services' as const, label: nav('cleaning') },
-    { href: '/about' as const, label: nav('aboutUs') },
-    { href: '/contact' as const, label: nav('aboutUsDropdown.contact') },
+    { href: '/area-rug-cleaning' as const, label: nav('cleaning') },
+    { href: '/types-of-rugs-we-clean' as const, label: nav('rugTypes') },
+    { href: '/about-us' as const, label: nav('aboutUs') },
+    { href: '/about-us/frequently-asked-questions' as const, label: nav('aboutUsDropdown.faq') },
+  ];
+
+  const socialLinks = [
+    { platform: 'facebook', href: 'https://www.facebook.com/pages/Heirloom-Oriental-Rug-Cleaning-Ltd/152247254864414', label: 'Facebook' },
+    { platform: 'x', href: 'https://twitter.com/HeirloomCanada', label: 'X (Twitter)' },
+    { platform: 'google', href: 'https://www.google.com/maps/place/Heirloom+Rug+Cleaning+Ltd./@50.9998663,-114.0500697,17z/data=!3m1!4b1!4m6!3m5!1s0x5371bb1555555555:0xb111fec8aa2489f2!8m2!3d50.9998663!4d-114.0500697!16s%2Fg%2F11b5wknz02', label: 'Google' },
+    { platform: 'youtube', href: 'https://www.youtube.com/c/Arearugcleaning/videos', label: 'YouTube' },
+    { platform: 'pinterest', href: 'https://www.pinterest.com/heirloomcalgary/', label: 'Pinterest' },
   ];
 
   return (
@@ -49,11 +59,29 @@ export default function Footer() {
           <div className="footer__col">
             <h4 className="footer__col-title">{t('contactTitle')}</h4>
             <ul className="footer__links">
-              <li><a href="tel:4034510545" className="footer__link">{t('phone')}</a></li>
+              <li><a href="tel:5878575553" className="footer__link">{t('phone')}</a></li>
               <li><a href="mailto:info@arearugcleaning.com" className="footer__link">{t('email')}</a></li>
               <li><span className="footer__link-text">{t('address')}</span></li>
-              <li><span className="footer__link-text">{t('hours')}</span></li>
             </ul>
+
+            {/* Follow Us */}
+            <div className="footer__social">
+              <h4 className="footer__col-title">{t('followUs')}</h4>
+              <div className="footer__social-icons">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.platform}
+                    href={link.href}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="footer__social-link"
+                    aria-label={link.label}
+                  >
+                    <SocialIcon platform={link.platform} size={20} />
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -62,77 +90,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <style jsx>{`
-        .footer {
-          background-color: var(--bg-dark);
-          color: var(--text-on-dark);
-          padding-top: var(--space-16);
-          padding-bottom: var(--space-8);
-        }
-        .footer__grid {
-          display: grid;
-          gap: var(--space-10);
-          margin-bottom: var(--space-12);
-        }
-        .footer__logo {
-          font-family: var(--font-heading);
-          font-size: var(--font-size-2xl);
-          font-weight: 700;
-          display: block;
-          margin-bottom: var(--space-4);
-        }
-        .footer__logo-accent {
-          color: var(--accent-primary);
-          font-size: 0.65em;
-          vertical-align: super;
-        }
-        .footer__desc {
-          font-size: var(--font-size-sm);
-          color: rgba(247, 243, 238, 0.6);
-          line-height: var(--line-height-relaxed);
-          max-width: 360px;
-        }
-        .footer__col-title {
-          font-family: var(--font-body);
-          font-size: var(--font-size-sm);
-          font-weight: 600;
-          letter-spacing: var(--letter-spacing-wider);
-          text-transform: uppercase;
-          color: var(--accent-primary);
-          margin-bottom: var(--space-4);
-        }
-        .footer__links {
-          display: flex;
-          flex-direction: column;
-          gap: var(--space-3);
-        }
-        .footer__link {
-          font-size: var(--font-size-sm);
-          color: rgba(247, 243, 238, 0.6);
-          transition: color var(--transition-fast);
-        }
-        .footer__link:hover {
-          color: var(--accent-primary);
-        }
-        .footer__link-text {
-          font-size: var(--font-size-sm);
-          color: rgba(247, 243, 238, 0.6);
-        }
-        .footer__bottom {
-          border-top: 1px solid rgba(247, 243, 238, 0.1);
-          padding-top: var(--space-6);
-        }
-        .footer__copyright {
-          font-size: var(--font-size-xs);
-          color: rgba(247, 243, 238, 0.4);
-          text-align: center;
-        }
-        @media (min-width: 768px) {
-          .footer__grid {
-            grid-template-columns: 2fr 1fr 1fr;
-          }
-        }
-      `}</style>
+
     </footer>
   );
 }
