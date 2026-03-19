@@ -604,15 +604,6 @@ select:focus-visible {
   z-index: 210;
 }
 
-/* Mobile sub-sub items */
-.header__mobile-sublink--parent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  font-weight: 500;
-}
-
 .header__mobile-subsub {
   padding-left: var(--space-4);
 }
@@ -769,6 +760,24 @@ select:focus-visible {
 
 .header__mobile-sublink:hover {
   color: var(--accent-primary);
+}
+
+.header__mobile-sublink.header__mobile-sublink--parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 500;
+}
+
+.header__mobile-chevron-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-3);
+  margin-right: calc(-1 * var(--space-3));
+  color: var(--text-tertiary);
+  flex-shrink: 0;
 }
 
 .header__mobile-actions {

@@ -182,7 +182,7 @@ export default function Header() {
           <div className="header__top-actions">
             <Link href="/calculate-cleaning-cost" className="btn btn-accent">{t('calculateCost')}</Link>
             <div className="header__top-actions-row">
-              <a href="tel:4034510545" className="btn btn-ghost">{t('call')}</a>
+              <a href="tel:5878575553" className="btn btn-ghost">{t('call')}</a>
               <Link href="/contact" className="btn btn-primary">{t('getQuote')}</Link>
             </div>
           </div>
@@ -262,37 +262,47 @@ export default function Header() {
               <li key={item.key}>
                 {item.dropdown ? (
                   <>
-                    <button
-                      className="header__mobile-link header__mobile-link--parent"
-                      onClick={() => toggleMobileDropdown(item.key)}
-                      aria-expanded={mobileDropdown === item.key}
-                    >
-                      {item.label}
-                      <svg
-                        className={`header__chevron ${mobileDropdown === item.key ? 'header__chevron--open' : ''}`}
-                        width="10" height="6" viewBox="0 0 10 6" fill="none"
+                    <div className="header__mobile-link header__mobile-link--parent">
+                      <Link href={item.href as '/'} onClick={() => setIsOpen(false)}>
+                        {item.label}
+                      </Link>
+                      <button
+                        className="header__mobile-chevron-btn"
+                        onClick={() => toggleMobileDropdown(item.key)}
+                        aria-expanded={mobileDropdown === item.key}
+                        aria-label={`Toggle ${item.label} submenu`}
                       >
-                        <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
+                        <svg
+                          className={`header__chevron ${mobileDropdown === item.key ? 'header__chevron--open' : ''}`}
+                          width="10" height="6" viewBox="0 0 10 6" fill="none"
+                        >
+                          <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </button>
+                    </div>
                     {mobileDropdown === item.key && (
                       <ul className="header__mobile-sub">
                         {item.dropdown.map((sub) => (
                           <li key={sub.href}>
                             {sub.children ? (
                               <>
-                                <button
-                                  className="header__mobile-sublink header__mobile-sublink--parent"
-                                  onClick={() => setMobileSub(prev => prev === sub.href ? null : sub.href)}
-                                >
-                                  {sub.label}
-                                  <svg
-                                    className={`header__chevron ${mobileSub === sub.href ? 'header__chevron--open' : ''}`}
-                                    width="8" height="5" viewBox="0 0 10 6" fill="none"
+                                <div className="header__mobile-sublink header__mobile-sublink--parent">
+                                  <Link href={sub.href as '/'} onClick={() => setIsOpen(false)}>
+                                    {sub.label}
+                                  </Link>
+                                  <button
+                                    className="header__mobile-chevron-btn"
+                                    onClick={() => setMobileSub(prev => prev === sub.href ? null : sub.href)}
+                                    aria-label={`Toggle ${sub.label} submenu`}
                                   >
-                                    <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                                  </svg>
-                                </button>
+                                    <svg
+                                      className={`header__chevron ${mobileSub === sub.href ? 'header__chevron--open' : ''}`}
+                                      width="8" height="5" viewBox="0 0 10 6" fill="none"
+                                    >
+                                      <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                  </button>
+                                </div>
                                 {mobileSub === sub.href && (
                                   <ul className="header__mobile-subsub">
                                     {sub.children.map((child) => (
@@ -330,7 +340,7 @@ export default function Header() {
             <Link href="/contact" className="btn btn-primary btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
               {t('getQuote')}
             </Link>
-            <a href="tel:4034510545" className="btn btn-ghost btn-lg" style={{ width: '100%' }}>
+            <a href="tel:5878575553" className="btn btn-ghost btn-lg" style={{ width: '100%' }}>
               {t('call')}
             </a>
           </div>

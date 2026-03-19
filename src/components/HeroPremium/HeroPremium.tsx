@@ -17,7 +17,7 @@ export default function HeroPremium() {
             <Link href="/contact" className="btn btn-primary btn-lg">
               {t('cta')}
             </Link>
-            <a href="tel:4034510545" className="btn btn-secondary btn-lg">
+            <a href="tel:5878575553" className="btn btn-secondary btn-lg">
               {t('secondaryCta')}
             </a>
           </div>
