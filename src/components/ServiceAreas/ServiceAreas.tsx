@@ -58,7 +58,7 @@ export default function ServiceAreas() {
               <iframe
                 loading="lazy"
                 title="Google Maps - Alberta, Canada"
-                src="https://www.google.com/maps?q=Alberta,+Canada&z=5&output=embed"
+                src="https://www.google.com/maps?q=Alberta,+Canada&z=4&output=embed"
                 className="service-areas__iframe"
                 onLoad={() => setIsLoading(false)}
               />
