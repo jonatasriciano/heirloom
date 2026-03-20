@@ -8,7 +8,7 @@ export default function ProcessSection() {
   const t = useTranslations('process');
 
   return (
-    <section className="section-alt">
+    <section className="section-alt" id="process">
       <div className="container">
         <div className="process__header">
           <span className="label-uppercase">{t('label')}</span>

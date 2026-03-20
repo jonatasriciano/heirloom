@@ -92,11 +92,25 @@
     }
   },
   "hero": {
-    "label": "Calgary's Trusted Rug Care Since 1967",
-    "title": "Preserving the Beauty of Your Finest Rugs",
-    "subtitle": "Expert cleaning, restoration and care for Oriental rugs, antique textiles and investment-grade carpets.",
     "cta": "Request a Free Estimate",
-    "secondaryCta": "Call (587) 857-5553"
+    "secondaryCta": "See Our Process",
+    "slides": {
+      "s1": {
+        "label": "Calgary's Trusted Rug Care Since 1967",
+        "title": "Preserving the Beauty of Your Finest Rugs",
+        "subtitle": "Expert cleaning, restoration and care for Oriental rugs, antique textiles and investment-grade carpets."
+      },
+      "s2": {
+        "label": "Full-Immersion Cleaning",
+        "title": "Deep Cleaning That Revives Every Fiber",
+        "subtitle": "Our gentle yet thorough washing process removes embedded soil, stains and allergens without harming delicate fibers."
+      },
+      "s3": {
+        "label": "Expert Restoration",
+        "title": "Restoring Rugs to Their Original Splendor",
+        "subtitle": "From fringe repair to color restoration, our master craftsmen bring damaged rugs back to life."
+      }
+    }
   },
   "trust": {
     "label": "Why Heirloom®",
@@ -195,6 +209,38 @@
     "subtitle": "Get a free, no-obligation estimate. We offer complimentary pickup and delivery in the Calgary area.",
     "primary": "Get Your Free Estimate",
     "secondary": "Call (587) 857-5553"
+  },
+  "serviceAreas": {
+    "label": "Service Areas",
+    "title": "Areas We Serve",
+    "description": "We proudly serve Calgary and surrounding communities across Alberta with expert rug cleaning, repair and restoration services.",
+    "note": "Don't see your area?",
+    "noteLink": "Contact us",
+    "noteSuffix": "— we likely serve your location too.",
+    "loadingMap": "Loading map..."
+  },
+  "googleReviews": {
+    "label": "What our Clients Says",
+    "title": "Client Testimonials",
+    "excellent": "Excellent",
+    "basedOn": "Based on {count} Google reviews",
+    "basedOnPrefix": "Based on {count}",
+    "basedOnSuffix": "reviews",
+    "seeAll": "See All Reviews",
+    "reviewUs": "Review us on",
+    "ownerResponse": "Response from the owner:",
+    "moreReviews": "More Reviews",
+    "timeAgo": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "daysAgo": "{count} days ago",
+      "weekAgo": "A week ago",
+      "weeksAgo": "{count} weeks ago",
+      "monthAgo": "A month ago",
+      "monthsAgo": "{count} months ago",
+      "yearAgo": "A year ago",
+      "yearsAgo": "{count} years ago"
+    }
   },
   "footer": {
     "description": "Calgary's premier rug cleaning and restoration service since 1967. Trusted by thousands of families to care for their most treasured textiles.",

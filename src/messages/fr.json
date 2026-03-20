@@ -92,11 +92,25 @@
     }
   },
   "hero": {
-    "label": "Le soin de confiance pour vos tapis à Calgary depuis 1967",
-    "title": "Préserver la beauté de vos plus beaux tapis",
-    "subtitle": "Nettoyage expert, restauration et entretien de tapis orientaux, textiles anciens et tapis de collection.",
     "cta": "Demander une estimation gratuite",
-    "secondaryCta": "Appeler (587) 857-5553"
+    "secondaryCta": "Voir notre processus",
+    "slides": {
+      "s1": {
+        "label": "Le soin de confiance pour vos tapis à Calgary depuis 1967",
+        "title": "Préserver la beauté de vos plus beaux tapis",
+        "subtitle": "Nettoyage expert, restauration et entretien de tapis orientaux, textiles anciens et tapis de collection."
+      },
+      "s2": {
+        "label": "Nettoyage par immersion complète",
+        "title": "Un nettoyage en profondeur qui ravive chaque fibre",
+        "subtitle": "Notre processus de lavage doux mais minutieux élimine les saletés incrustées, les taches et les allergènes sans endommager les fibres délicates."
+      },
+      "s3": {
+        "label": "Restauration experte",
+        "title": "Restaurer vos tapis à leur splendeur d'origine",
+        "subtitle": "De la réparation de franges à la restauration des couleurs, nos maîtres artisans redonnent vie aux tapis endommagés."
+      }
+    }
   },
   "trust": {
     "label": "Pourquoi Heirloom®",
@@ -195,6 +209,38 @@
     "subtitle": "Obtenez une estimation gratuite et sans obligation. Nous offrons le ramassage et la livraison gratuits dans la région de Calgary.",
     "primary": "Obtenir votre estimation gratuite",
     "secondary": "Appeler (587) 857-5553"
+  },
+  "serviceAreas": {
+    "label": "Zones de service",
+    "title": "Régions que nous desservons",
+    "description": "Nous desservons fièrement Calgary et les communautés environnantes de l'Alberta avec des services experts de nettoyage, réparation et restauration de tapis.",
+    "note": "Vous ne voyez pas votre région?",
+    "noteLink": "Contactez-nous",
+    "noteSuffix": "— nous desservons probablement votre localité aussi.",
+    "loadingMap": "Chargement de la carte..."
+  },
+  "googleReviews": {
+    "label": "Ce que disent nos clients",
+    "title": "Témoignages clients",
+    "excellent": "Excellent",
+    "basedOn": "Basé sur {count} avis Google",
+    "basedOnPrefix": "Basé sur {count}",
+    "basedOnSuffix": "avis",
+    "seeAll": "Voir tous les avis",
+    "reviewUs": "Laissez un avis sur",
+    "ownerResponse": "Réponse du propriétaire :",
+    "moreReviews": "Plus d'avis",
+    "timeAgo": {
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "daysAgo": "Il y a {count} jours",
+      "weekAgo": "Il y a une semaine",
+      "weeksAgo": "Il y a {count} semaines",
+      "monthAgo": "Il y a un mois",
+      "monthsAgo": "Il y a {count} mois",
+      "yearAgo": "Il y a un an",
+      "yearsAgo": "Il y a {count} ans"
+    }
   },
   "footer": {
     "description": "Le premier service de nettoyage et de restauration de tapis de Calgary depuis 1967. Des milliers de familles nous font confiance pour prendre soin de leurs textiles les plus précieux.",
