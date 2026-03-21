@@ -112,6 +112,15 @@
       }
     }
   },
+  "featuredServices": {
+    "title": "Nettoyage de tapis à Calgary, Okotoks et De Winton",
+    "items": {
+      "cleaning": "Nettoyage de tapis",
+      "repair": "Réparation de tapis",
+      "spotRemoval": "Enlèvement de taches",
+      "pads": "Sous-tapis"
+    }
+  },
   "trust": {
     "label": "Pourquoi Heirloom®",
     "title": "Un héritage de soin et de savoir-faire",
@@ -208,7 +217,7 @@
     "title": "Prêt à restaurer la beauté de votre tapis?",
     "subtitle": "Obtenez une estimation gratuite et sans obligation. Nous offrons le ramassage et la livraison gratuits dans la région de Calgary.",
     "primary": "Obtenir votre estimation gratuite",
-    "secondary": "Appeler (587) 857-5553"
+    "secondary": "Appelez-nous maintenant"
   },
   "serviceAreas": {
     "label": "Zones de service",
@@ -218,6 +227,14 @@
     "noteLink": "Contactez-nous",
     "noteSuffix": "— nous desservons probablement votre localité aussi.",
     "loadingMap": "Chargement de la carte..."
+  },
+  "awards": {
+    "title": "Prix et affiliations",
+    "items": {
+      "carpetsDyeTech": "Carpets Dye Tech",
+      "arcs": "ARCS",
+      "rugRangers": "Rug Rangers"
+    }
   },
   "googleReviews": {
     "label": "Ce que disent nos clients",

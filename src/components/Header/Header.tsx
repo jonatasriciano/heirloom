@@ -26,6 +26,38 @@ export default function Header() {
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
   const [mobileSub, setMobileSub] = useState<string | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const headerTopRef = useRef<HTMLDivElement>(null);
+  const [hideOffset, setHideOffset] = useState(0);
+
+  // Measure the height of promo + top section to know how much to slide up
+  useEffect(() => {
+    const measure = () => {
+      if (headerTopRef.current) {
+        setHideOffset(headerTopRef.current.offsetTop + headerTopRef.current.offsetHeight);
+      }
+    };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, []);
+
+  // Only apply on desktop (1024+)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth < 1024) return;
+      const header = document.querySelector('.header') as HTMLElement;
+      if (!header || !hideOffset) return;
+      const scrollY = window.scrollY;
+      const offset = Math.min(scrollY, hideOffset);
+      header.style.transform = `translateY(-${offset}px)`;
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, [hideOffset]);
 
   const navItems: NavItem[] = [
     { key: 'home', label: t('home'), href: '/' },
@@ -168,7 +200,7 @@ export default function Header() {
 
       <div className="container">
         {/* Top row: logo + CTA */}
-        <div className="header__top">
+        <div className="header__top" ref={headerTopRef}>
           <Link href="/" className="header__logo">
             <Image
               src="/images/heirloom-logo-transparent.webp"

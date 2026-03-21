@@ -2,12 +2,14 @@
 
 import Header from '@/components/Header/Header';
 import HeroCarousel from '@/components/HeroCarousel/HeroCarousel';
+import FeaturedServices from '@/components/FeaturedServices/FeaturedServices';
 import TrustSection from '@/components/TrustSection/TrustSection';
 import ServicesSection from '@/components/ServicesSection/ServicesSection';
 import ProcessSection from '@/components/ProcessSection/ProcessSection';
 import CTASection from '@/components/CTASection/CTASection';
 import ServiceAreas from '@/components/ServiceAreas/ServiceAreas';
 import GoogleReviews from '@/components/GoogleReviews/GoogleReviews';
+import AwardsSection from '@/components/AwardsSection/AwardsSection';
 import Footer from '@/components/Footer/Footer';
 import { sampleReviews } from '@/data/reviews';
 import type { Review } from '@/components/GoogleReviews/GoogleReviews';
@@ -24,6 +26,7 @@ export default function HomePage() {
             { titleKey: 's3', subtitleKey: 's3', backgroundImage: '/images/backgroundHero/background-hero-3.webp' },
           ]}
         />
+        <FeaturedServices />
         <TrustSection />
         <ServicesSection />
         <ProcessSection />
@@ -32,6 +35,7 @@ export default function HomePage() {
           overallRating={4.4}
           totalReviews={39}
         />
+        <AwardsSection />
         <CTASection />
         <ServiceAreas />
       </main>

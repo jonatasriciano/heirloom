@@ -112,6 +112,15 @@
       }
     }
   },
+  "featuredServices": {
+    "title": "Area Rug Cleaning in Calgary, Okotoks, & De Winton",
+    "items": {
+      "cleaning": "Rug Cleaning",
+      "repair": "Rug Repair",
+      "spotRemoval": "Spot Removal",
+      "pads": "Rug Pads"
+    }
+  },
   "trust": {
     "label": "Why Heirloom®",
     "title": "A Legacy of Care & Craftsmanship",
@@ -208,7 +217,7 @@
     "title": "Ready to Restore Your Rug's Beauty?",
     "subtitle": "Get a free, no-obligation estimate. We offer complimentary pickup and delivery in the Calgary area.",
     "primary": "Get Your Free Estimate",
-    "secondary": "Call (587) 857-5553"
+    "secondary": "Call Us Now"
   },
   "serviceAreas": {
     "label": "Service Areas",
@@ -218,6 +227,14 @@
     "noteLink": "Contact us",
     "noteSuffix": "— we likely serve your location too.",
     "loadingMap": "Loading map..."
+  },
+  "awards": {
+    "title": "Awards & Affiliations",
+    "items": {
+      "carpetsDyeTech": "Carpets Dye Tech",
+      "arcs": "ARCS",
+      "rugRangers": "Rug Rangers"
+    }
   },
   "googleReviews": {
     "label": "What our Clients Says",
