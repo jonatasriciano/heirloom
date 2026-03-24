@@ -3,6 +3,8 @@
 import Header from '@/components/Header/Header';
 import HeroCarousel from '@/components/HeroCarousel/HeroCarousel';
 import FeaturedServices from '@/components/FeaturedServices/FeaturedServices';
+import ImageTextSection from '@/components/ImageTextSection/ImageTextSection';
+import VideoTextSection from '@/components/VideoTextSection/VideoTextSection';
 import TrustSection from '@/components/TrustSection/TrustSection';
 import ServicesSection from '@/components/ServicesSection/ServicesSection';
 import ProcessSection from '@/components/ProcessSection/ProcessSection';
@@ -13,8 +15,15 @@ import AwardsSection from '@/components/AwardsSection/AwardsSection';
 import Footer from '@/components/Footer/Footer';
 import { sampleReviews } from '@/data/reviews';
 import type { Review } from '@/components/GoogleReviews/GoogleReviews';
+import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
+  const tAbout = useTranslations('aboutSection');
+  const tWhy = useTranslations('whyChoose');
+  const tPet = useTranslations('petProof');
+
+  const whyItems = ['i1', 'i2', 'i3', 'i4', 'i5', 'i6'].map(k => tWhy(`items.${k}`));
+
   return (
     <>
       <Header />
@@ -27,6 +36,28 @@ export default function HomePage() {
           ]}
         />
         <FeaturedServices />
+        <ImageTextSection
+          imageSrc="/images/heirloom-van.webp"
+          imageAlt={tAbout('title')}
+          title={tAbout('title')}
+          description={tAbout('desc1')}
+          description2={tAbout('desc2')}
+          imageOnLeft={false}
+        />
+        <ImageTextSection
+          imageSrc="/images/why-choose-heirloom.webp"
+          imageAlt={tWhy('title')}
+          title={tWhy('title')}
+          items={whyItems}
+          imageOnLeft={true}
+          variant="alt"
+        />
+        <VideoTextSection
+          videoSrc="/videos/rug-pads-to-prevent-pet-stains.webm"
+          title={tPet('title')}
+          description={tPet('desc')}
+          videoOnLeft={false}
+        />
         <TrustSection />
         <ServicesSection />
         <ProcessSection />

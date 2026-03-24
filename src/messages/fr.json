@@ -112,6 +112,26 @@
       }
     }
   },
+  "aboutSection": {
+    "title": "À propos de Heirloom® Rug Cleaning",
+    "desc1": "Nous offrons des services de nettoyage et de restauration pour les tapis orientaux et les textiles de collection. Nous nettoyons et protégeons tous les types de tapis, des synthétiques simples aux antiquités finement nouées à la main.",
+    "desc2": "Nous avons travaillé pendant des générations pour perfectionner notre processus afin de garantir que vos tapis soient beaux, doux et sentent merveilleusement bon lorsqu'ils vous sont retournés. Nous offrons même une garantie de satisfaction pour animaux de compagnie pour l'élimination de certaines taches, de l'urine et d'autres odeurs d'animaux. C'est l'une des raisons les plus courantes pour lesquelles les clients demandent nos services complets de nettoyage de tapis."
+  },
+  "whyChoose": {
+    "title": "Pourquoi choisir Heirloom® Rug Cleaning",
+    "items": {
+      "i1": "Nettoyage de tapis à Calgary depuis 1967",
+      "i2": "Spécialistes du nettoyage et de la réparation de tapis",
+      "i3": "Équipement de pointe et la plus grande installation d'ici à Toronto",
+      "i4": "Experts en enlèvement de taches",
+      "i5": "Certifiés pour nettoyer même les tapis les plus délicats",
+      "i6": "Options de dépôt, ramassage et expédition disponibles"
+    }
+  },
+  "petProof": {
+    "title": "Sous-tapis anti-animaux",
+    "desc": "L'une des meilleures façons de protéger votre tapis est d'avoir un sous-tapis de qualité en dessous. Nous travaillons avec l'un des meilleurs fabricants de sous-tapis pour vous offrir d'excellentes options pour le trafic intense, le rembourrage supplémentaire et la protection contre les déversements (ou les accidents de chiots)."
+  },
   "featuredServices": {
     "title": "Nettoyage de tapis à Calgary, Okotoks et De Winton",
     "items": {

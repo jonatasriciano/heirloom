@@ -112,6 +112,26 @@
       }
     }
   },
+  "aboutSection": {
+    "title": "About Heirloom® Rug Cleaning",
+    "desc1": "We provide cleaning and restoration services for Oriental rugs and investment textiles. We clean and protect all types of rugs, from simple synthetics to finely hand-knotted antiques.",
+    "desc2": "We have worked for generations to perfect our process to ensure that your rugs look, feel and smell amazing when they are returned to your home. We even offer a Pet Satisfaction Guarantee for the removal of some stains, urine, and other pet odours. This is one of the most common reasons that customers request our comprehensive rug cleaning services."
+  },
+  "whyChoose": {
+    "title": "Why Choose Heirloom® Rug Cleaning",
+    "items": {
+      "i1": "Cleaning Rugs in Calgary since 1967",
+      "i2": "Cleaning and rug repair specialists",
+      "i3": "State of the art equipment & the biggest facility from here to Toronto",
+      "i4": "Stain removal experts",
+      "i5": "Certified to clean even the most delicate rugs",
+      "i6": "Drop off, pick up, & shipping options are available"
+    }
+  },
+  "petProof": {
+    "title": "Pet Proof Rug Padding",
+    "desc": "One of the best ways to protect your rug is to have a quality rug pad underneath your rug. We work with one of the top rug pad manufacturers to offer you great options for high traffic, extra padding and protection for spills (or puppy accidents)."
+  },
   "featuredServices": {
     "title": "Area Rug Cleaning in Calgary, Okotoks, & De Winton",
     "items": {
