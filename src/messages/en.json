@@ -289,5 +289,33 @@
     "email": "info@arearugcleaning.com",
     "copyright": "© {year} Heirloom® Rug Cleaning. All rights reserved.",
     "followUs": "Follow Us On"
+  },
+  "calculator": {
+    "pageTitle": "Calculate Your Cleaning Cost",
+    "pageDescription": "Use our calculator to estimate the cost of cleaning your area rugs. Select the service type, shape, and dimensions to get an instant quote.",
+    "infoText": "Select a service type, choose the rug shape, enter dimensions, and quantity to calculate your estimated cleaning cost.",
+    "minimumNote": "Minimum charge per service line: {amount}",
+    "type": "Type",
+    "shape": "Shape",
+    "size": "Size",
+    "area": "Area",
+    "qty": "QTY",
+    "rate": "Rate",
+    "total": "Total",
+    "selectService": "Select Service",
+    "selectShape": "Select Shape",
+    "rectangle": "Rectangle",
+    "circle": "Circle",
+    "radius": "Radius",
+    "lengthFt": "Length (feet)",
+    "lengthIn": "Length (inches)",
+    "widthFt": "Width (feet)",
+    "widthIn": "Width (inches)",
+    "radiusFt": "Radius (feet)",
+    "radiusIn": "Radius (inches)",
+    "addRow": "Add Service",
+    "deleteRow": "Delete row",
+    "subtotal": "Subtotal",
+    "minimumApplied": "The calculated amount was below the $100.00 minimum charge. The minimum has been applied."
   }
 }

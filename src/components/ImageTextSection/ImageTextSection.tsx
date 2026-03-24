@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import ImageTooltip from '@/components/ImageTooltip/ImageTooltip';
 
 interface ImageTextSectionProps {
   imageSrc: string;
@@ -9,6 +10,9 @@ interface ImageTextSectionProps {
   title: string;
   description?: string;
   description2?: string;
+  highlightText?: string;
+  highlightImageSrc?: string;
+  highlightImageAlt?: string;
   items?: string[];
   imageOnLeft?: boolean;
   variant?: 'default' | 'alt';
@@ -21,6 +25,9 @@ export default function ImageTextSection({
   title,
   description,
   description2,
+  highlightText,
+  highlightImageSrc,
+  highlightImageAlt,
   items,
   imageOnLeft = true,
   variant = 'default',
@@ -46,7 +53,22 @@ export default function ImageTextSection({
             <h2 className="heading-display its__title">{title}</h2>
             <hr className="divider" />
             {description && <p className="its__desc">{description}</p>}
-            {description2 && <p className="its__desc">{description2}</p>}
+            {description2 && (
+              <p className="its__desc">
+                {highlightText && highlightImageSrc && description2.includes(highlightText)
+                  ? <>
+                      {description2.split(highlightText)[0]}
+                      <ImageTooltip
+                        text={highlightText}
+                        imageSrc={highlightImageSrc}
+                        imageAlt={highlightImageAlt || highlightText}
+                      />
+                      {description2.split(highlightText)[1]}
+                    </>
+                  : description2
+                }
+              </p>
+            )}
             {items && items.length > 0 && (
               <ul className="its__list">
                 {items.map((item, i) => (

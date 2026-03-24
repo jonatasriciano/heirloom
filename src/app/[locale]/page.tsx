@@ -35,15 +35,23 @@ export default function HomePage() {
             { titleKey: 's3', subtitleKey: 's3', backgroundImage: '/images/backgroundHero/background-hero-3.webp' },
           ]}
         />
+
         <FeaturedServices />
+
+        {/* About Section */}
         <ImageTextSection
           imageSrc="/images/heirloom-van.webp"
           imageAlt={tAbout('title')}
           title={tAbout('title')}
           description={tAbout('desc1')}
           description2={tAbout('desc2')}
+          highlightText="Pet Satisfaction Guarantee"
+          highlightImageSrc="/images/pet-urine-removal.webp"
+          highlightImageAlt="Pet urine removal service"
           imageOnLeft={false}
         />
+
+        {/* Why Choose Section */}
         <ImageTextSection
           imageSrc="/images/why-choose-heirloom.webp"
           imageAlt={tWhy('title')}
@@ -52,22 +60,31 @@ export default function HomePage() {
           imageOnLeft={true}
           variant="alt"
         />
+
+        {/* Pet Proof Rug Padding */}
         <VideoTextSection
           videoSrc="/videos/rug-pads-to-prevent-pet-stains.webm"
           title={tPet('title')}
           description={tPet('desc')}
           videoOnLeft={false}
         />
+
         <TrustSection />
+
         <ServicesSection />
+
         <ProcessSection />
+
         <GoogleReviews
           reviews={sampleReviews as Review[]}
           overallRating={4.4}
           totalReviews={39}
         />
+
         <AwardsSection />
+
         <CTASection />
+
         <ServiceAreas />
       </main>
       <Footer />

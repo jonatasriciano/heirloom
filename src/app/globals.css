@@ -960,6 +960,9 @@ select:focus-visible {
     padding-top: var(--space-12);
     padding-bottom: var(--space-16);
   }
+  .placeholder-page__title {
+    font-size: var(--font-size-5xl);
+  }
   .placeholder-page__card {
     padding: var(--space-16) var(--space-12);
   }
@@ -1803,12 +1806,47 @@ a.gr-business-name:hover {
   color: var(--accent-primary);
 }
 
+/* ============================================
+   COMPONENT: IMAGE TOOLTIP
+   ============================================ */
+.img-tooltip {
+  position: relative;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  color: var(--accent-primary);
+  cursor: pointer;
+}
+
+.img-tooltip__popup {
+  position: fixed;
+  transform: translateX(-50%) translateY(-100%);
+  z-index: 100;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  animation: tooltipFadeIn 0.35s ease-out;
+  pointer-events: none;
+}
+
+.img-tooltip__image {
+  display: block;
+  width: 260px;
+  height: auto;
+}
+
+@keyframes tooltipFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(calc(-100% + 12px)); }
+  to { opacity: 1; transform: translateX(-50%) translateY(-100%); }
+}
+
 @media (min-width: 768px) {
   .its__image-wrap {
     height: 420px;
   }
   .its__desc {
     font-size: var(--font-size-lg);
+  }
+  .img-tooltip__image {
+    width: 300px;
   }
 }
 

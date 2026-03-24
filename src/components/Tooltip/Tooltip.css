@@ -1,0 +1,30 @@
+/* ============================================
+   COMPONENT: TOOLTIP (reusable)
+   ============================================ */
+.tooltip__trigger {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tooltip__bubble {
+  padding: var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: var(--line-height-normal);
+  color: var(--text-on-dark);
+  background-color: #1a1a1a;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: 9999;
+  white-space: normal;
+  width: max-content;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.tooltip__bubble--visible {
+  opacity: 1;
+}

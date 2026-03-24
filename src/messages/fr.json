@@ -289,5 +289,33 @@
     "email": "info@arearugcleaning.com",
     "copyright": "© {year} Heirloom® Rug Cleaning. Tous droits réservés.",
     "followUs": "Suivez-nous sur"
+  },
+  "calculator": {
+    "pageTitle": "Calculez votre coût de nettoyage",
+    "pageDescription": "Utilisez notre calculatrice pour estimer le coût de nettoyage de vos tapis. Sélectionnez le type de service, la forme et les dimensions pour obtenir un devis instantané.",
+    "infoText": "Sélectionnez un type de service, choisissez la forme du tapis, entrez les dimensions et la quantité pour calculer votre coût estimé de nettoyage.",
+    "minimumNote": "Frais minimum par ligne de service : {amount}",
+    "type": "Type",
+    "shape": "Forme",
+    "size": "Taille",
+    "area": "Surface",
+    "qty": "QTÉ",
+    "rate": "Tarif",
+    "total": "Total",
+    "selectService": "Sélectionner un service",
+    "selectShape": "Sélectionner une forme",
+    "rectangle": "Rectangle",
+    "circle": "Cercle",
+    "radius": "Rayon",
+    "lengthFt": "Longueur (pieds)",
+    "lengthIn": "Longueur (pouces)",
+    "widthFt": "Largeur (pieds)",
+    "widthIn": "Largeur (pouces)",
+    "radiusFt": "Rayon (pieds)",
+    "radiusIn": "Rayon (pouces)",
+    "addRow": "Ajouter un service",
+    "deleteRow": "Supprimer la ligne",
+    "subtotal": "Sous-total",
+    "minimumApplied": "Le montant calculé était inférieur au minimum de 100,00 $. Le minimum a été appliqué."
   }
 }
