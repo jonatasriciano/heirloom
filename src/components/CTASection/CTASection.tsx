@@ -26,7 +26,7 @@ export default function CTASection() {
             <Link href="/contact" className="btn btn-primary btn-lg">
               {t('primary')}
             </Link>
-            <a href="tel:5878575553" className="btn cta__btn-outline btn-lg">
+            <a href="tel:4037202230" className="btn cta__btn-outline btn-lg">
               {t('secondary')}
             </a>
           </div>

@@ -59,8 +59,8 @@ export default function Footer() {
           <div className="footer__col">
             <h4 className="footer__col-title">{t('contactTitle')}</h4>
             <ul className="footer__links">
-              <li><a href="tel:5878575553" className="footer__link">{t('phone')}</a></li>
-              <li><a href="mailto:info@arearugcleaning.com" className="footer__link">{t('email')}</a></li>
+              <li><a href="tel:4037202230" className="footer__link">{t('phone')}</a></li>
+              <li><a href="mailto:office@arearugcleaning.com" className="footer__link">{t('email')}</a></li>
               <li><span className="footer__link-text">{t('address')}</span></li>
             </ul>
 

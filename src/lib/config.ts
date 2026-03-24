@@ -18,9 +18,9 @@ export const config = {
    * Contact information
    */
   contact: {
-    phone: '(587) 857-5553',
-    phoneLink: 'tel:5878575553',
-    email: 'info@arearugcleaning.com',
+    phone: '(403) 720-2230',
+    phoneLink: 'tel:4037202230',
+    email: 'office@arearugcleaning.com',
   },
   
   /**

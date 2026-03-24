@@ -242,7 +242,7 @@
   "serviceAreas": {
     "label": "Zones de service",
     "title": "Régions que nous desservons",
-    "description": "Nous desservons fièrement Calgary et les communautés environnantes de l'Alberta avec des services experts de nettoyage, réparation et restauration de tapis.",
+    "description": "Nous desservons fièrement Calgary et les communautés environnantes de l'Alberta avec des soins spécialisés pour les tapis fins et les textiles de luxe.",
     "note": "Vous ne voyez pas votre région?",
     "noteLink": "Contactez-nous",
     "noteSuffix": "— nous desservons probablement votre localité aussi.",
@@ -285,8 +285,8 @@
     "servicesTitle": "Services",
     "contactTitle": "Contact",
     "address": "Calgary, Alberta, Canada",
-    "phone": "(587) 857-5553",
-    "email": "info@arearugcleaning.com",
+    "phone": "(403) 720-2230",
+    "email": "office@arearugcleaning.com",
     "copyright": "© {year} Heirloom® Rug Cleaning. Tous droits réservés.",
     "followUs": "Suivez-nous sur"
   },
@@ -317,5 +317,22 @@
     "deleteRow": "Supprimer la ligne",
     "subtotal": "Sous-total",
     "minimumApplied": "Le montant calculé était inférieur au minimum de 100,00 $. Le minimum a été appliqué."
+  },
+  "contactForm": {
+    "pageTitle": "Contactez-nous",
+    "pageDescription": "Vous avez une question ou besoin d'un devis ? Remplissez le formulaire ci-dessous et notre équipe vous répondra rapidement.",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "streetAddress": "Adresse",
+    "city": "Ville",
+    "st": "Province",
+    "zip": "Code postal",
+    "phone": "Numéro de téléphone",
+    "email": "Adresse courriel",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "successMessage": "Merci pour votre message. Nous vous répondrons sous peu.",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer."
   }
 }

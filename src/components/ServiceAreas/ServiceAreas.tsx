@@ -19,7 +19,7 @@ const SERVICE_AREAS = [
   'Turner Valley',
 ];
 
-export default function ServiceAreas() {
+export default function ServiceAreas({ alt = false }: { alt?: boolean }) {
   const t = useTranslations('serviceAreas');
   const [isLoading, setIsLoading] = useState(true);
   const [shouldLoad, setShouldLoad] = useState(false);
@@ -40,7 +40,7 @@ export default function ServiceAreas() {
   }, []);
 
   return (
-    <section className="service-areas section">
+    <section className={`service-areas ${alt ? 'section-alt' : 'section'}`}>
       <div className="container">
         <div className="service-areas__grid">
           {/* Map Column */}

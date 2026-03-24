@@ -1085,10 +1085,6 @@ select:focus-visible {
 /* ============================================
    COMPONENT: SERVICE AREAS
    ============================================ */
-.service-areas {
-  background-color: var(--bg-primary);
-}
-
 .service-areas__grid {
   display: grid;
   gap: var(--space-10);
