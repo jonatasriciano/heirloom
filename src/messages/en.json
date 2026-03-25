@@ -321,6 +321,7 @@
   "contactForm": {
     "pageTitle": "Contact Us",
     "pageDescription": "Have a question or need a quote? Fill out the form below and our team will get back to you promptly.",
+    "formTitle": "Send Us a Message",
     "firstName": "First Name",
     "lastName": "Last Name",
     "streetAddress": "Street Address",
@@ -334,5 +335,26 @@
     "sending": "Sending...",
     "successMessage": "Thank you for your message. We will get back to you shortly.",
     "errorMessage": "Something went wrong. Please try again."
+  },
+  "hoursLocation": {
+    "locationsTitle": "Our Locations",
+    "locationsDesc": "We have two locations. Our Calgary drop-off centre and our main cleaning facility in Diamond Valley.",
+    "calgaryLabel": "Calgary Drop-Off Centre",
+    "calgaryAddress": "Unit 12, 5918 5 Street SE, Calgary",
+    "diamondLabel": "Diamond Valley Facility",
+    "diamondAddress": "Unit 113, 220 3 Street NE, Diamond Valley",
+    "diamondNote": "Open by appointment only",
+    "hoursTitle": "Business Hours",
+    "closed": "Closed",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "holidays": "Holidays"
+    }
   }
 }

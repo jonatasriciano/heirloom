@@ -5,6 +5,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import ContactForm from '@/components/ContactForm/ContactForm';
+import HoursLocation from '@/components/HoursLocation/HoursLocation';
 import ServiceAreas from '@/components/ServiceAreas/ServiceAreas';
 
 export default function ContactUsPage() {
@@ -46,10 +47,13 @@ export default function ContactUsPage() {
           </div>
         </div>
 
-        {/* Form */}
+        {/* Form + Hours & Location */}
         <div className="section">
           <div className="container">
-            <ContactForm />
+            <div className="contact-grid">
+              <HoursLocation />
+              <ContactForm />
+            </div>
           </div>
         </div>
 

@@ -321,6 +321,7 @@
   "contactForm": {
     "pageTitle": "Contactez-nous",
     "pageDescription": "Vous avez une question ou besoin d'un devis ? Remplissez le formulaire ci-dessous et notre équipe vous répondra rapidement.",
+    "formTitle": "Envoyez-nous un message",
     "firstName": "Prénom",
     "lastName": "Nom de famille",
     "streetAddress": "Adresse",
@@ -334,5 +335,26 @@
     "sending": "Envoi en cours...",
     "successMessage": "Merci pour votre message. Nous vous répondrons sous peu.",
     "errorMessage": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "hoursLocation": {
+    "locationsTitle": "Nos emplacements",
+    "locationsDesc": "Nous avons deux emplacements. Notre centre de dépôt à Calgary et notre installation principale de nettoyage à Diamond Valley.",
+    "calgaryLabel": "Centre de dépôt de Calgary",
+    "calgaryAddress": "Unité 12, 5918 5 Street SE, Calgary",
+    "diamondLabel": "Installation de Diamond Valley",
+    "diamondAddress": "Unité 113, 220 3 Street NE, Diamond Valley",
+    "diamondNote": "Ouvert sur rendez-vous uniquement",
+    "hoursTitle": "Heures d'ouverture",
+    "closed": "Fermé",
+    "days": {
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "holidays": "Jours fériés"
+    }
   }
 }

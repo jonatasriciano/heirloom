@@ -1083,6 +1083,28 @@ select:focus-visible {
 }
 
 /* ============================================
+   LAYOUT: CONTACT PAGE GRID
+   ============================================ */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 380px;
+    align-items: start;
+  }
+  .contact-grid > :first-child {
+    order: 2;
+  }
+  .contact-grid > :last-child {
+    order: 1;
+  }
+}
+
+/* ============================================
    COMPONENT: SERVICE AREAS
    ============================================ */
 .service-areas__grid {

@@ -17,6 +17,13 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit} noValidate>
+      <h2 className="contact-form__title">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="contact-form__title-icon">
+          <rect x="2" y="4" width="16" height="12" rx="2" stroke="var(--accent-primary)" strokeWidth="1.5"/>
+          <path d="M2 6l8 5 8-5" stroke="var(--accent-primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        {t('formTitle')}
+      </h2>
       <div className="contact-form__row">
         <div className="contact-form__field">
           <label className="contact-form__label" htmlFor="firstName">
@@ -69,7 +76,7 @@ export default function ContactForm() {
 
       <div className="contact-form__field">
         <label className="contact-form__label" htmlFor="message">{t('message')}</label>
-        <textarea id="message" name="message" rows={5} className="contact-form__textarea" />
+        <textarea id="message" name="message" rows={3} className="contact-form__textarea" />
       </div>
 
       <div className="contact-form__actions">
