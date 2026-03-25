@@ -215,7 +215,7 @@ export default function Header() {
             <Link href="/calculate-cleaning-cost" className="btn btn-accent">{t('calculateCost')}</Link>
             <div className="header__top-actions-row">
               <a href="tel:4037202230" className="btn btn-ghost">{t('call')}</a>
-              <Link href="/contact" className="btn btn-primary">{t('getQuote')}</Link>
+              <Link href="/about-us/contact-us" className="btn btn-primary">{t('getQuote')}</Link>
             </div>
           </div>
           {/* Mobile Toggle */}
@@ -369,7 +369,7 @@ export default function Header() {
             <Link href="/calculate-cleaning-cost" className="btn btn-accent btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
               {t('calculateCost')}
             </Link>
-            <Link href="/contact" className="btn btn-primary btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
+            <Link href="/about-us/contact-us" className="btn btn-primary btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
               {t('getQuote')}
             </Link>
             <a href="tel:4037202230" className="btn btn-ghost btn-lg" style={{ width: '100%' }}>
