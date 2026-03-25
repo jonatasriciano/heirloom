@@ -163,7 +163,6 @@ export default function Header() {
         { label: t('aboutUsDropdown.faq'), href: '/about-us/frequently-asked-questions' },
         { label: t('aboutUsDropdown.jobs'), href: '/about-us/jobs' },
         { label: t('aboutUsDropdown.reviews'), href: '/about-us/reviews' },
-        { label: t('aboutUsDropdown.hours'), href: '/about-us/hours-and-location' },
         { label: t('aboutUsDropdown.shipping'), href: '/about-us/shipping' },
         { label: t('aboutUsDropdown.contact'), href: '/about-us/contact-us' },
       ],

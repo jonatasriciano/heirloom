@@ -75,7 +75,6 @@ export const routing = defineRouting({
     '/about-us/frequently-asked-questions': '/about-us/frequently-asked-questions',
     '/about-us/jobs': '/about-us/jobs',
     '/about-us/reviews': '/about-us/reviews',
-    '/about-us/hours-and-location': '/about-us/hours-and-location',
     '/about-us/shipping': '/about-us/shipping',
     '/about-us/contact-us': '/about-us/contact-us',
     '/calculate-cleaning-cost': '/calculate-cleaning-cost',
