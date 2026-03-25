@@ -71,7 +71,6 @@ export const routing = defineRouting({
     '/carpet-dyeing/bleach-spot-repair': '/carpet-dyeing/bleach-spot-repair',
     '/about-us': '/about-us',
     '/about-us/awards-and-affiliations': '/about-us/awards-and-affiliations',
-    '/about-us/meet-the-team': '/about-us/meet-the-team',
     '/about-us/frequently-asked-questions': '/about-us/frequently-asked-questions',
     '/about-us/jobs': '/about-us/jobs',
     '/about-us/reviews': '/about-us/reviews',

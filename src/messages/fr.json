@@ -356,5 +356,39 @@
       "sunday": "Dimanche",
       "holidays": "Jours fériés"
     }
+  },
+  "aboutUsPage": {
+    "pageTitle": "À propos de nous",
+    "pageSubtitle": "Spécialistes familiaux du nettoyage de tapis fins, de l'entretien textile et d'une expertise de pointe.",
+    "storyLabel": "Notre histoire",
+    "introDesc1": "Chez Heirloom® Rug Cleaning, nous sommes une entreprise familiale dédiée au lavage, nettoyage et à la protection spécialisés des tapis orientaux fins et des textiles de collection. Nous combinons des techniques éprouvées avec un équipement moderne pour offrir le soin le plus complet possible aux clients de Calgary et du sud de l'Alberta.",
+    "introDesc2": "La plupart d'entre nous avons grandi dans ce métier, et cette expérience façonne le niveau de soin que nous apportons à chaque tapis.",
+    "teamLabel": "Rencontrez l'équipe",
+    "teamTitle": "Les personnes derrière le soin",
+    "team": {
+      "greg": {
+        "name": "Greg",
+        "role": "Fondateur et nettoyeur de tapis de deuxième génération",
+        "bio1": "Greg est un nettoyeur de tapis de deuxième génération et le fondateur de Heirloom® Rug Cleaning. Lorsqu'il a constaté que l'industrie manquait d'équipement de haute qualité, il a décidé de le construire lui-même.",
+        "bio2": "Il a ensuite fondé Centrum Force, où il a commencé à fabriquer des équipements de nettoyage de tapis haut de gamme et à développer des machines innovantes qui ont amélioré le processus, le rendant plus efficace et fiable."
+      },
+      "gabriel": {
+        "name": "Gabriel",
+        "role": "Nettoyeur de tapis de troisième génération",
+        "bio1": "Gabriel est un nettoyeur de tapis de troisième génération impliqué dans le métier depuis son plus jeune âge. Au fil des ans, il a appris auprès de certains des meilleurs professionnels du nettoyage de tapis au monde et aide maintenant son père, Greg, à gérer l'entreprise familiale.",
+        "bio2": "Il est aussi souvent la voix que les clients entendent lorsqu'ils appellent. Gabriel s'engage à ce que chaque client reçoive un service attentif et soit pleinement satisfait du soin que nous offrons."
+      },
+      "brock": {
+        "name": "Brock",
+        "role": "Nettoyeur de tapis de troisième génération",
+        "bio1": "Brock est également un nettoyeur de tapis de troisième génération. Comme Gabriel, il apprend les tapis et l'entretien textile depuis l'enfance. Il s'occupe d'une grande partie du lavage des tapis et apporte un œil aiguisé pour le détail à chaque pièce qui passe par notre installation.",
+        "bio2": "Son objectif est simple : s'assurer que chaque tapis repart en ayant l'air absolument impeccable."
+      }
+    },
+    "commitmentTitle": "Notre engagement",
+    "commitmentDesc": "Ensemble, nous nous engageons à offrir le plus haut niveau de service possible, avec de l'artisanat, de l'intégrité et un soin sincère derrière chaque travail.",
+    "leadershipTitle": "Leadership dans l'industrie",
+    "leadershipDesc1": "Heirloom® Rug Cleaning est également reconnu en Amérique du Nord et à l'étranger pour ses services de consultation. Nous avons aidé d'autres entreprises à résoudre des défis complexes de nettoyage de tapis et à équiper leurs installations avec des équipements modernes conçus pour nettoyer et protéger les tapis anciens de qualité patrimoniale du monde entier.",
+    "leadershipDesc2": "Nous avons également joué un rôle dans le développement d'équipements révolutionnaires et de pointe pour l'industrie du nettoyage et de la protection des tapis. Heirloom® a été la première entreprise au Canada à posséder le système unique Centrum Force® Synergy. Une seule autre entreprise au Canada a accès à cet équipement exceptionnel."
   }
 }

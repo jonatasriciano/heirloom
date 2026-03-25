@@ -356,5 +356,39 @@
       "sunday": "Sunday",
       "holidays": "Holidays"
     }
+  },
+  "aboutUsPage": {
+    "pageTitle": "About Us",
+    "pageSubtitle": "Family-owned specialists in fine rug cleaning, textile care, and industry-leading expertise.",
+    "storyLabel": "Our Story",
+    "introDesc1": "At Heirloom® Rug Cleaning, we are a family business dedicated to the specialized washing, cleaning, and protection of fine Oriental rugs and collectible textiles. We combine time-honoured techniques with modern equipment to deliver the most thorough care possible for customers in Calgary and throughout Southern Alberta.",
+    "introDesc2": "Most of us have grown up in this business, and that experience shapes the standard of care we bring to every rug.",
+    "teamLabel": "Meet the Team",
+    "teamTitle": "The People Behind the Care",
+    "team": {
+      "greg": {
+        "name": "Greg",
+        "role": "Founder & Second-Generation Rug Cleaner",
+        "bio1": "Greg is a second-generation rug cleaner and the founder of Heirloom® Rug Cleaning. When he recognized that the industry lacked truly high-quality equipment, he set out to build it himself.",
+        "bio2": "He went on to found Centrum Force, where he began manufacturing premium rug-cleaning equipment and developing innovative machines that improved the process, making it more effective, efficient, and reliable."
+      },
+      "gabriel": {
+        "name": "Gabriel",
+        "role": "Third-Generation Rug Cleaner",
+        "bio1": "Gabriel is a third-generation rug cleaner who has been involved in the trade since he could crawl. Over the years, he has learned from some of the world's leading rug-cleaning professionals and now helps his father, Greg, operate the family business.",
+        "bio2": "He is also often the voice customers hear when they call. Gabriel is committed to making sure every client receives attentive service and leaves fully satisfied with the care we provide."
+      },
+      "brock": {
+        "name": "Brock",
+        "role": "Third-Generation Rug Cleaner",
+        "bio1": "Brock is also a third-generation rug cleaner. Like Gabriel, he has been learning about rugs and textile care since childhood. He handles much of the rug washing and brings a sharp eye for detail to every piece that comes through our facility.",
+        "bio2": "His focus is simple. Make sure every rug leaves looking its absolute best."
+      }
+    },
+    "commitmentTitle": "Our Commitment",
+    "commitmentDesc": "Together, we are committed to delivering the highest level of service possible, with craftsmanship, integrity, and genuine care behind every job.",
+    "leadershipTitle": "Industry Leadership",
+    "leadershipDesc1": "Heirloom® Rug Cleaning is also known across North America and overseas for its consulting services. We have helped other companies solve complex rug-cleaning challenges and outfit their facilities with modern rug-washing equipment designed to clean and protect antique, heirloom-quality area rugs from around the world.",
+    "leadershipDesc2": "We have also played a role in developing revolutionary, state-of-the-art equipment for the rug-cleaning and protection industry. Heirloom® was the first company in Canada to have the unique Centrum Force® Synergy System. Only one other company in Canada has access to this exceptional equipment."
   }
 }
