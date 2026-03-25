@@ -390,5 +390,45 @@
     "leadershipTitle": "Leadership dans l'industrie",
     "leadershipDesc1": "Heirloom® Rug Cleaning est également reconnu en Amérique du Nord et à l'étranger pour ses services de consultation. Nous avons aidé d'autres entreprises à résoudre des défis complexes de nettoyage de tapis et à équiper leurs installations avec des équipements modernes conçus pour nettoyer et protéger les tapis anciens de qualité patrimoniale du monde entier.",
     "leadershipDesc2": "Nous avons également joué un rôle dans le développement d'équipements révolutionnaires et de pointe pour l'industrie du nettoyage et de la protection des tapis. Heirloom® a été la première entreprise au Canada à posséder le système unique Centrum Force® Synergy. Une seule autre entreprise au Canada a accès à cet équipement exceptionnel."
+  },
+  "rugCleaningPage": {
+    "pageTitle": "Nettoyage de tapis à Calgary",
+    "pageSubtitle": "Nettoyage professionnel de tapis pour Calgary et les environs, avec des soins spécialisés pour les tapis fins et les textiles de luxe.",
+    "introLabel": "Soins professionnels pour tapis",
+    "introTitle": "Des soins spécialisés pour vos plus beaux tapis",
+    "intro1": "Chez Heirloom® Rug Cleaning, nous comprenons que vos tapis sont bien plus que des revêtements de sol. Ce sont des œuvres d'art soigneusement fabriquées et des investissements précieux qui peuvent durer des décennies avec un entretien approprié. Les tapis apportent luxe, confort et beauté à un espace, et un entretien adéquat aide à préserver leur apparence et leur longévité. C'est pourquoi nous offrons des services de nettoyage professionnels pour les tapis et les textiles fins dans notre installation de pointe, desservant Calgary et les communautés du sud de l'Alberta.",
+    "intro2": "Le nettoyage à domicile est souvent inefficace et peut endommager les fibres délicates. Notre processus expert combine un savoir-faire éprouvé avec une technologie moderne, utilisant des solutions de nettoyage puissantes mais douces pour éliminer la saleté, les taches et les odeurs tout en protégeant l'intégrité de votre tapis. Pour un nettoyage qui répond à une norme supérieure, faites confiance aux spécialistes de Heirloom® Rug Cleaning.",
+    "intro3": "Quel que soit le type ou l'âge de votre tapis, nos techniciens qualifiés peuvent aider à restaurer sa beauté, sa fraîcheur et sa vivacité. Nous prenons soin des tapis orientaux délicats, des tapis persans et d'autres textiles fins avec une attention méticuleuse, respectant leur valeur et leur signification sentimentale comme s'il s'agissait de nos propres trésors familiaux.",
+    "intro4": "Chaque tapis est unique, c'est pourquoi nous adaptons notre approche de nettoyage aux matériaux, teintures et à la construction de chaque tapis. Cette méthode personnalisée aide à préserver et, dans certains cas, à restaurer les couleurs, les motifs et les finitions complexes tout en protégeant votre tapis pour les années à venir. Avec l'une des plus grandes installations au Canada dédiées à l'entretien des textiles fins et des équipements de nettoyage avancés, nous offrons un service complet, efficace et fiable.",
+    "features": {
+      "craftsmanship": {
+        "title": "Savoir-faire expert",
+        "desc": "Notre processus combine un savoir-faire éprouvé avec une technologie moderne, utilisant des solutions puissantes mais douces pour éliminer la saleté, les taches et les odeurs tout en protégeant l'intégrité de votre tapis."
+      },
+      "everyType": {
+        "title": "Tous types de tapis",
+        "desc": "Nous prenons soin des tapis orientaux délicats, des tapis persans et d'autres textiles fins avec une attention méticuleuse, respectant leur valeur et leur signification sentimentale comme nos propres trésors familiaux."
+      },
+      "tailored": {
+        "title": "Approche personnalisée",
+        "desc": "Nous adaptons notre approche de nettoyage aux matériaux, teintures et à la construction de chaque tapis. Avec l'une des plus grandes installations au Canada, nous offrons un service complet et fiable."
+      }
+    },
+    "sanitize": {
+      "title": "Quand devrais-je désinfecter mon tapis ?",
+      "desc": "Il existe plusieurs situations où la désinfection de votre tapis est particulièrement importante.",
+      "reasons": {
+        "petTitle": "Taches d'animaux",
+        "petDesc": "Les accidents d'animaux peuvent laisser des bactéries difficiles à éliminer. Le nettoyage régulier ne suffit pas toujours à éliminer tous les contaminants, et si elles ne sont pas traitées, les bactéries peuvent continuer à se développer, causant potentiellement des odeurs, des problèmes de santé et des dommages à long terme à votre tapis.",
+        "moldTitle": "Moisissures",
+        "moldDesc": "La croissance de moisissures est un autre problème courant qui nécessite une désinfection approfondie. Comme les bactéries des taches d'animaux, les moisissures peuvent persister et se propager si elles ne sont pas complètement éliminées, créant des risques potentiels pour la santé et causant des dommages supplémentaires au tapis."
+      },
+      "closing": "Ce sont les deux raisons les plus courantes pour lesquelles la désinfection est nécessaire. Chaque situation nécessite la technique et la solution de nettoyage appropriées pour assurer une élimination complète, protéger le tapis et maintenir un environnement propre et sain."
+    },
+    "whyChoose": {
+      "label": "Pourquoi nous choisir",
+      "title": "Pourquoi choisir Heirloom® Rug Cleaning ?",
+      "desc": "Heirloom® Rug Cleaning sert le Canada depuis 1967, apportant des décennies d'expérience à chaque tapis dont nous prenons soin. Nos spécialistes du nettoyage et de la réparation combinent des connaissances expertes avec des équipements et des installations de pointe pour offrir des résultats exceptionnels."
+    }
   }
 }

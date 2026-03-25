@@ -390,5 +390,45 @@
     "leadershipTitle": "Industry Leadership",
     "leadershipDesc1": "Heirloom® Rug Cleaning is also known across North America and overseas for its consulting services. We have helped other companies solve complex rug-cleaning challenges and outfit their facilities with modern rug-washing equipment designed to clean and protect antique, heirloom-quality area rugs from around the world.",
     "leadershipDesc2": "We have also played a role in developing revolutionary, state-of-the-art equipment for the rug-cleaning and protection industry. Heirloom® was the first company in Canada to have the unique Centrum Force® Synergy System. Only one other company in Canada has access to this exceptional equipment."
+  },
+  "rugCleaningPage": {
+    "pageTitle": "Rug Cleaning Calgary",
+    "pageSubtitle": "Professional rug cleaning for Calgary and the surrounding area, with specialized care for fine rugs and luxury textiles.",
+    "introLabel": "Professional Rug Care",
+    "introTitle": "Specialized Care for Your Finest Rugs",
+    "intro1": "At Heirloom® Rug Cleaning, we understand that your area rugs are more than floor coverings. They are carefully crafted works of art and valuable investments that can last for decades with proper care. Area rugs bring luxury, comfort, and beauty to a space, and proper maintenance helps preserve their appearance and longevity. That is why we provide professional cleaning services for area rugs and fine textiles in our state-of-the-art facility, serving Calgary and communities throughout Southern Alberta.",
+    "intro2": "Do-it-yourself home cleaning is often ineffective and can damage delicate fibres. Our expert process combines time-honoured craftsmanship with modern technology, using powerful yet gentle cleaning solutions to remove dirt, stains, and odours while protecting the integrity of your rug. For cleaning that meets a higher standard, trust the specialists at Heirloom® Rug Cleaning.",
+    "intro3": "No matter the type or age of your rug, our skilled technicians can help restore its beauty, freshness, and vibrancy. We care for delicate Oriental rugs, Persian rugs, and other fine textiles with meticulous attention, respecting their value and sentimental significance as though they were our own family heirlooms.",
+    "intro4": "Every rug is unique, which is why we tailor our cleaning approach to each rug's materials, dyes, and construction. This customized method helps preserve and, in some cases, restore colours, patterns, and intricate finishes while protecting your rug for years to come. With one of Canada's largest facilities dedicated to fine textile care and advanced cleaning equipment, we deliver thorough, effective, and dependable service.",
+    "features": {
+      "craftsmanship": {
+        "title": "Expert Craftsmanship",
+        "desc": "Our process combines time-honoured craftsmanship with modern technology, using powerful yet gentle cleaning solutions to remove dirt, stains, and odours while protecting the integrity of your rug."
+      },
+      "everyType": {
+        "title": "Every Rug Type",
+        "desc": "We care for delicate Oriental rugs, Persian rugs, and other fine textiles with meticulous attention, respecting their value and sentimental significance as though they were our own family heirlooms."
+      },
+      "tailored": {
+        "title": "Tailored Approach",
+        "desc": "We tailor our cleaning approach to each rug's materials, dyes, and construction. With one of Canada's largest facilities dedicated to fine textile care, we deliver thorough and dependable service."
+      }
+    },
+    "sanitize": {
+      "title": "When Should I Sanitize My Rug?",
+      "desc": "There are several situations where sanitizing your rug is especially important.",
+      "reasons": {
+        "petTitle": "Pet Stains",
+        "petDesc": "Pet accidents can leave behind bacteria that are difficult to eliminate. Regular cleaning is not always enough to remove all contaminants, and if left untreated, bacteria can continue to grow, potentially causing odours, health concerns, and long-term damage to your rug.",
+        "moldTitle": "Mold",
+        "moldDesc": "Mold growth is another common issue that requires thorough sanitization. Like bacteria from pet stains, mold can persist and spread if it is not completely removed, creating potential health risks and causing further damage to the rug."
+      },
+      "closing": "These are two of the most common reasons sanitizing is necessary. Each situation requires the proper technique and cleaning solution to ensure complete removal, protect the rug, and support a clean, healthy environment."
+    },
+    "whyChoose": {
+      "label": "Why Choose Us",
+      "title": "Why Choose Heirloom® Rug Cleaning?",
+      "desc": "Heirloom® Rug Cleaning has been serving Canada since 1967, bringing decades of experience to every rug we care for. Our cleaning and repair specialists combine expert knowledge with state-of-the-art equipment and facilities to deliver exceptional results. From delicate hand-knotted Oriental rugs to complex cleaning challenges, we provide efficient, thorough, and dependable service designed to leave your rugs looking their absolute best."
+    }
   }
 }

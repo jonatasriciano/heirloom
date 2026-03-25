@@ -1,0 +1,126 @@
+/* ============================================
+   COMPONENT: SANITIZE SECTION
+   Full-width bg image, centered header, card grid
+   ============================================ */
+.sanitize {
+  position: relative;
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.sanitize__bg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.sanitize__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 0.82) 0%,
+    rgba(17, 17, 17, 0.72) 100%
+  );
+  z-index: 1;
+}
+
+.sanitize .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.sanitize__header {
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.sanitize__title {
+  color: var(--text-on-dark);
+  margin-bottom: var(--space-3);
+}
+
+.sanitize__desc {
+  font-size: var(--font-size-lg);
+  color: rgba(247, 243, 238, 0.8);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--space-4);
+}
+
+/* Cards */
+.sanitize__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.sanitize__card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.sanitize__card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sanitize__card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--accent-rgb), 0.15);
+  border-radius: var(--radius-md);
+  color: var(--accent-light);
+}
+
+.sanitize__card-icon svg {
+  display: inline-block;
+}
+
+.sanitize__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-on-dark);
+  line-height: var(--line-height-snug);
+}
+
+.sanitize__card-text {
+  font-size: var(--font-size-sm);
+  color: rgba(247, 243, 238, 0.75);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Closing */
+.sanitize__closing {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: rgba(247, 243, 238, 0.55);
+  line-height: var(--line-height-relaxed);
+  max-width: 640px;
+  margin-inline: auto;
+  margin-top: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .sanitize__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+  .sanitize__card {
+    padding: var(--space-8);
+  }
+}

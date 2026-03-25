@@ -14,6 +14,7 @@ interface ImageTextSectionProps {
   highlightImageSrc?: string;
   highlightImageAlt?: string;
   items?: string[];
+  closing?: string;
   imageOnLeft?: boolean;
   variant?: 'default' | 'alt';
 }
@@ -29,6 +30,7 @@ export default function ImageTextSection({
   highlightImageSrc,
   highlightImageAlt,
   items,
+  closing,
   imageOnLeft = true,
   variant = 'default',
 }: ImageTextSectionProps) {
@@ -81,6 +83,7 @@ export default function ImageTextSection({
                 ))}
               </ul>
             )}
+            {closing && <p className="its__desc">{closing}</p>}
           </div>
         </div>
       </div>
