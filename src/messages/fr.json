@@ -441,5 +441,143 @@
       "title": "Pourquoi choisir Heirloom® Rug Cleaning ?",
       "desc": "Heirloom® Rug Cleaning sert le Canada depuis 1967, apportant des décennies d'expérience à chaque tapis dont nous prenons soin. Nos spécialistes du nettoyage et de la réparation combinent des connaissances expertes avec des équipements et des installations de pointe pour offrir des résultats exceptionnels."
     }
+  },
+  "rugPaddingPage": {
+    "pageTitle": "Sous-tapis à Calgary",
+    "pageSubtitle": "Sous-tapis de haute qualité pour Calgary et les environs, conçus pour améliorer la sécurité, le confort et la protection à long terme de vos tapis.",
+    "introLabel": "Sous-tapis premium",
+    "introTitle": "Protégez, confortez et prolongez la vie de vos tapis",
+    "intro1": "Il existe de nombreux sous-tapis sur le marché, mais peu égalent la sécurité, la durabilité et la performance d'un sous-tapis sélectionné par des professionnels. Un sous-tapis de qualité peut prolonger la vie d'un tapis jusqu'à 40 pour cent en réduisant la friction, en soutenant les fibres et en aidant à une usure plus uniforme.",
+    "introFeatures": {
+      "noLatex": {
+        "title": "100% sans latex",
+        "desc": "Nos sous-tapis ne contiennent pas de latex. Le latex peut contribuer aux dommages au sol et être un allergène pour certaines personnes et animaux. Nous offrons l'expédition partout au Canada."
+      },
+      "longerLife": {
+        "title": "Prolonge la vie du tapis de 40%",
+        "desc": "La plupart des tapis ne s'usent pas vraiment ; ils deviennent simplement laids. Un sous-tapis approprié réduit le bruit, ajoute de la chaleur et rend votre tapis plus doux et confortable."
+      },
+      "thickness": {
+        "title": "Deux épaisseurs disponibles",
+        "desc": "Nous offrons nos sous-tapis en épaisseurs de 1/8 pouce et 3/16 pouce, pour que vous puissiez choisir le bon niveau de rembourrage et de protection."
+      }
+    },
+    "whyPads": {
+      "label": "Avantages",
+      "title": "Pourquoi choisir nos sous-tapis ?",
+      "liquids": {
+        "title": "Protection contre les liquides",
+        "desc": "Les sous-tapis agissent comme des barrières efficaces contre les déversements. Ils peuvent aider à absorber l'humidité de l'eau, du café ou des accidents d'animaux avant qu'elle n'atteigne le sol."
+      },
+      "scratch": {
+        "title": "Prévention des rayures",
+        "desc": "En créant une prise plus sûre entre le tapis et le sol, les sous-tapis aident à réduire le glissement et le mouvement, minimisant la friction et le risque de chutes."
+      },
+      "comfort": {
+        "title": "Confort supplémentaire",
+        "desc": "Les sous-tapis offrent un rembourrage qui rend les tapis plus épais, plus doux et plus confortables. Ils offrent également une isolation, aidant à garder les sols plus chauds en hiver."
+      },
+      "noise": {
+        "title": "Moins de bruit, plus de durée de vie",
+        "desc": "Les sous-tapis aident à absorber le son pour un environnement plus calme, et en réduisant le mouvement et l'usure, ils peuvent prolonger considérablement la durée de vie de votre tapis."
+      }
+    },
+    "pets": {
+      "label": "Protection animaux",
+      "title": "Et si vous avez des animaux ?",
+      "desc1": "Les animaux et les tapis peuvent coexister dans la même maison. Bien que l'entretien des tapis avec des animaux puisse être difficile, la bonne routine de nettoyage et une protection adéquate du sol font une différence significative.",
+      "challenge": {
+        "title": "Le défi",
+        "desc": "Les sous-tapis jouent un rôle important lorsque les animaux retournent aux mêmes endroits préférés encore et encore. Les taches anciennes ou les odeurs persistantes peuvent également causer des problèmes continus."
+      },
+      "solution": {
+        "title": "Notre solution",
+        "desc": "Heirloom® Rug Cleaning offre une protection barrière pour animaux pour les sols sous les tapis, ainsi qu'un nettoyage professionnel pour restaurer les tapis dans un état frais et vibrant. Nos sous-tapis anti-animaux empêchent les accidents d'atteindre le bois ou d'autres revêtements de sol."
+      }
+    },
+    "otherBenefits": {
+      "label": "Plus d'avantages",
+      "title": "Autres avantages",
+      "slippery": {
+        "title": "Sols glissants",
+        "desc": "Un sous-tapis antidérapant aide à protéger le tapis et le sol en réduisant le glissement, le froissement et le déplacement."
+      },
+      "waterproof": {
+        "title": "Protection imperméable",
+        "desc": "Les sous-tapis imperméables sont un choix judicieux pour certaines zones de la maison, créant une barrière contre l'humidité, particulièrement utile dans les sous-sols et les buanderies."
+      },
+      "honeycomb": {
+        "title": "Sous-tapis alvéolés",
+        "desc": "Les styles alvéolés sont légers mais solides. Ils offrent une installation facile, une stabilité améliorée, une absorption des chocs et une isolation thermique."
+      },
+      "natural": {
+        "title": "Matériaux naturels",
+        "desc": "Les sous-tapis en fil naturel recyclé sont reconnus pour leur durabilité. Ils offrent confort, résistance aux moisissures et compatibilité avec les planchers chauffants."
+      }
+    },
+    "whyUs": {
+      "label": "Pourquoi nous choisir",
+      "title": "Pourquoi choisir Heirloom® pour les sous-tapis ?",
+      "desc": "Les professionnels de Heirloom® Rug Cleaning fournissent des sous-tapis de haute qualité pour les textiles fins partout au Canada. Nous offrons l'expédition nationale et sommes heureux de vous aider à choisir la meilleure option pour votre tapis, votre sol et vos besoins."
+    }
+  },
+  "rugRepairPage": {
+    "pageTitle": "Réparation de tapis à Calgary",
+    "pageSubtitle": "Restauration et protection expertes pour les tapis fins à Calgary et dans les environs.",
+    "introLabel": "Réparation experte",
+    "introTitle": "Préserver la beauté et la structure de vos tapis",
+    "intro1": "Heirloom® Rug Cleaning offre des services experts de réparation et de protection de tapis à Calgary. Des motifs complexes aux détails artisanaux fins, les tapis patrimoniaux sont des pièces précieuses qui méritent des soins spécialisés.",
+    "intro2": "Nos techniciens certifiés sont formés pour nettoyer, protéger et réparer tous les types de tapis, garantissant que chaque pièce reçoive l'attention et l'expertise nécessaires pour préserver sa beauté, sa structure et sa longévité.",
+    "types": {
+      "label": "Nos services",
+      "title": "Quels types de réparations offrons-nous ?",
+      "desc": "Pour maintenir la beauté et l'intégrité de votre tapis, des inspections régulières sont essentielles. Traiter les dommages mineurs tôt peut aider à prévenir une usure plus grave. Heirloom® Rug Cleaning offre une gamme complète de services, notamment :",
+      "closing": "Avec des soins appropriés et un service rapide, votre tapis peut continuer à être à son meilleur pour les années à venir."
+    },
+    "repairCards": {
+      "fringe": { "title": "Réparation de franges", "desc": "Des réparations mineures au remplacement complet, nous restaurons l'apparence et la structure de votre tapis." },
+      "serging": { "title": "Surjet et reliure", "desc": "Nous renforçons et finissons les bords pour une durabilité améliorée et un aspect propre et poli." },
+      "patching": { "title": "Rapiéçage et retissage", "desc": "Les trous, déchirures et coupures sont soigneusement réparés pour restaurer le tapis aussi parfaitement que possible." },
+      "backing": { "title": "Réparation du dos", "desc": "Nous remplaçons ou sécurisons le dos des tapis touffetés pour améliorer la stabilité et prolonger leur durée de vie." },
+      "colour": { "title": "Correction de couleur", "desc": "Les tons décolorés sont corrigés pour rafraîchir l'apparence générale du tapis." },
+      "deepClean": { "title": "Nettoyage en profondeur", "desc": "La saleté incrustée, les taches et les accumulations sont éliminées pour préserver la beauté et la valeur de votre tapis." }
+    },
+    "detailsLabel": "En détail",
+    "detailsTitle": "En savoir plus sur nos services de réparation",
+    "details": {
+      "fringe": {
+        "title": "Réparation de franges",
+        "desc1": "Après une inspection approfondie de votre tapis oriental, nous déterminons la méthode de réparation de franges la plus appropriée. Pour les tapis noués à la main, la réparation implique de réenvelopper soigneusement les extrémités à la main, un processus détaillé qui nécessite une attention particulière aux couleurs et à la structure originales.",
+        "desc2": "Pour les tapis fabriqués à la machine, le frangement mécanique est souvent la solution préférée. Si vos franges nécessitent un remplacement complet, nous offrons une large sélection de styles et de matériaux pour correspondre à votre tapis."
+      },
+      "serging": {
+        "title": "Surjet et reliure",
+        "desc1": "Le surjet est une technique de finition importante qui améliore l'apparence et la durabilité de votre tapis. Pour les tapis orientaux, nous utilisons des fils de laine, coton ou synthétiques de haute qualité pour protéger les bords et prévenir l'effilochage.",
+        "desc2": "Pour les moquettes transformées en tapis, la reliure est généralement préférée. Cela implique d'appliquer une bande étroite de tissu sur les bords bruts et de la coudre solidement en place. Le résultat est une finition propre et polie."
+      },
+      "patching": {
+        "title": "Rapiéçage et retissage",
+        "desc1": "Le rapiéçage est souvent l'un des moyens les plus pratiques et économiques de réparer les tapis orientaux et patrimoniaux. Traiter les trous rapidement est important pour prévenir d'autres dommages.",
+        "desc2": "Lorsque le tapis est très précieux ou que les dommages sont graves, le retissage est souvent la solution préférée. Des techniciens qualifiés reconstruisent la fondation du tapis en utilisant de nouveaux fils qui correspondent étroitement à l'original en couleur et en texture."
+      },
+      "backing": {
+        "title": "Réparation et remplacement du dos",
+        "desc1": "Les dos usés ou détériorés des tapis touffetés, crochetés ou fabriqués à la machine doivent être remplacés pour protéger et préserver correctement la structure du tapis. L'installation d'un nouveau dos prolonge la vie de votre tapis.",
+        "desc2": "Ce soutien supplémentaire améliore la durabilité et aide votre tapis à maintenir sa forme, sa stabilité et son apparence générale pour les années à venir."
+      }
+    },
+    "backingReplace": {
+      "label": "Entretien de tapis",
+      "title": "Quand devrais-je remplacer le dos de mon tapis ?",
+      "desc": "Voici deux tests simples que vous pouvez faire à la maison pour vérifier si le dos de votre tapis doit être remplacé.",
+      "test1": {
+        "title": "Vérifier les résidus",
+        "desc": "Vérifiez sous votre tapis. Si vous remarquez un résidu poudreux, cela indique souvent que l'adhésif se dégrade et que le dos doit être remplacé."
+      },
+      "test2": {
+        "title": "Le test du pincement",
+        "desc": "Pincez doucement le dos. S'il se sépare facilement, il est temps de le remplacer. S'il est encore ferme et intact, le dos a probablement encore de la vie."
+      }
+    }
   }
 }

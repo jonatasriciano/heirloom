@@ -441,5 +441,143 @@
       "title": "Why Choose Heirloom® Rug Cleaning?",
       "desc": "Heirloom® Rug Cleaning has been serving Canada since 1967, bringing decades of experience to every rug we care for. Our cleaning and repair specialists combine expert knowledge with state-of-the-art equipment and facilities to deliver exceptional results. From delicate hand-knotted Oriental rugs to complex cleaning challenges, we provide efficient, thorough, and dependable service designed to leave your rugs looking their absolute best."
     }
+  },
+  "rugPaddingPage": {
+    "pageTitle": "Rug Underlays Calgary",
+    "pageSubtitle": "High-quality rug underlays for Calgary and the surrounding area, designed to improve safety, comfort, and long-term rug protection.",
+    "introLabel": "Premium Rug Underlays",
+    "introTitle": "Protect, Comfort, and Extend the Life of Your Rugs",
+    "intro1": "There are many rug underlays on the market, but few match the safety, durability, and performance of a professionally selected rug pad. A quality underlay can extend a rug's life by as much as 40 percent by reducing friction, supporting the fibres, and helping it wear more evenly over time.",
+    "introFeatures": {
+      "noLatex": {
+        "title": "100% Latex-Free",
+        "desc": "Our rug pads contain no latex. Latex has been shown to contribute to floor damage and can be an allergen for some people and pets. We also offer shipping across Canada."
+      },
+      "longerLife": {
+        "title": "Extends Rug Life by 40%",
+        "desc": "Most rugs don't truly wear out; they simply \"ugly out.\" A proper underlay reduces noise, adds warmth, and makes your rug feel softer and more comfortable underfoot."
+      },
+      "thickness": {
+        "title": "Two Thicknesses Available",
+        "desc": "We offer our rug underlays in 1/8 inch and 3/16 inch thicknesses, so you can choose the right level of cushioning and protection for your rug and flooring type."
+      }
+    },
+    "whyPads": {
+      "label": "Benefits",
+      "title": "Why Choose Our Pads?",
+      "liquids": {
+        "title": "Protection from Liquids",
+        "desc": "Rug underlays act as effective barriers against spills. They can help absorb moisture from water, coffee, or pet accidents before it reaches the floor, which is especially beneficial for wood and other sensitive flooring surfaces."
+      },
+      "scratch": {
+        "title": "Scratch Prevention",
+        "desc": "By creating a more secure grip between the rug and the floor, underlays help reduce slipping and movement. This minimizes friction, lowers the risk of rug wear and tearing, and helps prevent slips, trips, and falls caused by rugs shifting unexpectedly."
+      },
+      "comfort": {
+        "title": "Added Comfort",
+        "desc": "Underlays provide cushioning that makes rugs feel thicker, softer, and more comfortable underfoot. They also offer insulation, helping to keep floors warmer during the winter months."
+      },
+      "noise": {
+        "title": "Less Noise, Longer Life",
+        "desc": "Underlays help absorb sound for a quieter environment, and by reducing movement and wear, they can significantly extend your rug's lifespan, reducing the need for repairs or premature replacement."
+      }
+    },
+    "pets": {
+      "label": "Pet Protection",
+      "title": "What About If You Have Pets?",
+      "desc1": "Pets and area rugs can coexist in the same home. While maintaining rugs with pets can be challenging, the right cleaning routine and proper floor protection make a significant difference.",
+      "challenge": {
+        "title": "The Challenge",
+        "desc": "Rug pads and underlays play an important role when pets return to the same favourite spots again and again. Older stains or lingering odours from past accidents can also cause ongoing issues if not properly addressed."
+      },
+      "solution": {
+        "title": "Our Solution",
+        "desc": "Heirloom® Rug Cleaning offers pet-barrier protection for floors beneath rugs, along with professional rug cleaning to restore rugs to a fresh, vibrant condition. Our pet-proof rug pads help prevent accidents from reaching wood or other flooring below."
+      }
+    },
+    "otherBenefits": {
+      "label": "More Advantages",
+      "title": "Other Benefits",
+      "slippery": {
+        "title": "Slippery Floors",
+        "desc": "A non-slip underlay helps protect both the rug and the floor underneath by reducing sliding, bunching, and shifting, which can lower the risk of trips and falls."
+      },
+      "waterproof": {
+        "title": "Waterproof Protection",
+        "desc": "Waterproof underlays can be a smart choice for certain areas of the home. They help create a moisture barrier and are especially useful in spaces such as basements and laundry rooms."
+      },
+      "honeycomb": {
+        "title": "Honeycombed Underlays",
+        "desc": "Honeycombed styles are lightweight yet strong. They offer easy installation, enhanced stability, impact absorption, moisture control, and thermal insulation."
+      },
+      "natural": {
+        "title": "Natural Materials",
+        "desc": "Underlays made from natural, recycled yarn are known for their durability. They also offer comfort, resistance to mold and mildew, and compatibility with heated floors."
+      }
+    },
+    "whyUs": {
+      "label": "Why Choose Us",
+      "title": "Why Choose Heirloom® for Rug Underlays?",
+      "desc": "The area rug professionals at Heirloom® Rug Cleaning provide high-quality underlays for fine textiles across Canada. We offer nationwide shipping on our rug pads and are happy to help you choose the best option for your rug, flooring, and household needs. To learn more about our products and services, give us a call."
+    }
+  },
+  "rugRepairPage": {
+    "pageTitle": "Rug Repairs Calgary",
+    "pageSubtitle": "Expert restoration and protection for fine area rugs in Calgary and surrounding areas.",
+    "introLabel": "Expert Rug Repair",
+    "introTitle": "Preserving the Beauty and Structure of Your Rugs",
+    "intro1": "Heirloom® Rug Cleaning offers expert area rug repair and protection services in Calgary. From intricate patterns to fine handcrafted details, heirloom rugs are valuable, collectible pieces that deserve specialized care.",
+    "intro2": "Our certified technicians are trained to clean, protect, and repair all types of area rugs, ensuring every piece receives the attention and expertise required to preserve its beauty, structure, and longevity.",
+    "types": {
+      "label": "Our Services",
+      "title": "What Types of Repairs Do We Offer?",
+      "desc": "To maintain the beauty and integrity of your area rug, regular inspections are essential. Addressing minor damage early can help prevent more serious wear and costly repairs down the road. Heirloom® Rug Cleaning offers a full range of professional rug care services, including:",
+      "closing": "With proper care and timely service, your rug can continue to look its best for years to come."
+    },
+    "repairCards": {
+      "fringe": { "title": "Fringe Repair", "desc": "From minor repairs to complete fringe replacement, we restore both the appearance and structure of your rug." },
+      "serging": { "title": "Serging & Binding", "desc": "We reinforce and finish rug edges for improved durability and a clean, polished look." },
+      "patching": { "title": "Patching & Reweaving", "desc": "Holes, tears, and cuts are carefully repaired to restore the rug as seamlessly as possible." },
+      "backing": { "title": "Backing Repair", "desc": "We replace or secure backing on tufted rugs to improve stability and extend their lifespan." },
+      "colour": { "title": "Colour Correction", "desc": "Faded tones and discolouration are corrected to refresh the rug's overall appearance." },
+      "deepClean": { "title": "Deep Cleaning", "desc": "Embedded dirt, stains, and buildup are removed to help preserve your rug's beauty and value." }
+    },
+    "detailsLabel": "In Detail",
+    "detailsTitle": "Learn More About Our Repair Services",
+    "details": {
+      "fringe": {
+        "title": "Fringe Repair",
+        "desc1": "After a thorough inspection of your Oriental rug, we determine the most appropriate fringe repair method based on its construction and condition. For hand-knotted rugs, fringe repair involves carefully rewrapping the ends by hand. This detailed, time-intensive process requires close attention to the rug's original colours, structure, and craftsmanship to ensure an authentic restoration.",
+        "desc2": "For machine-made rugs, power fringing is often the preferred solution. If your fringe requires complete replacement, we offer a wide selection of styles and materials to match your rug. If preferred, you can also remove the fringe entirely and choose a bound edge for a neat, modern look with added durability."
+      },
+      "serging": {
+        "title": "Serging and Binding",
+        "desc1": "Serging, also known as binding, is an important finishing technique that enhances both the appearance and durability of your rug. For Oriental rugs, we use high-quality wool, cotton, or synthetic threads to protect the edges and prevent unravelling while maintaining the rug's original character.",
+        "desc2": "For tufted carpets turned into rugs, binding is typically preferred. This involves applying a narrow strip of fabric over the raw edges and securely stitching it in place to prevent the rug from coming apart. The result is a clean, polished finish that adds both strength and refinement to the rug."
+      },
+      "patching": {
+        "title": "Patching and Reweaving",
+        "desc1": "Rug patching is often one of the most practical and cost-effective ways to repair Oriental and heirloom rugs. Addressing holes early is important. Prompt repairs help prevent further damage and reduce the need for extensive restoration later.",
+        "desc2": "When the rug is highly valuable or the damage is severe, reweaving is often the preferred solution. Skilled technicians rebuild the rug's foundation using new threads that closely match the original in both colour and texture. Each knot is recreated individually to match the original pattern, resulting in a repair that blends seamlessly."
+      },
+      "backing": {
+        "title": "Backing Repair and Replacement",
+        "desc1": "Worn or deteriorating backings on tufted, hooked, or machine-made rugs should be replaced to properly protect and preserve the rug's structure. Installing a new backing extends your rug's life by reinforcing its foundation and keeping tufts, knots, fringe, and scrim securely in place.",
+        "desc2": "This added support improves durability and helps your rug maintain its shape, stability, and overall appearance for years to come."
+      }
+    },
+    "backingReplace": {
+      "label": "Rug Maintenance",
+      "title": "When Should I Replace My Rug's Backing?",
+      "desc": "Here are two simple tests you can do at home to check if your rug's backing needs replacement.",
+      "test1": {
+        "title": "Check for Residue",
+        "desc": "Check underneath your rug. If you notice a powdery residue, it often indicates that the adhesive is breaking down and the backing needs replacement."
+      },
+      "test2": {
+        "title": "The Pinch Test",
+        "desc": "Gently pinch the scrim backing. If it separates or pulls away easily, it is time for a replacement. If it still feels firm and intact, the backing likely still has some life left."
+      }
+    }
   }
 }

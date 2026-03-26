@@ -1,0 +1,259 @@
+/* ============================================
+   PAGE: RUG REPAIR
+   ============================================ */
+
+/* Repair types — dark bg image section */
+.rr-types {
+  position: relative;
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.rr-types__bg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.rr-types__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.82) 0%, rgba(17, 17, 17, 0.72) 100%);
+  z-index: 1;
+}
+
+.rr-types .container {
+  position: relative;
+  z-index: 2;
+}
+
+.rr-types__header {
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.rr-types__title {
+  color: var(--text-on-dark);
+  margin-bottom: var(--space-3);
+}
+
+.rr-types__desc {
+  font-size: var(--font-size-base);
+  color: rgba(247, 243, 238, 0.8);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--space-4);
+}
+
+.rr-types__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.rr-types__card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rr-types__card-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--accent-light);
+}
+
+.rr-types__card-desc {
+  font-size: var(--font-size-sm);
+  color: rgba(247, 243, 238, 0.7);
+  line-height: var(--line-height-relaxed);
+}
+
+.rr-types__closing {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: rgba(247, 243, 238, 0.55);
+  margin-top: var(--space-8);
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+/* Section header */
+.rr-section-header {
+  text-align: center;
+  margin-bottom: var(--space-10);
+}
+
+.rr-section-title {
+  margin-bottom: var(--space-3);
+}
+
+/* Accordion */
+.rr-accordion {
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.rr-accordion__item {
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.rr-accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-5) 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.rr-accordion__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.rr-accordion__trigger-text {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rr-accordion__chevron {
+  flex-shrink: 0;
+  color: var(--accent-primary);
+  transition: transform var(--transition-base);
+  display: inline-block;
+}
+
+details[open] .rr-accordion__chevron {
+  transform: rotate(180deg);
+}
+
+.rr-accordion__content {
+  padding-bottom: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.rr-accordion__image-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.rr-accordion__image {
+  object-fit: cover;
+}
+
+.rr-accordion__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rr-accordion__content p {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (min-width: 768px) {
+  .rr-accordion__content {
+    flex-direction: row;
+    gap: var(--space-6);
+  }
+  .rr-accordion__image-wrap {
+    width: 280px;
+    min-height: 180px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .rr-types__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.rr-section-desc {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+  max-width: 640px;
+  margin-inline: auto;
+  margin-top: var(--space-4);
+}
+
+/* Test cards */
+.rr-tests {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.rr-test {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-card);
+}
+
+.rr-test__num {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--accent-primary);
+  background-color: rgba(var(--accent-rgb), 0.08);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.rr-test__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.rr-test__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rr-test__desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (min-width: 768px) {
+  .rr-tests {
+    grid-template-columns: 1fr 1fr;
+  }
+}
