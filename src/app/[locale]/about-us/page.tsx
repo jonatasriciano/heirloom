@@ -19,23 +19,23 @@ export default function AboutUsPage() {
       <Header />
       <main>
         {/* Hero */}
-        <div className="placeholder-page__hero">
+        <div className="page-hero__hero">
           <div className="container">
-            <nav className="placeholder-page__breadcrumb" aria-label="Breadcrumb">
-              <Link href="/" className="placeholder-page__breadcrumb-link">
+            <nav className="page-hero__breadcrumb" aria-label={tNav('breadcrumb')}>
+              <Link href="/" className="page-hero__breadcrumb-link">
                 {tNav('home')}
               </Link>
-              <span className="placeholder-page__breadcrumb-item">
-                <span className="placeholder-page__breadcrumb-sep" aria-hidden="true">
+              <span className="page-hero__breadcrumb-item">
+                <span className="page-hero__breadcrumb-sep" aria-hidden="true">
                   <svg width="6" height="10" viewBox="0 0 6 10" fill="none">
                     <path d="M1 1L5 5L1 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                <span className="placeholder-page__breadcrumb-current">{tNav('aboutUs')}</span>
+                <span className="page-hero__breadcrumb-current">{tNav('aboutUs')}</span>
               </span>
             </nav>
-            <h1 className="placeholder-page__title">{t('pageTitle')}</h1>
-            <p className="placeholder-page__desc">{t('pageSubtitle')}</p>
+            <h1 className="page-hero__title">{t('pageTitle')}</h1>
+            <p className="page-hero__desc">{t('pageSubtitle')}</p>
           </div>
         </div>
 

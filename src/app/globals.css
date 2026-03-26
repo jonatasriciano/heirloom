@@ -799,10 +799,10 @@ select:focus-visible {
   }
 }
 
-/* --- PLACEHOLDER PAGE --- */
+/* --- PAGE HERO --- */
 
 /* Hero banner */
-.placeholder-page__hero {
+.page-hero__hero {
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-soft);
   padding-top: var(--space-8);
@@ -810,7 +810,7 @@ select:focus-visible {
 }
 
 /* Breadcrumb */
-.placeholder-page__breadcrumb {
+.page-hero__breadcrumb {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -820,37 +820,37 @@ select:focus-visible {
   font-size: var(--font-size-sm);
   color: var(--text-tertiary);
 }
-.placeholder-page__breadcrumb-item {
+.page-hero__breadcrumb-item {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
 }
-.placeholder-page__breadcrumb-link {
+.page-hero__breadcrumb-link {
   color: var(--text-secondary);
   transition: color var(--transition-fast);
 }
-.placeholder-page__breadcrumb-link:hover {
+.page-hero__breadcrumb-link:hover {
   color: var(--accent-primary);
 }
-.placeholder-page__breadcrumb-sep {
+.page-hero__breadcrumb-sep {
   color: var(--text-light);
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
 }
 /* Override global svg { display: block } for inline breadcrumb chevrons */
-.placeholder-page__breadcrumb-sep svg {
+.page-hero__breadcrumb-sep svg {
   display: inline-block;
   width: 5px;
   height: 8px;
 }
-.placeholder-page__breadcrumb-current {
+.page-hero__breadcrumb-current {
   color: var(--accent-primary);
   font-weight: 500;
 }
 
 /* Title — override global h1 sizing */
-.placeholder-page__title {
+.page-hero__title {
   font-family: var(--font-heading);
   font-size: var(--font-size-3xl);
   font-weight: 600;
@@ -860,7 +860,7 @@ select:focus-visible {
 }
 
 /* Description */
-.placeholder-page__desc {
+.page-hero__desc {
   font-size: var(--font-size-base);
   color: var(--text-secondary);
   max-width: 600px;
@@ -869,14 +869,14 @@ select:focus-visible {
 }
 
 /* Body / content area */
-.placeholder-page__body {
+.page-hero__body {
   padding-top: var(--space-12);
   padding-bottom: var(--space-20);
   min-height: 40vh;
 }
 
 /* Card */
-.placeholder-page__card {
+.page-hero__card {
   background: var(--bg-card);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-xl);
@@ -889,19 +889,19 @@ select:focus-visible {
 }
 
 /* Override global svg { display: block } for the card icon */
-.placeholder-page__icon {
+.page-hero__icon {
   color: var(--accent-primary);
   margin-bottom: var(--space-5);
   opacity: 0.65;
 }
-.placeholder-page__icon svg {
+.page-hero__icon svg {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Card title — override global h2 sizing */
-.placeholder-page__card-title {
+.page-hero__card-title {
   font-family: var(--font-heading);
   font-size: var(--font-size-xl);
   font-weight: 600;
@@ -911,7 +911,7 @@ select:focus-visible {
 }
 
 /* Card text */
-.placeholder-page__card-text {
+.page-hero__card-text {
   font-size: var(--font-size-sm);
   color: var(--text-tertiary);
   line-height: var(--line-height-relaxed);
@@ -922,7 +922,7 @@ select:focus-visible {
 }
 
 /* Back link */
-.placeholder-page__back-link {
+.page-hero__back-link {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -931,39 +931,39 @@ select:focus-visible {
   color: var(--accent-primary);
   transition: color var(--transition-fast);
 }
-.placeholder-page__back-link:hover {
+.page-hero__back-link:hover {
   color: var(--accent-secondary);
 }
 
 /* Responsive */
 @media (min-width: 768px) {
-  .placeholder-page__hero {
+  .page-hero__hero {
     padding-top: var(--space-10);
     padding-bottom: var(--space-12);
   }
-  .placeholder-page__title {
+  .page-hero__title {
     font-size: var(--font-size-4xl);
   }
-  .placeholder-page__desc {
+  .page-hero__desc {
     font-size: var(--font-size-lg);
   }
-  .placeholder-page__body {
+  .page-hero__body {
     padding-top: var(--space-16);
   }
-  .placeholder-page__card {
+  .page-hero__card {
     padding: var(--space-12) var(--space-10);
   }
 }
 
 @media (min-width: 1024px) {
-  .placeholder-page__hero {
+  .page-hero__hero {
     padding-top: var(--space-12);
     padding-bottom: var(--space-16);
   }
-  .placeholder-page__title {
+  .page-hero__title {
     font-size: var(--font-size-5xl);
   }
-  .placeholder-page__card {
+  .page-hero__card {
     padding: var(--space-16) var(--space-12);
   }
 }

@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Accueil",
+    "breadcrumb": "Fil d'Ariane",
     "cleaning": "Nettoyage",
     "rugTypes": "Types de tapis",
     "repair": "Réparation",
@@ -346,6 +347,16 @@
     "diamondNote": "Ouvert sur rendez-vous uniquement",
     "hoursTitle": "Heures d'ouverture",
     "closed": "Fermé",
+    "hours": {
+      "monday": "8 h 00 – 15 h 00",
+      "tuesday": "8 h 00 – 15 h 00",
+      "wednesday": "8 h 00 – 15 h 00",
+      "thursday": "8 h 00 – 15 h 00",
+      "friday": "8 h 00 – 12 h 00",
+      "saturday": "Fermé",
+      "sunday": "Fermé",
+      "holidays": "Fermé"
+    },
     "days": {
       "monday": "Lundi",
       "tuesday": "Mardi",

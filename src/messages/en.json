@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "breadcrumb": "Breadcrumb",
     "cleaning": "Cleaning",
     "rugTypes": "Rug Types",
     "repair": "Repair",
@@ -346,6 +347,16 @@
     "diamondNote": "Open by appointment only",
     "hoursTitle": "Business Hours",
     "closed": "Closed",
+    "hours": {
+      "monday": "8:00 a.m. – 3:00 p.m.",
+      "tuesday": "8:00 a.m. – 3:00 p.m.",
+      "wednesday": "8:00 a.m. – 3:00 p.m.",
+      "thursday": "8:00 a.m. – 3:00 p.m.",
+      "friday": "8:00 a.m. – 12:00 p.m.",
+      "saturday": "Closed",
+      "sunday": "Closed",
+      "holidays": "Closed"
+    },
     "days": {
       "monday": "Monday",
       "tuesday": "Tuesday",

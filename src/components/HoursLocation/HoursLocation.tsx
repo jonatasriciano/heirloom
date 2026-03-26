@@ -3,16 +3,7 @@
 import { useTranslations } from 'next-intl';
 import './HoursLocation.css';
 
-const HOURS = [
-  { dayKey: 'monday', hours: '8:00 a.m. – 3:00 p.m.' },
-  { dayKey: 'tuesday', hours: '8:00 a.m. – 3:00 p.m.' },
-  { dayKey: 'wednesday', hours: '8:00 a.m. – 3:00 p.m.' },
-  { dayKey: 'thursday', hours: '8:00 a.m. – 3:00 p.m.' },
-  { dayKey: 'friday', hours: '8:00 a.m. – 12:00 p.m.' },
-  { dayKey: 'saturday', hours: null },
-  { dayKey: 'sunday', hours: null },
-  { dayKey: 'holidays', hours: null },
-];
+const DAY_KEYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'holidays'] as const;
 
 export default function HoursLocation() {
   const t = useTranslations('hoursLocation');
@@ -52,12 +43,16 @@ export default function HoursLocation() {
           {t('hoursTitle')}
         </h2>
         <div className="hours-loc__table">
-          {HOURS.map(({ dayKey, hours }) => (
-            <div key={dayKey} className={`hours-loc__row ${!hours ? 'hours-loc__row--closed' : ''}`}>
-              <span className="hours-loc__day">{t(`days.${dayKey}`)}</span>
-              <span className="hours-loc__time">{hours ?? t('closed')}</span>
-            </div>
-          ))}
+          {DAY_KEYS.map((dayKey) => {
+            const hours = t(`hours.${dayKey}`);
+            const isClosed = hours === t('closed');
+            return (
+              <div key={dayKey} className={`hours-loc__row ${isClosed ? 'hours-loc__row--closed' : ''}`}>
+                <span className="hours-loc__day">{t(`days.${dayKey}`)}</span>
+                <span className="hours-loc__time">{hours}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
