@@ -1,0 +1,66 @@
+/* ============================================
+   PAGE: ABOUT US
+   ============================================ */
+
+/* Team section */
+.about-team__header {
+  text-align: center;
+  margin-bottom: var(--space-10);
+}
+
+.about-team__title {
+  margin-bottom: var(--space-3);
+}
+
+.about-team__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.about-team__card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-base);
+}
+
+.about-team__card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.about-team__name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.about-team__role {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--accent-primary);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+}
+
+.about-team__bio {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-2);
+}
+
+.about-team__bio:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .about-team__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

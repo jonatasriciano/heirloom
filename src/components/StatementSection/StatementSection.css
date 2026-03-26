@@ -1,0 +1,95 @@
+/* ============================================
+   COMPONENT: STATEMENT SECTION (reusable)
+   Centered text with animated ornaments
+   ============================================ */
+.statement-section {
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes statementSpinLeft {
+  from { transform: translateY(-65%) rotate(0deg); }
+  to { transform: translateY(-65%) rotate(360deg); }
+}
+
+@keyframes statementSpinRight {
+  from { transform: translateY(-35%) rotate(0deg); }
+  to { transform: translateY(-35%) rotate(-360deg); }
+}
+
+.statement__ornament {
+  display: none;
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+}
+
+.statement__ornament--left {
+  left: -40px;
+  width: 240px;
+  height: 240px;
+  animation: statementSpinLeft 90s linear infinite;
+}
+
+.statement__ornament--right {
+  right: -40px;
+  width: 240px;
+  height: 240px;
+  animation: statementSpinRight 90s linear infinite;
+}
+
+.statement__ornament svg {
+  width: 100%;
+  height: 100%;
+}
+
+.statement__content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+  z-index: 1;
+}
+
+.statement__title {
+  margin-bottom: var(--space-3);
+}
+
+.statement__text {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .statement__ornament {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .statement__ornament--left {
+    left: -20px;
+    width: 300px;
+    height: 300px;
+  }
+  .statement__ornament--right {
+    right: -20px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .statement__ornament--left {
+    left: 20px;
+    width: 360px;
+    height: 360px;
+  }
+  .statement__ornament--right {
+    right: 20px;
+    width: 360px;
+    height: 360px;
+  }
+}

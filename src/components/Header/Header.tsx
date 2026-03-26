@@ -158,12 +158,11 @@ export default function Header() {
     {
       key: 'aboutUs', label: t('aboutUs'), href: '/about-us',
       dropdown: [
+        { label: t('aboutUs'), href: '/about-us' },
         { label: t('aboutUsDropdown.awards'), href: '/about-us/awards-and-affiliations' },
-        { label: t('aboutUsDropdown.team'), href: '/about-us/meet-the-team' },
         { label: t('aboutUsDropdown.faq'), href: '/about-us/frequently-asked-questions' },
         { label: t('aboutUsDropdown.jobs'), href: '/about-us/jobs' },
         { label: t('aboutUsDropdown.reviews'), href: '/about-us/reviews' },
-        { label: t('aboutUsDropdown.hours'), href: '/about-us/hours-and-location' },
         { label: t('aboutUsDropdown.shipping'), href: '/about-us/shipping' },
         { label: t('aboutUsDropdown.contact'), href: '/about-us/contact-us' },
       ],
