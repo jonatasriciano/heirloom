@@ -70,12 +70,7 @@ export const routing = defineRouting({
     '/carpet-dyeing/color-repair': '/carpet-dyeing/color-repair',
     '/carpet-dyeing/bleach-spot-repair': '/carpet-dyeing/bleach-spot-repair',
     '/about-us': '/about-us',
-    '/about-us/awards-and-affiliations': '/about-us/awards-and-affiliations',
-    '/about-us/frequently-asked-questions': '/about-us/frequently-asked-questions',
-    '/about-us/jobs': '/about-us/jobs',
-    '/about-us/reviews': '/about-us/reviews',
-    '/about-us/shipping': '/about-us/shipping',
-    '/about-us/contact-us': '/about-us/contact-us',
+    '/contact': '/contact',
     '/calculate-cleaning-cost': '/calculate-cleaning-cost',
   }
 });

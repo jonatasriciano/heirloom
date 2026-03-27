@@ -12,9 +12,8 @@ export default function Footer() {
   const quickLinks = [
     { href: '/' as const, label: nav('home') },
     { href: '/area-rug-cleaning' as const, label: nav('cleaning') },
-    { href: '/types-of-rugs-we-clean' as const, label: nav('rugTypes') },
     { href: '/about-us' as const, label: nav('aboutUs') },
-    { href: '/about-us/frequently-asked-questions' as const, label: nav('aboutUsDropdown.faq') },
+    { href: '/contact' as const, label: nav('aboutUsDropdown.contact') },
   ];
 
   const socialLinks = [

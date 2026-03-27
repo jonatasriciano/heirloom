@@ -63,109 +63,24 @@ export default function Header() {
     { key: 'home', label: t('home'), href: '/' },
     {
       key: 'cleaning', label: t('cleaning'), href: '/area-rug-cleaning',
-      dropdown: [
-        { label: t('cleaningDropdown.process'), href: '/area-rug-cleaning/rug-cleaning-process', children: [
-          { label: t('cleaningDropdown.inspection'), href: '/area-rug-cleaning/rug-cleaning-process/rug-inspection' },
-          { label: t('cleaningDropdown.pickup'), href: '/area-rug-cleaning/rug-cleaning-process/pickup' },
-          { label: t('cleaningDropdown.dusting'), href: '/area-rug-cleaning/rug-cleaning-process/dusting' },
-          { label: t('cleaningDropdown.washRinse'), href: '/area-rug-cleaning/rug-cleaning-process/clean-wash-and-rinse' },
-          { label: t('cleaningDropdown.drying'), href: '/area-rug-cleaning/rug-cleaning-process/drying' },
-          { label: t('cleaningDropdown.vacuumInspection'), href: '/area-rug-cleaning/rug-cleaning-process/vacuuming-and-final-inspection' },
-          { label: t('cleaningDropdown.fiberProtectorPads'), href: '/area-rug-cleaning/rug-cleaning-process/fiber-protector-and-pads' },
-          { label: t('cleaningDropdown.delivery'), href: '/area-rug-cleaning/rug-cleaning-process/delivery' },
-        ]},
-        { label: t('cleaningDropdown.methods'), href: '/area-rug-cleaning/rug-cleaning-methods', children: [
-          { label: t('cleaningDropdown.wetCleaning'), href: '/area-rug-cleaning/rug-cleaning-methods/wet-cleaning' },
-          { label: t('cleaningDropdown.hotWater'), href: '/area-rug-cleaning/rug-cleaning-methods/hot-water-extraction' },
-          { label: t('cleaningDropdown.deepCleaning'), href: '/area-rug-cleaning/rug-cleaning-methods/deep-cleaning' },
-        ]},
-        { label: t('cleaningDropdown.stainRemoval'), href: '/area-rug-cleaning/stain-removal', children: [
-          { label: t('cleaningDropdown.oldStain'), href: '/area-rug-cleaning/stain-removal/old' },
-        ]},
-        { label: t('cleaningDropdown.maintenance'), href: '/area-rug-cleaning/maintenance' },
-        { label: t('cleaningDropdown.articles'), href: '/area-rug-cleaning/articles' },
-        { label: t('cleaningDropdown.videos'), href: '/area-rug-cleaning/rug-washing-videos' },
-      ],
-    },
-    {
-      key: 'rugTypes', label: t('rugTypes'), href: '/types-of-rugs-we-clean',
-      dropdown: [
-        { label: t('rugTypesDropdown.oriental'), href: '/types-of-rugs-we-clean/oriental-rugs' },
-        { label: t('rugTypesDropdown.persian'), href: '/types-of-rugs-we-clean/antique-persian-area-rugs' },
-        { label: t('rugTypesDropdown.silk'), href: '/types-of-rugs-we-clean/silk-rugs' },
-        { label: t('rugTypesDropdown.turkish'), href: '/types-of-rugs-we-clean/turkish-rugs' },
-        { label: t('rugTypesDropdown.antique'), href: '/types-of-rugs-we-clean/antique-area-rugs' },
-        { label: t('rugTypesDropdown.other'), href: '/types-of-rugs-we-clean/other-types-we-clean' },
-      ],
     },
     {
       key: 'repair', label: t('repair'), href: '/rug-repair',
-      dropdown: [
-        { label: t('repairDropdown.fringe'), href: '/rug-repair/fringe-repair' },
-        { label: t('repairDropdown.colorDyeing'), href: '/rug-repair/color-correction-and-dyeing' },
-        { label: t('repairDropdown.backing'), href: '/rug-repair/backing-repair' },
-        { label: t('repairDropdown.blotSpills'), href: '/rug-repair/blot-spills' },
-        { label: t('repairDropdown.patching'), href: '/rug-repair/rug-patching' },
-        { label: t('repairDropdown.fireWater'), href: '/rug-repair/fire-and-water-damaged-rugs', children: [
-          { label: t('repairDropdown.smokeOdor'), href: '/rug-repair/fire-and-water-damaged-rugs/smoke-odor-removal' },
-        ]},
-        { label: t('repairDropdown.holeRepair'), href: '/rug-repair/rug-hole-repair' },
-        { label: t('repairDropdown.articles'), href: '/rug-repair/article' },
-      ],
     },
     {
       key: 'underlays', label: t('underlays'), href: '/rug-padding',
-      dropdown: [
-        { label: t('underlaysDropdown.petBarrier'), href: '/rug-padding/pet-barrier' },
-        { label: t('underlaysDropdown.types'), href: '/rug-padding/types', children: [
-          { label: t('underlaysDropdown.slipperyFloor'), href: '/rug-padding/types/slippery-floor' },
-          { label: t('underlaysDropdown.waterproof'), href: '/rug-padding/types/waterproof-rug-pads' },
-        ]},
-        { label: t('underlaysDropdown.floorType'), href: '/rug-padding/floor-type', children: [
-          { label: t('underlaysDropdown.laminate'), href: '/rug-padding/floor-type/laminate' },
-        ]},
-        { label: t('underlaysDropdown.features'), href: '/rug-padding/features', children: [
-          { label: t('underlaysDropdown.nonSlip'), href: '/rug-padding/features/non-slip' },
-          { label: t('underlaysDropdown.naturalMaterial'), href: '/rug-padding/features/natural-material' },
-        ]},
-        { label: t('underlaysDropdown.material'), href: '/rug-padding/material' },
-        { label: t('underlaysDropdown.replacement'), href: '/rug-padding/replacement' },
-      ],
     },
     {
       key: 'rugProtection', label: t('rugProtection'), href: '/rug-protection',
-      dropdown: [
-        { label: t('rugProtectionDropdown.protectorRepellent'), href: '/rug-protection/protector-and-stain-repellant' },
-      ],
-    },
-    {
-      key: 'pets', label: t('pets'), href: '/pets',
-      dropdown: [
-        { label: t('petsDropdown.odors'), href: '/pets/pet-urine-and-odour-removal' },
-        { label: t('petsDropdown.stainRemoval'), href: '/pets/pet-stain-removal' },
-        { label: t('petsDropdown.pads'), href: '/pets/pads' },
-        { label: t('petsDropdown.articles'), href: '/pets/articles' },
-      ],
     },
     {
       key: 'carpetDyeing', label: t('carpetDyeing'), href: '/carpet-dyeing',
-      dropdown: [
-        { label: t('carpetDyeingDropdown.restoration'), href: '/carpet-dyeing/carpet-restoration' },
-        { label: t('carpetDyeingDropdown.colorRepair'), href: '/carpet-dyeing/color-repair' },
-        { label: t('carpetDyeingDropdown.bleachSpot'), href: '/carpet-dyeing/bleach-spot-repair' },
-      ],
     },
     {
       key: 'aboutUs', label: t('aboutUs'), href: '/about-us',
-      dropdown: [
-        { label: t('aboutUs'), href: '/about-us' },
-        { label: t('aboutUsDropdown.awards'), href: '/about-us/awards-and-affiliations' },
-        { label: t('aboutUsDropdown.faq'), href: '/about-us/frequently-asked-questions' },
-        { label: t('aboutUsDropdown.jobs'), href: '/about-us/jobs' },
-        { label: t('aboutUsDropdown.reviews'), href: '/about-us/reviews' },
-        { label: t('aboutUsDropdown.shipping'), href: '/about-us/shipping' },
-        { label: t('aboutUsDropdown.contact'), href: '/about-us/contact-us' },
-      ],
+    },
+    {
+      key: 'contact', label: t('aboutUsDropdown.contact'), href: '/contact',
     },
   ];
 
