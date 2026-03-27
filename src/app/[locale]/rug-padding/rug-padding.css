@@ -1,0 +1,254 @@
+/* ============================================
+   PAGE: RUG PADDING
+   ============================================ */
+.rp-features-wrap {
+  padding-bottom: var(--section-py);
+}
+
+.rp-section-header {
+  text-align: center;
+  margin-bottom: var(--space-10);
+}
+
+.rp-section-title {
+  margin-bottom: var(--space-3);
+}
+
+.rp-section-desc {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+  max-width: 640px;
+  margin-inline: auto;
+  margin-top: var(--space-4);
+}
+
+/* Pets section — dark bg image */
+.rp-pets {
+  position: relative;
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.rp-pets__bg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.rp-pets__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.82) 0%, rgba(17, 17, 17, 0.72) 100%);
+  z-index: 1;
+}
+
+.rp-pets .container {
+  position: relative;
+  z-index: 2;
+}
+
+.rp-pets__header {
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.rp-pets__title {
+  color: var(--text-on-dark);
+  margin-bottom: var(--space-3);
+}
+
+.rp-pets__desc {
+  font-size: var(--font-size-lg);
+  color: rgba(247, 243, 238, 0.8);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--space-4);
+}
+
+.rp-pets__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.rp-pets__card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rp-pets__card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--accent-rgb), 0.15);
+  border-radius: var(--radius-md);
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
+.rp-pets__card-icon svg {
+  display: inline-block;
+}
+
+.rp-pets__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-on-dark);
+}
+
+.rp-pets__card-text {
+  font-size: var(--font-size-sm);
+  color: rgba(247, 243, 238, 0.75);
+  line-height: var(--line-height-relaxed);
+}
+
+.rp-pets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.rp-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.rp-feature {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-base);
+}
+
+.rp-feature:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.rp-feature__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rp-feature__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.rp-feature__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--accent-rgb), 0.08);
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.rp-feature__icon svg {
+  display: inline-block;
+}
+
+.rp-feature__desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (min-width: 768px) {
+  .rp-features {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rp-feature {
+    padding: var(--space-8);
+  }
+  .rp-features-wrap .rp-features {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .rp-pets-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rp-pets__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rp-pets__card {
+    padding: var(--space-8);
+  }
+}
+
+/* Other Benefits — horizontal list */
+.rp-benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.rp-benefit {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.rp-benefit__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--accent-rgb), 0.08);
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.rp-benefit__icon svg {
+  display: inline-block;
+}
+
+.rp-benefit__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rp-benefit__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rp-benefit__desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (min-width: 768px) {
+  .rp-benefits {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}

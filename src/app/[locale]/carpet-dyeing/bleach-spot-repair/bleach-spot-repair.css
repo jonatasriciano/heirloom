@@ -1,0 +1,177 @@
+/* ============================================
+   PAGE: BLEACH SPOT REPAIR
+   ============================================ */
+/* Why dyeing grid */
+.bsr-dyeing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+.bsr-dyeing-content { display: flex; flex-direction: column; gap: var(--space-3); }
+.bsr-dyeing-text { font-size: var(--font-size-base); color: var(--text-secondary); line-height: var(--line-height-relaxed); }
+.bsr-dyeing-closing { font-size: var(--font-size-sm); color: var(--accent-primary); font-weight: 500; font-style: italic; }
+
+@media (min-width: 768px) {
+  .bsr-dyeing-grid { grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+}
+
+/* Overdyeing — dark bg */
+.bsr-overdye-section {
+  position: relative;
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.bsr-overdye-section__bg { object-fit: cover; z-index: 0; }
+
+.bsr-overdye-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(17,17,17,0.82), rgba(17,17,17,0.72));
+  z-index: 1;
+}
+
+.bsr-overdye-section .container { position: relative; z-index: 2; }
+
+.bsr-overdye {
+  text-align: center;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.bsr-overdye__title {
+  color: var(--text-on-dark);
+  margin-bottom: var(--space-3);
+}
+
+.bsr-overdye__text {
+  font-size: var(--font-size-base);
+  color: rgba(247,243,238,0.8);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--space-4);
+}
+
+.bsr-overdye__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.bsr-overdye__card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.bsr-overdye__card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.bsr-overdye__card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--accent-rgb), 0.15);
+  border-radius: var(--radius-md);
+  color: var(--accent-light);
+  margin-bottom: 0;
+}
+
+.bsr-overdye__card-icon svg { display: inline-block; }
+
+.bsr-overdye__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-on-dark);
+}
+
+.bsr-overdye__card-desc {
+  font-size: var(--font-size-sm);
+  color: rgba(247,243,238,0.7);
+  line-height: var(--line-height-relaxed);
+}
+
+.bsr-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.bsr-service {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-base);
+}
+
+.bsr-service:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.bsr-service__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.bsr-service__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.bsr-service__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--accent-rgb), 0.08);
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.bsr-service__icon svg {
+  display: inline-block;
+}
+
+.bsr-service__desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (min-width: 768px) {
+  .bsr-services {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bsr-service {
+    padding: var(--space-8);
+  }
+  .bsr-overdye__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bsr-overdye__card {
+    padding: var(--space-8);
+  }
+}

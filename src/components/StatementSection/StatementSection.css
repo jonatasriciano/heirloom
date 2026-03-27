@@ -5,6 +5,9 @@
 .statement-section {
   position: relative;
   overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes statementSpinLeft {
@@ -25,16 +28,16 @@
 }
 
 .statement__ornament--left {
-  left: -40px;
-  width: 240px;
-  height: 240px;
+  left: -60px;
+  width: 200px;
+  height: 200px;
   animation: statementSpinLeft 90s linear infinite;
 }
 
 .statement__ornament--right {
-  right: -40px;
-  width: 240px;
-  height: 240px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
   animation: statementSpinRight 90s linear infinite;
 }
 
