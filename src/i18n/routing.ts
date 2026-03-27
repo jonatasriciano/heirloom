@@ -70,7 +70,7 @@ export const routing = defineRouting({
     '/carpet-dyeing/color-repair': '/carpet-dyeing/color-repair',
     '/carpet-dyeing/bleach-spot-repair': '/carpet-dyeing/bleach-spot-repair',
     '/about-us': '/about-us',
-    '/contact': '/contact',
+    '/contact-us': '/contact-us',
     '/calculate-cleaning-cost': '/calculate-cleaning-cost',
   }
 });

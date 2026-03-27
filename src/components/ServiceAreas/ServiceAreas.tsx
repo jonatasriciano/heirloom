@@ -82,7 +82,7 @@ export default function ServiceAreas({ alt = false }: { alt?: boolean }) {
             </div>
             <p className="service-areas__note">
               {t('note')}{' '}
-              <Link href="/about-us/contact-us" className="service-areas__note-link">{t('noteLink')}</Link>
+              <Link href="/contact-us" className="service-areas__note-link">{t('noteLink')}</Link>
               {' '}{t('noteSuffix')}
             </p>
           </div>

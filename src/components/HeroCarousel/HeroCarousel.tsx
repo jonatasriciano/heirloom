@@ -124,7 +124,7 @@ export default function HeroCarousel({
             <h1 className="hero-carousel__title">{t(`slides.s${idx + 1}.title`)}</h1>
             <p className="hero-carousel__subtitle">{t(`slides.s${idx + 1}.subtitle`)}</p>
             <div className="hero-carousel__actions">
-              <Link href="/about-us/contact-us" className="btn btn-primary btn-lg hero-carousel__cta-primary">
+              <Link href="/contact-us" className="btn btn-primary btn-lg hero-carousel__cta-primary">
                 {t('cta')}
               </Link>
               <Link href="/area-rug-cleaning/rug-cleaning-process" className="hero-carousel__cta-secondary">

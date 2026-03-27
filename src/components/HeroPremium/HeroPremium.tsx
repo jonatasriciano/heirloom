@@ -14,7 +14,7 @@ export default function HeroPremium() {
           <h1 className="hero__title heading-display">{t('title')}</h1>
           <p className="hero__subtitle">{t('subtitle')}</p>
           <div className="hero__actions">
-            <Link href="/about-us/contact-us" className="btn btn-primary btn-lg">
+            <Link href="/contact-us" className="btn btn-primary btn-lg">
               {t('cta')}
             </Link>
             <a href="tel:4037202230" className="btn btn-secondary btn-lg">

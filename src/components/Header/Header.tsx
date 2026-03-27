@@ -80,7 +80,7 @@ export default function Header() {
       key: 'aboutUs', label: t('aboutUs'), href: '/about-us',
     },
     {
-      key: 'contact', label: t('aboutUsDropdown.contact'), href: '/contact',
+      key: 'contact', label: t('aboutUsDropdown.contact'), href: '/contact-us',
     },
   ];
 
@@ -129,7 +129,7 @@ export default function Header() {
             <Link href="/calculate-cleaning-cost" className="btn btn-accent">{t('calculateCost')}</Link>
             <div className="header__top-actions-row">
               <a href="tel:4037202230" className="btn btn-ghost">{t('call')}</a>
-              <Link href="/about-us/contact-us" className="btn btn-primary">{t('getQuote')}</Link>
+              <Link href="/contact-us" className="btn btn-primary">{t('getQuote')}</Link>
             </div>
           </div>
           {/* Mobile Toggle */}
@@ -283,7 +283,7 @@ export default function Header() {
             <Link href="/calculate-cleaning-cost" className="btn btn-accent btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
               {t('calculateCost')}
             </Link>
-            <Link href="/about-us/contact-us" className="btn btn-primary btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
+            <Link href="/contact-us" className="btn btn-primary btn-lg" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
               {t('getQuote')}
             </Link>
             <a href="tel:4037202230" className="btn btn-ghost btn-lg" style={{ width: '100%' }}>

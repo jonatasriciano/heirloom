@@ -13,7 +13,7 @@ export default function Footer() {
     { href: '/' as const, label: nav('home') },
     { href: '/area-rug-cleaning' as const, label: nav('cleaning') },
     { href: '/about-us' as const, label: nav('aboutUs') },
-    { href: '/contact' as const, label: nav('aboutUsDropdown.contact') },
+    { href: '/contact-us' as const, label: nav('aboutUsDropdown.contact') },
   ];
 
   const socialLinks = [

@@ -23,7 +23,7 @@ export default function CTASection() {
           <h2 className="heading-display cta__title">{t('title')}</h2>
           <p className="cta__subtitle">{t('subtitle')}</p>
           <div className="cta__actions">
-            <Link href="/about-us/contact-us" className="btn btn-primary btn-lg">
+            <Link href="/contact-us" className="btn btn-primary btn-lg">
               {t('primary')}
             </Link>
             <a href="tel:4037202230" className="btn cta__btn-outline btn-lg">
