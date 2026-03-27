@@ -7,7 +7,7 @@ import { Link } from '@/i18n/routing';
 const services = [
   { key: 'cleaning', image: '/images/servicesHomePage/featured-rug-cleaning.webp', href: '/area-rug-cleaning' },
   { key: 'repair', image: '/images/servicesHomePage/featured-rug-repair.webp', href: '/rug-repair' },
-  { key: 'spotRemoval', image: '/images/servicesHomePage/featured-spot-removal.webp', href: '/area-rug-cleaning/stain-removal' },
+  { key: 'spotRemoval', image: '/images/servicesHomePage/featured-spot-removal.webp', href: '/carpet-dyeing' },
   { key: 'pads', image: '/images/servicesHomePage/featured-rug-pads.webp', href: '/rug-padding' },
 ] as const;
 

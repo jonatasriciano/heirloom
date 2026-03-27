@@ -5,6 +5,11 @@
 
 export const config = {
   /**
+   * Company slug for CMS API calls
+   */
+  companySlug: 'heirloom',
+
+  /**
    * Base URL for the application
    */
   baseUrl: process.env.NEXT_PUBLIC_BASE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3011',

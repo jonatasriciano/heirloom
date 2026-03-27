@@ -24,7 +24,7 @@ export async function getSeoData(path: string, locale: string = 'en'): Promise<S
       return null;
     }
 
-    const url = `${CMS_API_URL}/api/public/seo?path=${encodeURIComponent(path)}&locale=${locale}&companySlug=heirloom`;
+    const url = `${CMS_API_URL}/api/public/seo?path=${encodeURIComponent(path)}&locale=${locale}&companySlug=${config.companySlug}`;
 
     const response = await fetch(url, {
       headers: { 'X-API-Key': CMS_API_KEY },
