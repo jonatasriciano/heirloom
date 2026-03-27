@@ -1,8 +1,11 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { headers } from 'next/headers';
 import { Playfair_Display, Inter } from 'next/font/google';
 import { routing } from '@/i18n/routing';
+import { generateSeoMetadata } from '@/lib/seo-metadata';
+import { getSeoFallback } from '@/lib/seo-fallbacks';
 import type { Metadata } from 'next';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import '../globals.css';
@@ -25,10 +28,22 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: 'Heirloom® Rug Cleaning - Area Rug Cleaning Calgary',
-  description: 'Area rug cleaning and restoration services in Calgary since 1967. Oriental rugs, stain removal, pet odor removal, rug repair and more.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '/';
+  const cleanPath = pathname.replace(`/${locale}`, '') || '/';
+
+  return generateSeoMetadata({
+    path: cleanPath,
+    locale,
+    fallback: getSeoFallback(cleanPath),
+  });
+}
 
 export default async function LocaleLayout({
   children,
