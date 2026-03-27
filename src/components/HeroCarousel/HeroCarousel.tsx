@@ -127,7 +127,7 @@ export default function HeroCarousel({
               <Link href="/contact-us" className="btn btn-primary btn-lg hero-carousel__cta-primary">
                 {t('cta')}
               </Link>
-              <Link href="/area-rug-cleaning/rug-cleaning-process" className="hero-carousel__cta-secondary">
+              <Link href="/area-rug-cleaning" className="hero-carousel__cta-secondary">
                 {t('secondaryCta')}
               </Link>
             </div>
