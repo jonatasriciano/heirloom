@@ -579,5 +579,65 @@
         "desc": "Gently pinch the scrim backing. If it separates or pulls away easily, it is time for a replacement. If it still feels firm and intact, the backing likely still has some life left."
       }
     }
+  },
+  "rugProtectionPage": {
+    "pageTitle": "Fabric Protection Calgary",
+    "pageSubtitle": "Professional protection for fine rugs, carpets, and luxury textiles in Calgary and the surrounding areas.",
+    "introLabel": "Rug Protection",
+    "introTitle": "Preserve the Beauty of Your Fine Textiles",
+    "intro1": "Applying a stain repellent is one of the smartest ways to protect your fine textiles and preserve their beauty for years to come. Stain-repellent treatments help safeguard valuable area rugs and can also be applied to wall-to-wall carpet, giving your entire space an added layer of protection.",
+    "intro2": "At Heirloom® Rug Cleaning, we apply specialized protection solutions safely and strategically to help make stains easier to remove while also discouraging pests. With decades of experience providing top-quality rug cleaning and protection services across Alberta, our team ensures your rugs receive the care they deserve.",
+    "whyProtect": {
+      "label": "Benefits",
+      "title": "Why Protect Your Rugs?",
+      "stains": { "title": "Prevents Permanent Stains", "desc": "Helps protect against red wine, ketchup, juice, and other common spills." },
+      "cleanup": { "title": "Allows Easier Cleanup", "desc": "Spills bead on the surface instead of soaking in, giving you more time to respond." },
+      "dirt": { "title": "Traps Dirt at the Surface", "desc": "Microscopic dirt particles stay closer to the surface, making routine cleaning easier." },
+      "colour": { "title": "Preserves Colour", "desc": "Helps maintain the rich, vibrant hues of your fine textiles for years to come." },
+      "odours": { "title": "Guards Against Odours", "desc": "Reduces the absorption of cooking, smoke, and other lingering smells." },
+      "closing": "At Heirloom® Rug Cleaning, we understand the value of your area rugs and the importance of properly protecting them. That is why we rely on skilled professionals to handle every step of the process, including the precise application of stain repellent."
+    },
+    "whyUs": {
+      "label": "Why Choose Us",
+      "title": "Why Choose Heirloom® for Rug Protection?",
+      "desc": "Heirloom® Rug Cleaning understands the value of your area rugs and your commitment to preserving them. That is why we employ highly skilled rug professionals and provide services designed to deliver exceptional care and long-lasting results. Our protection services include the expert application of rug protectors and stain repellents, forming an essential part of our complete rug care and maintenance offering."
+    }
+  },
+  "bleachSpotPage": {
+    "pageTitle": "Flawless Bleach Repair & Carpet Dyeing",
+    "pageSubtitle": "Specialized colour restoration and carpet dyeing for Calgary and the surrounding area.",
+    "introLabel": "Colour Restoration",
+    "introTitle": "Restore Your Carpet's Original Beauty",
+    "intro1": "A clean carpet helps your home look its best, but cleanliness is only part of the picture. If the colour has faded, or if a spill has stripped away the dye, your carpet may no longer reflect its original beauty.",
+    "intro2": "In these cases, regular cleaning is not always enough. It takes specialized colour restoration to bring it back. If your carpet is no longer as rich, elegant, or vibrant as it once was, Heirloom® Rug Cleaning can help restore its appearance with professional carpet dyeing services.",
+    "whyDyeing": {
+      "title": "Why Choose Carpet Dyeing Over Replacement?",
+      "desc": "When it comes to bleach stains and colour loss, carpet dyeing is often the smartest solution. Instead of cutting out damaged sections, we carefully match the surrounding colour so the repair blends naturally. In many cases, dyeing is far more cost-effective than full replacement, and the results can make damaged areas virtually disappear.",
+      "closing": "The goal is simple. Restore your carpet so it looks natural, consistent, and as though the damage never happened in the first place.",
+      "before": "Before",
+      "after": "After"
+    },
+    "diy": {
+      "title": "Could I Do This Myself?",
+      "desc1": "Carpet dyeing is not as simple as adding colour. It is a highly specialized process that requires the right techniques, tools, and professional-grade materials. Without the proper knowledge, do-it-yourself attempts can lead to uneven colour, poor blending, or permanent damage.",
+      "desc2": "Professional technicians have the training, equipment, and colour-matching expertise needed to complete the work properly and efficiently, so you can feel confident the repair will blend as seamlessly as possible."
+    },
+    "overdye": {
+      "label": "Advanced Technique",
+      "title": "Overdyeing",
+      "desc1": "Overdyeing is an effective way to revive your carpet and restore rich, even colour throughout the surface. Faded areas and visible stains can be blended away, leaving the carpet looking refreshed, vibrant, and renewed.",
+      "costTitle": "Cost-Effective Solution",
+      "desc2": "Because the process restores the appearance rather than replacing the material, overdyeing can help you avoid the cost of new carpet while extending the life of what you already have.",
+      "ecoTitle": "Eco-Conscious Choice",
+      "desc3": "Overdyeing is also an eco-conscious option. By restoring rather than replacing, you reduce waste and support a healthier indoor environment."
+    },
+    "services": {
+      "label": "Our Services",
+      "title": "What Dye Services Do We Offer?",
+      "restoration": { "title": "Carpet Restoration", "desc": "Restore your carpet's original beauty and value with advanced professional techniques designed to refresh and revitalize its appearance." },
+      "colourRepair": { "title": "Carpet Colour Repair", "desc": "Our expert colour repair service is a cost-effective way to preserve your carpet's appearance while extending its lifespan." },
+      "bleachSpot": { "title": "Carpet Bleach Spot Repair", "desc": "An efficient and affordable solution that corrects bleach damage without the need for costly carpet replacement." },
+      "recolouring": { "title": "Faded Carpet Recolouring", "desc": "Whether your carpet has faded from spills, sunlight, or everyday wear, we can restore rich, even colour and bring it back to life." }
+    }
   }
 }

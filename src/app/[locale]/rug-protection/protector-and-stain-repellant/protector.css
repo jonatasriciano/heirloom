@@ -1,0 +1,81 @@
+/* ============================================
+   PAGE: RUG PROTECTION
+   ============================================ */
+.rp-protect {
+  position: relative;
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.rp-protect__bg { object-fit: cover; z-index: 0; }
+
+.rp-protect__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(17,17,17,0.82), rgba(17,17,17,0.72));
+  z-index: 1;
+}
+
+.rp-protect .container { position: relative; z-index: 2; }
+
+.rp-protect__header {
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.rp-protect__title {
+  color: var(--text-on-dark);
+  margin-bottom: var(--space-3);
+}
+
+.rp-protect__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.rp-protect__card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rp-protect__card-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--accent-light);
+}
+
+.rp-protect__card-desc {
+  font-size: var(--font-size-sm);
+  color: rgba(247,243,238,0.7);
+  line-height: var(--line-height-relaxed);
+}
+
+.rp-protect__closing {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: rgba(247,243,238,0.55);
+  max-width: 700px;
+  margin-inline: auto;
+  margin-top: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .rp-protect__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rp-protect__card {
+    padding: var(--space-6);
+  }
+}
