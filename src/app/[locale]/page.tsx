@@ -64,6 +64,7 @@ export default function HomePage() {
         {/* Pet Proof Rug Padding */}
         <VideoTextSection
           videoSrc="/videos/rug-pads-to-prevent-pet-stains.webm"
+          posterSrc='/images/colorful-rug-with-grey-backing.webp'
           title={tPet('title')}
           description={tPet('desc')}
           videoOnLeft={false}
