@@ -82,8 +82,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer__bottom">
+        <div className="footer__bottom" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
           <p className="footer__copyright">{t('copyright', { year: new Date().getFullYear() })}</p>
+          <p className="footer__copyright" style={{ fontSize: 'var(--font-size-xs)', opacity: 0.6, display: 'flex', alignItems: 'center', gap: '6px' }}>
+            Powered by{' '}
+            <a href="https://fusionmediayyc.com/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', color: 'inherit', textDecoration: 'none' }}>
+              <Image src="/images/fusion-media-yyc.svg" alt="Fusion Media YYC" width={18} height={18} />
+              <strong>Fusion Media YYC</strong>
+            </a>
+          </p>
         </div>
       </div>
     </footer>

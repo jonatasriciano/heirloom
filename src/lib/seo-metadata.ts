@@ -76,7 +76,7 @@ export async function generateSeoMetadata({
         { url: '/favicon.ico', sizes: 'any' },
         { url: '/icon.png', type: 'image/png' },
       ],
-      apple: '/apple-touch-icon.png',
+      apple: '/icon.png',
     },
     openGraph: {
       title: ogTitle,
