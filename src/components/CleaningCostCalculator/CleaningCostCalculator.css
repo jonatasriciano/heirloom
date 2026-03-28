@@ -332,3 +332,53 @@
     font-size: var(--font-size-base);
   }
 }
+
+/* Quote Request Form */
+.calc__quote {
+  margin-top: var(--space-10);
+  padding: var(--space-8);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+}
+
+.calc__quote-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.calc__quote-desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.calc__quote-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .calc__quote-fields {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.calc__quote-success {
+  margin-top: var(--space-4);
+  color: #16a34a;
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+.calc__quote-error {
+  margin-top: var(--space-4);
+  color: #dc2626;
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}

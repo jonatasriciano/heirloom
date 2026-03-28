@@ -4,50 +4,27 @@
  */
 
 export const config = {
-  /**
-   * Company slug for CMS API calls
-   */
   companySlug: 'heirloom',
-
-  /**
-   * Base URL for the application
-   */
-  baseUrl: process.env.NEXT_PUBLIC_BASE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3011',
-  
-  /**
-   * Site name
-   */
+  baseUrl: (process.env.NEXT_PUBLIC_BASE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3011').replace(/\/+$/, ''),
   siteName: 'Heirloom® Rug Cleaning',
-  
-  /**
-   * Contact information
-   */
   contact: {
     phone: '(403) 720-2230',
     phoneLink: 'tel:4037202230',
     email: 'office@arearugcleaning.com',
   },
-  
-  /**
-   * Social media links
-   */
+  links: {
+    getQuote: '/contact-us',
+    allServices: '/area-rug-cleaning',
+  },
   social: {
     facebook: '',
     instagram: '',
   },
-  
-  /**
-   * Service area
-   */
   serviceArea: {
     city: 'Calgary',
     province: 'AB',
     country: 'Canada',
   },
-  
-  /**
-   * Business information
-   */
   business: {
     name: 'Heirloom® Rug Cleaning',
     tagline: 'Area Rug Cleaning in Calgary since 1967',
@@ -59,12 +36,11 @@ export const config = {
       icbm: '51.0447, -114.0719',
     },
   },
-  
-  /**
-   * SEO configuration
-   */
   seo: {
     defaultOgImage: '/images/heirloom-logo.png',
+  },
+  analytics: {
+    gaId: '',
   },
 } as const;
 

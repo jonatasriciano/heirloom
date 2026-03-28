@@ -1,7 +1,5 @@
 'use client';
 
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 
@@ -15,9 +13,7 @@ export default function PlaceholderPage({ title, description, breadcrumb }: Plac
   const t = useTranslations('nav');
 
   return (
-    <>
-      <Header />
-      <main className="placeholder-page">
+    <main className="placeholder-page">
         {/* Hero banner */}
         <div className="page-hero__hero">
           <div className="container">
@@ -73,7 +69,5 @@ export default function PlaceholderPage({ title, description, breadcrumb }: Plac
           </div>
         </div>
       </main>
-      <Footer />
-    </>
   );
 }

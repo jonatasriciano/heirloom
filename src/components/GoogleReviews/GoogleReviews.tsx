@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useState, useEffect } from 'react';
+import { config } from '@/lib/config';
 
 export interface Review {
   id: string;
@@ -10,217 +10,162 @@ export interface Review {
   authorImage: string;
   rating: number;
   text: string;
-  date: string;
-  ownerResponse?: string;
+  timeAgo: string;
+}
+
+interface ReviewsResponse {
+  name: string;
+  rating: number;
+  userRatingsTotal: number;
+  reviews: Review[];
+  reviewsUri: string;
+  writeReviewUri: string;
 }
 
 interface GoogleReviewsProps {
+  title?: string;
+  subtitle?: string;
   businessName?: string;
-  overallRating?: number;
-  totalReviews?: number;
-  reviews: Review[];
-  reviewsPerPage?: number;
+  fallbackReviews?: Review[];
+  fallbackRating?: number;
+  fallbackTotalReviews?: number;
 }
 
-const isGoogleProfileImage = (src: string) => src.includes('lh3.googleusercontent.com');
-
-const GOOGLE_PLACE_ID = 'ChIJVVVVVRW7cVMR8okkqsj-EbE';
+const isGoogleProfileImage = (src: string) =>
+  src.includes('lh3.googleusercontent.com');
 
 export default function GoogleReviews({
-  businessName = 'Heirloom Rug Cleaning',
-  overallRating = 5.0,
-  totalReviews = 5,
-  reviews,
-  reviewsPerPage = 10
+  title,
+  subtitle,
+  businessName,
+  fallbackReviews = [],
+  fallbackRating = 0,
+  fallbackTotalReviews = 0,
 }: GoogleReviewsProps) {
-  const t = useTranslations('googleReviews');
-  const [visibleReviews, setVisibleReviews] = useState(reviewsPerPage);
+  const [data, setData] = useState<ReviewsResponse | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  const getTimeAgo = (dateStr: string) => {
-    const now = new Date();
-    const date = new Date(dateStr);
-    const diffMs = now.getTime() - date.getTime();
-    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-
-    if (diffDays === 0) return t('timeAgo.today');
-    if (diffDays === 1) return t('timeAgo.yesterday');
-    if (diffDays < 7) return t('timeAgo.daysAgo', { count: diffDays });
-    if (diffDays < 14) return t('timeAgo.weekAgo');
-    if (diffDays < 30) return t('timeAgo.weeksAgo', { count: Math.floor(diffDays / 7) });
-    if (diffDays < 60) return t('timeAgo.monthAgo');
-    if (diffDays < 365) return t('timeAgo.monthsAgo', { count: Math.floor(diffDays / 30) });
-    if (diffDays < 730) return t('timeAgo.yearAgo');
-    return t('timeAgo.yearsAgo', { count: Math.floor(diffDays / 365) });
-  };
-
-  const showMoreReviews = () => {
-    setVisibleReviews(prev => Math.min(prev + reviewsPerPage, reviews.length));
-  };
-
-  const renderStars = (rating: number) => (
-    <div className="gr-stars">
-      {[1, 2, 3, 4, 5].map((star) => {
-        const fill = Math.min(1, Math.max(0, rating - (star - 1)));
-        if (fill >= 1) {
-          return (
-            <svg key={star} className="gr-star gr-star--filled" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-          );
-        }
-        if (fill <= 0) {
-          return (
-            <svg key={star} className="gr-star gr-star--empty" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-          );
-        }
-        const pct = Math.round(fill * 100);
-        return (
-          <svg key={star} className="gr-star" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <defs>
-              <linearGradient id={`star-grad-${star}`}>
-                <stop offset={`${pct}%`} stopColor="#fbbc04" />
-                <stop offset={`${pct}%`} stopColor="var(--border-medium)" />
-              </linearGradient>
-            </defs>
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill={`url(#star-grad-${star})`} />
-          </svg>
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const cmsUrl = process.env.NEXT_PUBLIC_CMS_URL || 'http://localhost:3000';
+        const res = await fetch(
+          `${cmsUrl}/api/public/company/google-reviews?slug=${config.companySlug}`
         );
-      })}
+        if (res.ok) {
+          setData(await res.json());
+        }
+      } catch {
+        // Use fallback
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchReviews();
+  }, []);
+
+  const reviews = data?.reviews?.length ? data.reviews : fallbackReviews;
+  const rating = data?.rating || fallbackRating;
+  const totalReviews = data?.userRatingsTotal || fallbackTotalReviews;
+  const name = data?.name || businessName || config.siteName;
+  const reviewsUri = data?.reviewsUri || '';
+  const writeReviewUri = data?.writeReviewUri || '';
+
+  const renderStars = (r: number) => (
+    <div style={{ display: 'flex', gap: '2px', alignItems: 'center' }}>
+      {[1, 2, 3, 4, 5].map((star) => (
+        <svg key={star} viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"
+          style={{ fill: star <= Math.round(r) ? '#fbbc04' : '#dadce0' }}>
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+      ))}
     </div>
   );
+
+  if (loading) return null;
+  if (reviews.length === 0) return null;
 
   return (
     <section className="section">
       <div className="container">
-        <div className="gr-header">
-          <span className="label-uppercase">{t('label')}</span>
-          <h2 className="heading-display">{t('title')}</h2>
-          <hr className="divider-center" style={{ marginTop: 'var(--space-4)' }} />
-        </div>
+        {(subtitle || title) && (
+          <div style={{ textAlign: 'center', marginBottom: 'var(--space-12, 3rem)' }}>
+            {subtitle && <span className="label-uppercase">{subtitle}</span>}
+            {title && <h2 className="heading-display">{title}</h2>}
+            <hr className="divider-center" style={{ marginTop: 'var(--space-4, 1rem)' }} />
+          </div>
+        )}
 
-        <div className="gr-business-card card-flat">
-          <div className="gr-business-info">
-            <div className="gr-business-details">
-              <Image
-                src="/images/business-reviews.svg"
-                alt="Google"
-                width={56}
-                height={56}
-                className="gr-business-icon"
-                priority
-              />
+        {/* Business Card */}
+        <div className="card-flat" style={{ marginBottom: 'var(--space-8, 2rem)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6, 1.5rem)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4, 1rem)' }}>
+              <Image src="/images/business-reviews.svg" alt="Google Reviews" width={56} height={56} style={{ flexShrink: 0 }} />
               <div>
-                <div className="gr-business-excellent">{t('excellent')}</div>
-                <a
-                  href={`https://search.google.com/local/reviews?placeid=${GOOGLE_PLACE_ID}`}
-                  className="gr-business-name"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {businessName}
-                </a>
-                <div className="gr-rating-row">
-                  <span className="gr-rating-number">{overallRating.toFixed(1)}</span>
-                  {renderStars(overallRating)}
+                <div style={{ fontWeight: 700, color: 'var(--accent-primary, #2563eb)' }}>Excellent</div>
+                {reviewsUri ? (
+                  <a href={reviewsUri} target="_blank" rel="noopener noreferrer"
+                    style={{ fontWeight: 700, color: 'var(--text-primary, #111)', textDecoration: 'none' }}>
+                    {name}
+                  </a>
+                ) : (
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary, #111)' }}>{name}</div>
+                )}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '2px' }}>
+                  <span style={{ fontWeight: 800, fontSize: '1.25rem', color: '#fbbc04' }}>{rating.toFixed(1)}</span>
+                  {renderStars(rating)}
                 </div>
-                <div className="gr-based-on">
-                  {t('basedOnPrefix', { count: totalReviews })}
-                  <Image
-                    src="/images/google-logo.svg"
-                    alt="Google"
-                    width={14}
-                    height={14}
-                    className="gr-google-inline"
-                    priority
-                  />
-                  {t('basedOnSuffix')}
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-light, #8a8a8a)', display: 'flex', alignItems: 'center', gap: '4px', marginTop: '2px' }}>
+                  Based on {totalReviews}{' '}
+                  <Image src="/images/google-logo.svg" alt="Google" width={14} height={14} style={{ display: 'inline-block' }} />
+                  {' '}reviews
                 </div>
               </div>
             </div>
-
-            <div className="gr-business-actions">
-              <a
-                href={`https://search.google.com/local/reviews?placeid=${GOOGLE_PLACE_ID}`}
-                className="gr-btn-pill"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t('seeAll')}
-              </a>
-              <a
-                href={`https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`}
-                className="gr-btn-pill"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t('reviewUs')}
-                <span className="gr-btn-google-icon">
-                  <Image
-                    src="/images/google-logo.svg"
-                    alt="Google"
-                    width={14}
-                    height={14}
-                    priority
-                  />
-                </span>
-              </a>
-            </div>
+            {(reviewsUri || writeReviewUri) && (
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
+                {reviewsUri && (
+                  <a href={reviewsUri} target="_blank" rel="noopener noreferrer"
+                    style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.5rem 1rem', height: '36px', backgroundColor: 'var(--accent-primary, #0a6cff)', color: '#fff', fontSize: '0.75rem', fontWeight: 500, borderRadius: '9999px', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                    See all reviews
+                  </a>
+                )}
+                {writeReviewUri && (
+                  <a href={writeReviewUri} target="_blank" rel="noopener noreferrer"
+                    style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', padding: '0.5rem 1rem', height: '36px', backgroundColor: 'var(--accent-primary, #0a6cff)', color: '#fff', fontSize: '0.75rem', fontWeight: 500, borderRadius: '9999px', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                    Review us on
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '20px', height: '20px', backgroundColor: '#fff', borderRadius: '50%' }}>
+                      <Image src="/images/google-logo.svg" alt="Google" width={14} height={14} />
+                    </span>
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
-        <div className="gr-reviews-list">
-          {reviews.slice(0, visibleReviews).map((review, index) => (
-            <div key={review.id} className="gr-review card-flat">
-              <div className="gr-review-header">
-                <Image
-                  src={review.authorImage}
-                  alt={review.author}
-                  width={40}
-                  height={40}
-                  className="gr-review-avatar"
-                  loading={index < 3 ? 'eager' : 'lazy'}
-                  sizes="40px"
-                  unoptimized={isGoogleProfileImage(review.authorImage)}
-                />
-                <div className="gr-review-meta">
-                  <span className="gr-review-author">{review.author}</span>
-                  <span className="gr-review-time">{getTimeAgo(review.date)}</span>
+        {/* Reviews */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6, 1.5rem)' }}>
+          {reviews.map((review, i) => (
+            <div key={review.id} className="card-flat">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                <Image src={review.authorImage || '/images/default-avatar.svg'} alt={review.author} width={40} height={40}
+                  style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
+                  loading={i < 3 ? 'eager' : 'lazy'} sizes="40px"
+                  unoptimized={isGoogleProfileImage(review.authorImage)} />
+                <div style={{ flex: 1 }}>
+                  <span style={{ fontWeight: 600, color: 'var(--text-primary, #111)' }}>{review.author}</span>
+                  <div style={{ fontSize: '0.875rem', color: 'var(--text-light, #8a8a8a)' }}>{review.timeAgo}</div>
                 </div>
-                <Image
-                  src="/images/google-logo.svg"
-                  alt="Google"
-                  width={18}
-                  height={18}
-                  className="gr-review-google"
-                  loading={index < 3 ? 'eager' : 'lazy'}
-                />
+                <Image src="/images/google-logo.svg" alt="Google" width={18} height={18} style={{ flexShrink: 0 }} loading={i < 3 ? 'eager' : 'lazy'} />
               </div>
-
-              <div className="gr-review-rating">{renderStars(review.rating)}</div>
-
+              <div style={{ marginBottom: '0.75rem' }}>{renderStars(review.rating)}</div>
               {review.text && (
-                <p className="gr-review-text">{review.text}</p>
-              )}
-
-              {review.ownerResponse && (
-                <div className="gr-owner-response">
-                  <p className="gr-owner-response-label">{t('ownerResponse')}</p>
-                  <p className="gr-owner-response-text">{review.ownerResponse}</p>
-                </div>
+                <p style={{ color: 'var(--text-secondary, #4b4b4b)', lineHeight: 1.75 }}>{review.text}</p>
               )}
             </div>
           ))}
         </div>
-
-        {visibleReviews < reviews.length && (
-          <div className="gr-more">
-            <button onClick={showMoreReviews} className="btn btn-accent">
-              {t('moreReviews')}
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );

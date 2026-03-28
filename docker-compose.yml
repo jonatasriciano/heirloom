@@ -43,6 +43,8 @@ services:
       start_period: 40s
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks:
+      - fusion-network
 
   # Production Service (for local testing)
   app-prod:
@@ -67,7 +69,9 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    networks:
+      - fusion-network
 
 networks:
-  default:
-    driver: bridge
+  fusion-network:
+    external: true

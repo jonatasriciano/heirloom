@@ -4,12 +4,13 @@ import { NextRequest } from 'next/server';
 
 const intlMiddleware = createMiddleware(routing);
 
-export default function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const response = intlMiddleware(request);
-  
+
+  // Add pathname to headers for SEO metadata generation
   const pathname = request.nextUrl.pathname;
   response.headers.set('x-pathname', pathname);
-  
+
   return response;
 }
 

@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import { submitContact } from '@/lib/submit-contact';
 import Tooltip from '@/components/Tooltip/Tooltip';
 import './CleaningCostCalculator.css';
 
@@ -92,6 +93,7 @@ export default function CleaningCostCalculator() {
     createEmptyRow(1),
     createEmptyRow(2),
   ]);
+  const [quoteStatus, setQuoteStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
   const updateRow = useCallback((id: number, updates: Partial<CalculatorRow>) => {
     setRows(prev => prev.map(row => {
@@ -135,6 +137,29 @@ export default function CleaningCostCalculator() {
   const subtotal = Math.round(rows.reduce((sum, row) => sum + row.total, 0) * 100) / 100;
 
   const numericOnly = (value: string) => value.replace(/[^0-9.]/g, '');
+
+  const buildQuoteMessage = () => {
+    const items = rows
+      .filter(r => r.total > 0)
+      .map(r => `• ${r.service} (${r.shape}) — ${r.area} sq ft × ${r.quantity} @ ${formatCurrency(r.rate)}/sq ft = ${formatCurrency(r.total)}${r.belowMinimum ? ' (minimum applied)' : ''}`)
+      .join('\n');
+    return `Cleaning Cost Estimate Request\n\n${items}\n\nEstimated Subtotal: ${formatCurrency(subtotal)} (plus GST)`;
+  };
+
+  const handleQuoteSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setQuoteStatus('sending');
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const result = await submitContact({
+      name: (data.get('quoteName') as string) || '',
+      email: (data.get('quoteEmail') as string) || '',
+      phone: (data.get('quotePhone') as string) || '',
+      message: buildQuoteMessage(),
+    });
+    setQuoteStatus(result.success ? 'sent' : 'error');
+    if (result.success) form.reset();
+  };
 
   return (
     <div className="calc">
@@ -386,6 +411,24 @@ export default function CleaningCostCalculator() {
           <span className="calc__subtotal-value">{formatCurrency(subtotal)} <span className="calc__subtotal-gst">(plus GST)</span></span>
         </div>
       </div>
+
+      {/* Quote Request Form */}
+      {subtotal > 0 && (
+        <form className="calc__quote" onSubmit={handleQuoteSubmit}>
+          <h3 className="calc__quote-title">{t('quoteTitle') || 'Request a Quote'}</h3>
+          <p className="calc__quote-desc">{t('quoteDesc') || 'Fill in your details and we\'ll get back to you with a confirmed quote.'}</p>
+          <div className="calc__quote-fields">
+            <input name="quoteName" type="text" required placeholder={t('quoteName') || 'Full Name *'} className="calc__input" />
+            <input name="quoteEmail" type="email" required placeholder={t('quoteEmail') || 'Email *'} className="calc__input" />
+            <input name="quotePhone" type="tel" required placeholder={t('quotePhone') || 'Phone *'} className="calc__input" />
+          </div>
+          <button type="submit" className="btn btn-primary btn-lg" disabled={quoteStatus === 'sending'}>
+            {quoteStatus === 'sending' ? (t('quoteSending') || 'Sending...') : (t('quoteSubmit') || 'Send Quote Request')}
+          </button>
+          {quoteStatus === 'sent' && <p className="calc__quote-success">{t('quoteSuccess') || 'Quote request sent! We\'ll be in touch soon.'}</p>}
+          {quoteStatus === 'error' && <p className="calc__quote-error">{t('quoteError') || 'Something went wrong. Please try again.'}</p>}
+        </form>
+      )}
     </div>
   );
 }

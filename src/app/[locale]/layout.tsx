@@ -6,8 +6,13 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import { generateSeoMetadata } from '@/lib/seo-metadata';
 import { getSeoFallback } from '@/lib/seo-fallbacks';
+import { config } from '@/lib/config';
 import type { Metadata } from 'next';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
+import StructuredData from '@/components/StructuredData/StructuredData';
+import GoogleAnalytics from '@/components/GoogleAnalytics/GoogleAnalytics';
 import '../globals.css';
 
 const playfair = Playfair_Display({
@@ -62,10 +67,20 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${playfair.variable} ${inter.variable}`} data-theme="luxury-light">
+      <head>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://lh3.googleusercontent.com" crossOrigin="anonymous" />
+        <link rel="preload" as="image" href="/images/backgroundHero/background-hero-1.webp" type="image/webp" fetchPriority="high" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <ScrollToTop />
+          <GoogleAnalytics companySlug={config.companySlug} gaId={config.analytics.gaId} />
+          <StructuredData type="organization" />
+          <StructuredData type="localBusiness" />
+          <Header />
           {children}
+          <Footer />
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>

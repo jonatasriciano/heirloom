@@ -1,8 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import StatementSection from '@/components/StatementSection/StatementSection';
@@ -16,9 +14,7 @@ export default function CarpetDyeingPage() {
   const t = useTranslations('bleachSpotPage');
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         <div className="page-hero__hero">
           <div className="container">
             <nav className="page-hero__breadcrumb" aria-label={tNav('breadcrumb')}>
@@ -144,7 +140,5 @@ export default function CarpetDyeingPage() {
 
         <CTASection />
       </main>
-      <Footer />
-    </>
   );
 }

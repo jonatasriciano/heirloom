@@ -1,8 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import ContactForm from '@/components/ContactForm/ContactForm';
 import HoursLocation from '@/components/HoursLocation/HoursLocation';
@@ -13,9 +11,7 @@ export default function ContactUsPage() {
   const t = useTranslations('contactForm');
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         {/* Hero */}
         <div className="page-hero__hero">
           <div className="container">
@@ -49,7 +45,5 @@ export default function ContactUsPage() {
 
         <ServiceAreas alt />
       </main>
-      <Footer />
-    </>
   );
 }

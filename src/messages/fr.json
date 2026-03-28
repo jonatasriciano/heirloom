@@ -289,7 +289,13 @@
     "phone": "(403) 720-2230",
     "email": "office@arearugcleaning.com",
     "copyright": "© {year} Heirloom® Rug Cleaning. Tous droits réservés.",
-    "followUs": "Suivez-nous sur"
+    "followUs": "Suivez-nous sur",
+    "newsletter": "Infolettre",
+    "newsletterText": "Restez informé de nos dernières nouvelles et conseils d'entretien de tapis.",
+    "newsletterPlaceholder": "Entrez votre courriel",
+    "newsletterButton": "S'abonner",
+    "newsletterSuccess": "Merci de vous être abonné!",
+    "newsletterError": "Une erreur est survenue. Veuillez réessayer."
   },
   "calculator": {
     "pageTitle": "Calculez votre coût de nettoyage",
@@ -535,12 +541,30 @@
       "closing": "Avec des soins appropriés et un service rapide, votre tapis peut continuer à être à son meilleur pour les années à venir."
     },
     "repairCards": {
-      "fringe": { "title": "Réparation de franges", "desc": "Des réparations mineures au remplacement complet, nous restaurons l'apparence et la structure de votre tapis." },
-      "serging": { "title": "Surjet et reliure", "desc": "Nous renforçons et finissons les bords pour une durabilité améliorée et un aspect propre et poli." },
-      "patching": { "title": "Rapiéçage et retissage", "desc": "Les trous, déchirures et coupures sont soigneusement réparés pour restaurer le tapis aussi parfaitement que possible." },
-      "backing": { "title": "Réparation du dos", "desc": "Nous remplaçons ou sécurisons le dos des tapis touffetés pour améliorer la stabilité et prolonger leur durée de vie." },
-      "colour": { "title": "Correction de couleur", "desc": "Les tons décolorés sont corrigés pour rafraîchir l'apparence générale du tapis." },
-      "deepClean": { "title": "Nettoyage en profondeur", "desc": "La saleté incrustée, les taches et les accumulations sont éliminées pour préserver la beauté et la valeur de votre tapis." }
+      "fringe": {
+        "title": "Réparation de franges",
+        "desc": "Des réparations mineures au remplacement complet, nous restaurons l'apparence et la structure de votre tapis."
+      },
+      "serging": {
+        "title": "Surjet et reliure",
+        "desc": "Nous renforçons et finissons les bords pour une durabilité améliorée et un aspect propre et poli."
+      },
+      "patching": {
+        "title": "Rapiéçage et retissage",
+        "desc": "Les trous, déchirures et coupures sont soigneusement réparés pour restaurer le tapis aussi parfaitement que possible."
+      },
+      "backing": {
+        "title": "Réparation du dos",
+        "desc": "Nous remplaçons ou sécurisons le dos des tapis touffetés pour améliorer la stabilité et prolonger leur durée de vie."
+      },
+      "colour": {
+        "title": "Correction de couleur",
+        "desc": "Les tons décolorés sont corrigés pour rafraîchir l'apparence générale du tapis."
+      },
+      "deepClean": {
+        "title": "Nettoyage en profondeur",
+        "desc": "La saleté incrustée, les taches et les accumulations sont éliminées pour préserver la beauté et la valeur de votre tapis."
+      }
     },
     "detailsLabel": "En détail",
     "detailsTitle": "En savoir plus sur nos services de réparation",
@@ -590,11 +614,26 @@
     "whyProtect": {
       "label": "Avantages",
       "title": "Pourquoi protéger vos tapis ?",
-      "stains": { "title": "Prévient les taches permanentes", "desc": "Aide à protéger contre le vin rouge, le ketchup, le jus et autres déversements courants." },
-      "cleanup": { "title": "Nettoyage plus facile", "desc": "Les déversements perlent à la surface au lieu de s'imbiber, vous donnant plus de temps pour réagir." },
-      "dirt": { "title": "Retient la saleté en surface", "desc": "Les particules microscopiques restent plus proches de la surface, facilitant le nettoyage de routine." },
-      "colour": { "title": "Préserve les couleurs", "desc": "Aide à maintenir les teintes riches et vibrantes de vos textiles fins pour les années à venir." },
-      "odours": { "title": "Protège contre les odeurs", "desc": "Réduit l'absorption des odeurs de cuisine, de fumée et autres odeurs persistantes." },
+      "stains": {
+        "title": "Prévient les taches permanentes",
+        "desc": "Aide à protéger contre le vin rouge, le ketchup, le jus et autres déversements courants."
+      },
+      "cleanup": {
+        "title": "Nettoyage plus facile",
+        "desc": "Les déversements perlent à la surface au lieu de s'imbiber, vous donnant plus de temps pour réagir."
+      },
+      "dirt": {
+        "title": "Retient la saleté en surface",
+        "desc": "Les particules microscopiques restent plus proches de la surface, facilitant le nettoyage de routine."
+      },
+      "colour": {
+        "title": "Préserve les couleurs",
+        "desc": "Aide à maintenir les teintes riches et vibrantes de vos textiles fins pour les années à venir."
+      },
+      "odours": {
+        "title": "Protège contre les odeurs",
+        "desc": "Réduit l'absorption des odeurs de cuisine, de fumée et autres odeurs persistantes."
+      },
       "closing": "Chez Heirloom® Rug Cleaning, nous comprenons la valeur de vos tapis et l'importance de les protéger correctement. C'est pourquoi nous comptons sur des professionnels qualifiés pour chaque étape du processus."
     },
     "whyUs": {
@@ -634,10 +673,22 @@
     "services": {
       "label": "Nos services",
       "title": "Quels services de teinture offrons-nous ?",
-      "restoration": { "title": "Restauration de moquette", "desc": "Restaurez la beauté et la valeur originales de votre moquette avec des techniques professionnelles avancées." },
-      "colourRepair": { "title": "Réparation de couleur", "desc": "Notre service expert de réparation de couleur est un moyen économique de préserver l'apparence de votre moquette." },
-      "bleachSpot": { "title": "Réparation de décoloration", "desc": "Une solution efficace et abordable qui corrige les dommages de décolorant sans remplacement coûteux." },
-      "recolouring": { "title": "Recoloration de moquette décolorée", "desc": "Que votre moquette ait pâli à cause de déversements, du soleil ou de l'usure quotidienne, nous pouvons restaurer une couleur riche et uniforme." }
+      "restoration": {
+        "title": "Restauration de moquette",
+        "desc": "Restaurez la beauté et la valeur originales de votre moquette avec des techniques professionnelles avancées."
+      },
+      "colourRepair": {
+        "title": "Réparation de couleur",
+        "desc": "Notre service expert de réparation de couleur est un moyen économique de préserver l'apparence de votre moquette."
+      },
+      "bleachSpot": {
+        "title": "Réparation de décoloration",
+        "desc": "Une solution efficace et abordable qui corrige les dommages de décolorant sans remplacement coûteux."
+      },
+      "recolouring": {
+        "title": "Recoloration de moquette décolorée",
+        "desc": "Que votre moquette ait pâli à cause de déversements, du soleil ou de l'usure quotidienne, nous pouvons restaurer une couleur riche et uniforme."
+      }
     }
   }
 }

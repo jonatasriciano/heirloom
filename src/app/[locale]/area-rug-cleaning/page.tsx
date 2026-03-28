@@ -1,8 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import ImageTextSection from '@/components/ImageTextSection/ImageTextSection';
 import ProcessSection from '@/components/ProcessSection/ProcessSection';
@@ -17,9 +15,7 @@ export default function AreaRugCleaningPage() {
   const t = useTranslations('rugCleaningPage');
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         {/* Hero */}
         <div className="page-hero__hero">
           <div className="container">
@@ -110,7 +106,5 @@ export default function AreaRugCleaningPage() {
 
         <CTASection />
       </main>
-      <Footer />
-    </>
   );
 }

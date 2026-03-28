@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "next dev -p 3011",
-    "dev:clean": "rm -rf .next && next dev -p 3011",
-    "build": "next build",
+    "dev:clean": "rm -rf .next && rm -rf node_modules/.cache && next dev -p 3011",
+    "build": "NODE_ENV=production TURBOPACK=0 next build",
     "prebuild": "node scripts/generate-sitemap-pages.js",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",

@@ -50,3 +50,6 @@ next-env.d.ts
 # Google credentials
 google-credentials.json
 service-account-key.json
+
+# Generated sitemap pages
+src/generated/sitemap-pages.json

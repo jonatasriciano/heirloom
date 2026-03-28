@@ -289,7 +289,13 @@
     "phone": "(403) 720-2230",
     "email": "office@arearugcleaning.com",
     "copyright": "© {year} Heirloom® Rug Cleaning. All rights reserved.",
-    "followUs": "Follow Us On"
+    "followUs": "Follow Us On",
+    "newsletter": "Newsletter",
+    "newsletterText": "Stay updated with our latest news and rug care tips.",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterButton": "Subscribe",
+    "newsletterSuccess": "Thanks for subscribing!",
+    "newsletterError": "Something went wrong. Please try again."
   },
   "calculator": {
     "pageTitle": "Calculate Your Cleaning Cost",
@@ -535,12 +541,30 @@
       "closing": "With proper care and timely service, your rug can continue to look its best for years to come."
     },
     "repairCards": {
-      "fringe": { "title": "Fringe Repair", "desc": "From minor repairs to complete fringe replacement, we restore both the appearance and structure of your rug." },
-      "serging": { "title": "Serging & Binding", "desc": "We reinforce and finish rug edges for improved durability and a clean, polished look." },
-      "patching": { "title": "Patching & Reweaving", "desc": "Holes, tears, and cuts are carefully repaired to restore the rug as seamlessly as possible." },
-      "backing": { "title": "Backing Repair", "desc": "We replace or secure backing on tufted rugs to improve stability and extend their lifespan." },
-      "colour": { "title": "Colour Correction", "desc": "Faded tones and discolouration are corrected to refresh the rug's overall appearance." },
-      "deepClean": { "title": "Deep Cleaning", "desc": "Embedded dirt, stains, and buildup are removed to help preserve your rug's beauty and value." }
+      "fringe": {
+        "title": "Fringe Repair",
+        "desc": "From minor repairs to complete fringe replacement, we restore both the appearance and structure of your rug."
+      },
+      "serging": {
+        "title": "Serging & Binding",
+        "desc": "We reinforce and finish rug edges for improved durability and a clean, polished look."
+      },
+      "patching": {
+        "title": "Patching & Reweaving",
+        "desc": "Holes, tears, and cuts are carefully repaired to restore the rug as seamlessly as possible."
+      },
+      "backing": {
+        "title": "Backing Repair",
+        "desc": "We replace or secure backing on tufted rugs to improve stability and extend their lifespan."
+      },
+      "colour": {
+        "title": "Colour Correction",
+        "desc": "Faded tones and discolouration are corrected to refresh the rug's overall appearance."
+      },
+      "deepClean": {
+        "title": "Deep Cleaning",
+        "desc": "Embedded dirt, stains, and buildup are removed to help preserve your rug's beauty and value."
+      }
     },
     "detailsLabel": "In Detail",
     "detailsTitle": "Learn More About Our Repair Services",
@@ -590,11 +614,26 @@
     "whyProtect": {
       "label": "Benefits",
       "title": "Why Protect Your Rugs?",
-      "stains": { "title": "Prevents Permanent Stains", "desc": "Helps protect against red wine, ketchup, juice, and other common spills." },
-      "cleanup": { "title": "Allows Easier Cleanup", "desc": "Spills bead on the surface instead of soaking in, giving you more time to respond." },
-      "dirt": { "title": "Traps Dirt at the Surface", "desc": "Microscopic dirt particles stay closer to the surface, making routine cleaning easier." },
-      "colour": { "title": "Preserves Colour", "desc": "Helps maintain the rich, vibrant hues of your fine textiles for years to come." },
-      "odours": { "title": "Guards Against Odours", "desc": "Reduces the absorption of cooking, smoke, and other lingering smells." },
+      "stains": {
+        "title": "Prevents Permanent Stains",
+        "desc": "Helps protect against red wine, ketchup, juice, and other common spills."
+      },
+      "cleanup": {
+        "title": "Allows Easier Cleanup",
+        "desc": "Spills bead on the surface instead of soaking in, giving you more time to respond."
+      },
+      "dirt": {
+        "title": "Traps Dirt at the Surface",
+        "desc": "Microscopic dirt particles stay closer to the surface, making routine cleaning easier."
+      },
+      "colour": {
+        "title": "Preserves Colour",
+        "desc": "Helps maintain the rich, vibrant hues of your fine textiles for years to come."
+      },
+      "odours": {
+        "title": "Guards Against Odours",
+        "desc": "Reduces the absorption of cooking, smoke, and other lingering smells."
+      },
       "closing": "At Heirloom® Rug Cleaning, we understand the value of your area rugs and the importance of properly protecting them. That is why we rely on skilled professionals to handle every step of the process, including the precise application of stain repellent."
     },
     "whyUs": {
@@ -634,10 +673,22 @@
     "services": {
       "label": "Our Services",
       "title": "What Dye Services Do We Offer?",
-      "restoration": { "title": "Carpet Restoration", "desc": "Restore your carpet's original beauty and value with advanced professional techniques designed to refresh and revitalize its appearance." },
-      "colourRepair": { "title": "Carpet Colour Repair", "desc": "Our expert colour repair service is a cost-effective way to preserve your carpet's appearance while extending its lifespan." },
-      "bleachSpot": { "title": "Carpet Bleach Spot Repair", "desc": "An efficient and affordable solution that corrects bleach damage without the need for costly carpet replacement." },
-      "recolouring": { "title": "Faded Carpet Recolouring", "desc": "Whether your carpet has faded from spills, sunlight, or everyday wear, we can restore rich, even colour and bring it back to life." }
+      "restoration": {
+        "title": "Carpet Restoration",
+        "desc": "Restore your carpet's original beauty and value with advanced professional techniques designed to refresh and revitalize its appearance."
+      },
+      "colourRepair": {
+        "title": "Carpet Colour Repair",
+        "desc": "Our expert colour repair service is a cost-effective way to preserve your carpet's appearance while extending its lifespan."
+      },
+      "bleachSpot": {
+        "title": "Carpet Bleach Spot Repair",
+        "desc": "An efficient and affordable solution that corrects bleach damage without the need for costly carpet replacement."
+      },
+      "recolouring": {
+        "title": "Faded Carpet Recolouring",
+        "desc": "Whether your carpet has faded from spills, sunlight, or everyday wear, we can restore rich, even colour and bring it back to life."
+      }
     }
   }
 }

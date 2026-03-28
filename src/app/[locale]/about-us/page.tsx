@@ -1,8 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import ImageTextSection from '@/components/ImageTextSection/ImageTextSection';
 import CTASection from '@/components/CTASection/CTASection';
@@ -15,9 +13,7 @@ export default function AboutUsPage() {
   const tAbout = useTranslations('aboutSection');
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         {/* Hero */}
         <div className="page-hero__hero">
           <div className="container">
@@ -89,7 +85,5 @@ export default function AboutUsPage() {
 
         <CTASection />
       </main>
-      <Footer />
-    </>
   );
 }

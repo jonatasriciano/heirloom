@@ -1,8 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import CTASection from '@/components/CTASection/CTASection';
 import { Link } from '@/i18n/routing';
 import CleaningCostCalculator from '@/components/CleaningCostCalculator/CleaningCostCalculator';
@@ -12,9 +10,7 @@ export default function CalculateCleaningCostPage() {
   const t = useTranslations('calculator');
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         {/* Hero */}
         <div className="page-hero__hero">
           <div className="container">
@@ -45,7 +41,5 @@ export default function CalculateCleaningCostPage() {
 
         <CTASection />
       </main>
-      <Footer />
-    </>
   );
 }

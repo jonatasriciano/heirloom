@@ -107,7 +107,7 @@ export default function HeroCarousel({
               src={slide.backgroundImage}
               alt=""
               fill
-              priority={i === 1}
+              priority={i === 0}
               sizes="100vw"
               className="hero-carousel__image"
             />

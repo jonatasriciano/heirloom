@@ -1,8 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import StatementSection from '@/components/StatementSection/StatementSection';
@@ -14,9 +12,7 @@ export default function RugRepairPage() {
   const t = useTranslations('rugRepairPage');
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         {/* Hero */}
         <div className="page-hero__hero">
           <div className="container">
@@ -139,7 +135,5 @@ export default function RugRepairPage() {
 
         <CTASection />
       </main>
-      <Footer />
-    </>
   );
 }

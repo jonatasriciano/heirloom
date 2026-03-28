@@ -1,6 +1,5 @@
 'use client';
 
-import Header from '@/components/Header/Header';
 import HeroCarousel from '@/components/HeroCarousel/HeroCarousel';
 import FeaturedServices from '@/components/FeaturedServices/FeaturedServices';
 import ImageTextSection from '@/components/ImageTextSection/ImageTextSection';
@@ -12,9 +11,7 @@ import CTASection from '@/components/CTASection/CTASection';
 import ServiceAreas from '@/components/ServiceAreas/ServiceAreas';
 import GoogleReviews from '@/components/GoogleReviews/GoogleReviews';
 import AwardsSection from '@/components/AwardsSection/AwardsSection';
-import Footer from '@/components/Footer/Footer';
 import { sampleReviews } from '@/data/reviews';
-import type { Review } from '@/components/GoogleReviews/GoogleReviews';
 import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
@@ -26,7 +23,6 @@ export default function HomePage() {
 
   return (
     <>
-      <Header />
       <main>
         <HeroCarousel
           slides={[
@@ -77,9 +73,9 @@ export default function HomePage() {
         <ProcessSection />
 
         <GoogleReviews
-          reviews={sampleReviews as Review[]}
-          overallRating={4.4}
-          totalReviews={39}
+          fallbackReviews={sampleReviews}
+          fallbackRating={4.4}
+          fallbackTotalReviews={39}
         />
 
         <AwardsSection />
@@ -88,7 +84,6 @@ export default function HomePage() {
 
         <ServiceAreas />
       </main>
-      <Footer />
     </>
   );
 }

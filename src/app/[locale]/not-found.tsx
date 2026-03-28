@@ -1,15 +1,11 @@
 'use client';
 
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/routing';
 import './not-found.css';
 
 export default function NotFound() {
   return (
-    <>
-      <Header />
-      <main className="not-found">
+    <main className="not-found">
         <div className="container">
           <div className="not-found__grid">
             {/* Ornament column */}
@@ -62,7 +58,5 @@ export default function NotFound() {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
   );
 }

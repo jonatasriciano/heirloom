@@ -49,7 +49,9 @@ docs
 *.mp4
 *.mov
 *.avi
+*.webm
 *.mkv
+public/videos/
 
 # Misc
 .editorconfig

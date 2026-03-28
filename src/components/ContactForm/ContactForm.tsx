@@ -2,17 +2,31 @@
 
 import { useState, type FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
+import { submitContact } from '@/lib/submit-contact';
 import './ContactForm.css';
 
 export default function ContactForm() {
   const t = useTranslations('contactForm');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('sending');
-    // TODO: integrate with API
-    setTimeout(() => setStatus('sent'), 1200);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const name = `${data.get('firstName')} ${data.get('lastName')}`.trim();
+    const email = (data.get('email') as string) || '';
+    const phone = (data.get('phone') as string) || '';
+
+    const address = [data.get('street'), data.get('city'), data.get('st'), data.get('zip')]
+      .filter(Boolean).join(', ');
+    const msg = (data.get('message') as string) || '';
+    const message = address ? `Address: ${address}\n\n${msg}` : msg;
+
+    const result = await submitContact({ name, email, phone, message });
+    setStatus(result.success ? 'sent' : 'error');
+    if (result.success) form.reset();
   };
 
   return (
@@ -26,24 +40,18 @@ export default function ContactForm() {
       </h2>
       <div className="contact-form__row">
         <div className="contact-form__field">
-          <label className="contact-form__label" htmlFor="firstName">
-            {t('firstName')} <span className="contact-form__required">*</span>
-          </label>
+          <label className="contact-form__label" htmlFor="firstName">{t('firstName')} <span className="contact-form__required">*</span></label>
           <input id="firstName" name="firstName" type="text" required className="contact-form__input" />
         </div>
         <div className="contact-form__field">
-          <label className="contact-form__label" htmlFor="lastName">
-            {t('lastName')} <span className="contact-form__required">*</span>
-          </label>
+          <label className="contact-form__label" htmlFor="lastName">{t('lastName')} <span className="contact-form__required">*</span></label>
           <input id="lastName" name="lastName" type="text" required className="contact-form__input" />
         </div>
       </div>
-
       <div className="contact-form__field">
         <label className="contact-form__label" htmlFor="street">{t('streetAddress')}</label>
         <input id="street" name="street" type="text" className="contact-form__input" />
       </div>
-
       <div className="contact-form__row contact-form__row--3">
         <div className="contact-form__field">
           <label className="contact-form__label" htmlFor="city">{t('city')}</label>
@@ -58,27 +66,20 @@ export default function ContactForm() {
           <input id="zip" name="zip" type="text" className="contact-form__input" />
         </div>
       </div>
-
       <div className="contact-form__row">
         <div className="contact-form__field">
-          <label className="contact-form__label" htmlFor="phone">
-            {t('phone')} <span className="contact-form__required">*</span>
-          </label>
+          <label className="contact-form__label" htmlFor="phone">{t('phone')} <span className="contact-form__required">*</span></label>
           <input id="phone" name="phone" type="tel" required className="contact-form__input" />
         </div>
         <div className="contact-form__field">
-          <label className="contact-form__label" htmlFor="email">
-            {t('email')} <span className="contact-form__required">*</span>
-          </label>
+          <label className="contact-form__label" htmlFor="email">{t('email')} <span className="contact-form__required">*</span></label>
           <input id="email" name="email" type="email" required className="contact-form__input" />
         </div>
       </div>
-
       <div className="contact-form__field">
         <label className="contact-form__label" htmlFor="message">{t('message')}</label>
         <textarea id="message" name="message" rows={3} className="contact-form__textarea" />
       </div>
-
       <div className="contact-form__actions">
         <button type="submit" className="btn btn-primary btn-lg" disabled={status === 'sending'}>
           {status === 'sending' ? t('sending') : t('send')}
