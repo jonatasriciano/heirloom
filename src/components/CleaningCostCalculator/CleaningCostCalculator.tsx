@@ -148,13 +148,28 @@ export default function CleaningCostCalculator() {
 
   const handleQuoteSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setQuoteStatus('sending');
     const form = e.currentTarget;
     const data = new FormData(form);
+    const name = (data.get('quoteName') as string || '').trim();
+    const email = (data.get('quoteEmail') as string || '').trim();
+    const phone = (data.get('quotePhone') as string || '').trim();
+
+    if (!name || !email || !phone) {
+      form.reportValidity();
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      form.reportValidity();
+      return;
+    }
+
+    setQuoteStatus('sending');
     const result = await submitContact({
-      name: (data.get('quoteName') as string) || '',
-      email: (data.get('quoteEmail') as string) || '',
-      phone: (data.get('quotePhone') as string) || '',
+      name,
+      email,
+      phone,
       message: buildQuoteMessage(),
     });
     setQuoteStatus(result.success ? 'sent' : 'error');

@@ -11,13 +11,22 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('sending');
 
     const form = e.currentTarget;
     const data = new FormData(form);
-    const name = `${data.get('firstName')} ${data.get('lastName')}`.trim();
-    const email = (data.get('email') as string) || '';
-    const phone = (data.get('phone') as string) || '';
+    const firstName = (data.get('firstName') as string || '').trim();
+    const lastName = (data.get('lastName') as string || '').trim();
+    const email = (data.get('email') as string || '').trim();
+    const phone = (data.get('phone') as string || '').trim();
+
+    if (!firstName || !lastName || !email || !phone) return;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) return;
+
+    setStatus('sending');
+
+    const name = `${firstName} ${lastName}`.trim();
 
     const address = [data.get('street'), data.get('city'), data.get('st'), data.get('zip')]
       .filter(Boolean).join(', ');
@@ -30,7 +39,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit} noValidate>
+    <form className="contact-form" onSubmit={handleSubmit}>
       <h2 className="contact-form__title">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="contact-form__title-icon">
           <rect x="2" y="4" width="16" height="12" rx="2" stroke="var(--accent-primary)" strokeWidth="1.5"/>

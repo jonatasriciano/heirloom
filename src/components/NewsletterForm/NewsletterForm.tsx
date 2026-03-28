@@ -23,7 +23,13 @@ export default function NewsletterForm({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!email.trim()) return;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      setStatus('error');
+      setMsg(errorMessage);
+      return;
+    }
     setStatus('loading');
 
     try {
