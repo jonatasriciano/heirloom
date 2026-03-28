@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { config } from '@/lib/config';
 
 export interface Review {
   id: string;
@@ -48,10 +47,7 @@ export default function GoogleReviews({
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const cmsUrl = process.env.NEXT_PUBLIC_CMS_URL || 'http://localhost:3000';
-        const res = await fetch(
-          `${cmsUrl}/api/public/company/google-reviews?slug=${config.companySlug}`
-        );
+        const res = await fetch('/api/google-reviews');
         if (res.ok) {
           setData(await res.json());
         }
@@ -67,7 +63,7 @@ export default function GoogleReviews({
   const reviews = data?.reviews?.length ? data.reviews : fallbackReviews;
   const rating = data?.rating || fallbackRating;
   const totalReviews = data?.userRatingsTotal || fallbackTotalReviews;
-  const name = data?.name || businessName || config.siteName;
+  const name = data?.name || businessName || 'Heirloom® Rug Cleaning';
   const reviewsUri = data?.reviewsUri || '';
   const writeReviewUri = data?.writeReviewUri || '';
 
